@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="faveActionHeight">56dp</dimen>
+    <dimen name="faceSize">120dp</dimen>
+    <dimen name="faceContainer">130dp</dimen>
+
+    <!-- KeyLines -->
+    <dimen name="keyline_8dp">16dp</dimen>
+    <dimen name="keyline_16dp">32dp</dimen>
+    <dimen name="keyline_16dp_minus">-32dp</dimen>
+    <dimen name="keyline_24dp">48dp</dimen>
+    <dimen name="keyline_56dp">112dp</dimen>
+    <dimen name="keyline_72dp">144dp</dimen>
+    <dimen name="keyline_75dp">150dp</dimen>
+    <dimen name="keyline_56dpX">104dp</dimen>
+    <dimen name="listView_padding">56dp</dimen>
+
+    <integer name="abc_max_action_buttons">5</integer>
+    <!-- Default height of an action bar. -->
+    <dimen name="abc_action_bar_default_height">56dip</dimen>
+    <!-- Vertical padding around action bar icons. -->
+    <dimen name="abc_action_bar_icon_vertical_padding">4dip</dimen>
+    <!-- Text size for action bar titles -->
+    <dimen name="abc_action_bar_title_text_size">18dp</dimen>
+    <!-- Text size for action bar subtitles -->
+    <dimen name="abc_action_bar_subtitle_text_size">14dp</dimen>
+    <!-- Top margin for action bar subtitles -->
+    <dimen name="abc_action_bar_subtitle_top_margin">-3dp</dimen>
+    <!-- Bottom margin for action bar subtitles -->
+    <dimen name="abc_action_bar_subtitle_bottom_margin">9dip</dimen>
+    <dimen name="home_card_size">170dp</dimen>
+
+</resources>

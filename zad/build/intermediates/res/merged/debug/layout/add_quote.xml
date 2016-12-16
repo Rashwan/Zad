@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullshette"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- Remember : Add Material like , image beside every topic & Material Padding -->
+
+    <RelativeLayout
+        android:id="@+id/color_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/Purple_Deep" />
+
+    <ScrollView
+        android:id="@+id/Scrolly"
+        style="@style/ScrollBarZad_Theme_Purple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/color_layout"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="30dp" >
+
+            <EditText
+                android:id="@+id/quote_text"
+                style="@style/Zad_Theme_Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewx"
+                android:layout_alignRight="@+id/textViewx"
+                android:layout_below="@+id/textViewx"
+                android:ems="10"
+                android:hint="@string/quote_hint"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/keyline_8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text_hint" />
+
+            <TextView
+                android:id="@+id/textViewx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginTop="20dp"
+                android:padding="@dimen/keyline_8dp"
+                android:text="@string/quote_label"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/quote_text"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginTop="20dp"
+                android:padding="@dimen/keyline_8dp"
+                android:text="@string/author_label"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/quote_source_text"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginTop="20dp"
+                android:padding="@dimen/keyline_8dp"
+                android:text="@string/quote_category_label"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/yellow" />
+
+            <EditText
+                android:id="@+id/author_text"
+                style="@style/Zad_Theme_Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:ems="10"
+                android:hint="@string/author_hint"
+                android:inputType="text"
+                android:padding="@dimen/keyline_8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text_hint" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/author_text"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginTop="20dp"
+                android:padding="@dimen/keyline_8dp"
+                android:text="@string/quote_source_label"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/yellow" />
+
+            <EditText
+                android:id="@+id/quote_source_text"
+                style="@style/Zad_Theme_Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:ems="10"
+                android:hint="@string/source_hint"
+                android:inputType="text"
+                android:padding="@dimen/keyline_8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text_hint" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                style="@style/SpinnerZad_Theme_Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:gravity="right"
+                android:padding="@dimen/keyline_8dp"
+                android:popupBackground="@drawable/card_bg2"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/otherCategory"
+                style="@style/_Zad_Theme_Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/spinner1"
+                android:layout_marginLeft="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginTop="@dimen/keyline_8dp"
+                android:ems="10"
+                android:enabled="false"
+                android:gravity="right"
+                android:hint="@string/other_category"
+                android:inputType="text"
+                android:padding="@dimen/keyline_8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text"
+                android:textColorHint="@color/text_hint" />
+
+            <TextView
+                android:id="@+id/text_shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/ButtonZad_Theme_Purple"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agree_sending"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:padding="@dimen/keyline_8dp"
+                android:text="@string/add_quote_button"
+                android:textColor="@color/white" />
+
+            <CheckedTextView
+                android:id="@+id/agree_sending"
+                style="@style/Zad_Theme_Purple"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/otherCategory"
+                android:layout_marginBottom="@dimen/keyline_16dp"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginTop="@dimen/keyline_24dp"
+                android:background="@color/transparent"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.3"
+                android:paddingLeft="@dimen/keyline_24dp"
+                android:paddingRight="@dimen/keyline_16dp"
+                android:text="@string/agree_sending"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

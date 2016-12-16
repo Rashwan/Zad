@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authors_list_quotes_notBoring" >
+
+    <ListView
+        android:id="@+id/listviewMine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Card_back"
+        android:paddingLeft="@dimen/listView_padding"
+        android:paddingRight="@dimen/listView_padding" />
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height" >
+
+        <RelativeLayout
+            android:id="@+id/koca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.app.zad.notboring.ActionBarMagicView
+                android:id="@+id/header_bg_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:src="@drawable/image_new6" />
+
+            <ImageView
+                android:id="@+id/Author_profilr_pic"
+                android:layout_width="@dimen/header_logo_size"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:id="@+id/Author_profilr_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:shadowColor="@color/Purple_Deep_Reverse"
+                android:shadowDx="-1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="وسام شوكت"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:typeface="serif" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

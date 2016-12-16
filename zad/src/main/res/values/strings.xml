@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">زاد</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9014018720636756/9907378221</string>
+    <string name="twitter_name">تويتر</string>
+    <string name="twitter_url">w@appZad</string>
+    <string name="Pic_Mazag_placeholder">آرثر سي كلارك</string>
+    <string name="Pic_Today_placeholder">آرثر سي كلارك</string>
+    <string name="Pic_Random_placeholder">آرثر سي كلارك</string>
+
+    <!-- Wizard -->
+    <string name="next">التالي</string>
+    <string name="prev">رجوع</string>
+    <string name="finish">إلى زاد</string>
+    <string name="finishwidget">موافق</string>
+    <string name="review">Review</string>
+    <string name="label_your_name">الاسم الأول</string>
+    <string name="label_your_email">اللقب</string>
+    <string name="hint_your_first_name">مثال:أحمد</string>
+    <string name="hint_your_second_name"></string>
+    <!-- About ACtivity -->
+    <string name="website">الموقع</string>
+    <string name="website_url">appZad.com</string>
+    <string name="gmail_url">zad.dev.team@gmail.com</string>
+    <string name="gmail">البريد الإلكتروني</string>
+
+    <!-- widget -->
+    <string name="initial_quote_label">جاري التحميل..</string>
+    <string name="loading">جاري التحميل..</string>
+    <string name="cancel_label">إلفاء</string>
+    <string name="ok_label">موافق</string>
+    <string name="freq_label">الفاصل الزمني بين كل التحديث</string>
+    <string name="choose_widget_label">تخصيص المقولات</string>
+    <string name="author_widget_label">اختيار الأشخاص</string>
+    <string name="category_widget_label">اختيار الأقوال</string>
+
+    <!-- perefrences -->
+    <string name="morning_settings_label">توقيت حكمة الصباح</string>
+    <string name="evening_settings_label">توقيت حكمة المساء</string>
+    <string name="notifcation_settings_label">التنبيهات</string>
+    <string name="notifcation_enabled_summary">التنبيهات مفعلة</string>
+    <string name="notifcation_disabled_summary">التنبيهات غير مفعلة</string>
+    <string name="ringtone_settings_label">نغمة التنبيهات</string>
+    <string name="viberate_settings_label">الاهتزاز</string>
+    <string name="light_settings_label">الضوء</string>
+    <string name="about_title">حول التطبيق</string>
+    <string name="other_prefs_title">أخرى</string>
+    <string name="mood_notification_title">توقيت تنبيه اختيار المزاج</string>
+
+    <!-- Add quote lables -->
+    <string name="quote_label">القول المأثور</string>
+    <string name="author_label">القائل</string>
+    <string name="quote_source_label">مصدر القول</string>
+    <string name="quote_category_label">تصنيف القول</string>
+    <string name="add_quote_button">إرسال</string>
+    <string name="quote_hint">المقولة التي تود إضافتها</string>
+    <string name="author_hint">اسم قائل المقولة .. مثال عباس العقاد</string>
+    <string name="source_hint">مصدر هذه المقولة .. مثال عبقرية عُمَر</string>
+
+    <!-- Add quote categories -->
+    <string name="other_category">أخرى</string>
+    <string name="app_id">816219228396620</string>
+    <string name="Quote1">الناس لا تموت بالحب وهذا الذي مُتِ بسببه ليس حبّاً إنه ليس أكثر من دودة نخرت قلبكِ وعلّمتكِ الاستسلام</string>
+
+    <!-- Add quote toasts -->
+    <string name="success_toast">تم ارسال القول الجديد بنجاح، سيتم مراجعته واعتماده قريبًا جدا\r\nشكرًا لك !</string>
+    <string name="not_completed_fields_toast">تأكد من ادخالك للحقول الضرورية !</string>
+    <string name="failure_toast">تأكد من اتصالك بالإنترنت !</string>
+
+    <string-array name="categories">
+        <item>ديني وروحاني</item>
+        <item>شعبي</item>
+        <item>سياسة وحرية</item>
+        <item>حب ورومانسية وجمال</item>
+        <item>ريادة أعمال</item>
+        <item>الحياة و الانسانية والأخلاق</item>
+        <item>الفنون والثقافة والفلسفة</item>
+        <item>العلم و التعليم و الترحال</item>
+        <item>فكاهة</item>
+        <item>الشرور والظلم</item>
+        <item>أخرى</item>
+    </string-array>
+    <string-array name="categoriesnew">
+        <item>ديني وروحاني</item>
+        <item>سياسة وحرية</item>
+        <item>حب ورومانسية وجمال</item>
+        <item>ريادة أعمال</item>
+        <item>الحياة و الانسانية والأخلاق</item>
+        <item>الفنون والثقافة والفلسفة</item>
+        <item>العلم و التعليم و الترحال</item>
+        <item>فكاهة</item>
+        <item>الشرور والظلم</item>
+        <item>أخرى</item>
+    </string-array>
+
+    <string name="add_to_favourites">تم إضافة المقولة لمفضلتك</string>
+    <string name="removed_from_favourites">تم إزالة المقولة من مفضلتك</string>
+    <string name="chooseCategoryDialogTitle">اختر التصنيف المناسب لهذه المقولة من وجهة نظرك:</string>
+    <string name="editDialogTitle">اختر التصنيف المناسب من وجهة نظرك</string>
+    <string name="noReasonForReportToas">يجب إبداء السبب</string>
+    <string name="succsufellyReporte">تم التبليغ بنجاح ستتم المراجعة فورا\r\n شكرًا لك</string>
+    <string name="succsufellyEdited">تم إرسال طلبك بنجاح سيتم مراجعته فورا\r\n شكرًا لك</string>
+    <string name="share_quote">شارك الحكمة</string>
+
+    <!-- Search -->
+    <string name="Speak_Arabic">تحدث بالعربية الفصحى</string>
+    <string name="search_hint">ابحث عن حكمة أو حكيم</string>
+    <string name="search_label">بحث</string>
+
+    <string-array name="NavBarDrawerNames">
+        <item>الرئيسية</item>
+        <item>الحكماء</item>
+        <item>التصنيفات</item>
+        <item>الحكم</item>
+        <item>مفضلتي</item>
+        <item>إقترح قول مأثور</item>
+        <item>شراء النسخة المميزة</item>
+        <item></item>
+    </string-array>
+    <string-array name="Thanks_List_Names">
+        <item>نورهان فايز</item>
+        <item>خالد خليل</item>
+        <item>إيمان العساس</item>
+        <item>آلاء خليل</item>
+        <item>عمرو عبد الفتاح</item>
+        <item>مصطفى الساعدي</item>
+        <item>أحمد روحي</item>
+        <item>مالك القاسم</item>
+        <item>نذير الملوحي</item>
+        <item>أبو وقاص الجبوري</item>
+        <item>محمد حافظ</item>
+        <item>أسامة القائد</item>
+        <item>رنيم محمد</item>
+    </string-array>
+
+    <array name="menu_mi_perfil_icon">
+        <item>ic_about_instagram</item>
+        <item>ic_about_instagram</item>
+        <item>ic_about_instagram</item>
+        <item>ic_about_instagram</item>
+        <item>ic_about_instagram</item>
+    </array>
+
+    <string name="noboringactionbar_title">جاري التحميل..</string>
+    <string name="loreum">Quam ob rem vita quidem talis fuit vel fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum celeritas abstulit; quo de genere mortis difficile dictu est; quid homines suspicentur, videtis; hoc vere tamen licet dicere, P. Scipioni ex multis diebus, quos in vita celeberrimos laetissimosque viderit, illum diem clarissimum fuisse, cum senatu dimisso domum reductus ad vesperum est a patribus conscriptis, populo Romano, sociis et Latinis, pridie quam excessit e vita, ut ex tam alto dignitatis gradu ad superos videatur deos potius quam ad inferos pervenisse.  Quam ob rem id primum videamus, si placet, quatenus amor in amicitia progredi debeat. Numne, si Coriolanus habuit amicos, ferre contra patriam arma illi cum Coriolano debuerunt? num Vecellinum amici regnum adpetentem, num Maelium debuerunt iuvare?  Pandente itaque viam fatorum sorte tristissima, qua praestitutum erat eum vita et imperio spoliari, itineribus interiectis permutatione iumentorum emensis venit Petobionem oppidum Noricorum, ubi reseratae sunt insidiarum latebrae omnes, et Barbatio repente apparuit comes, qui sub eo domesticis praefuit, cum Apodemio agente in rebus milites ducens, quos beneficiis suis oppigneratos elegerat imperator certus nec praemiis nec miseratione ulla posse deflecti.  Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.  Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae.</string>
+    <string name="drawer_open">Open menu</string>
+    <string name="drawer_close">Close menu</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">جاري التحميل..</string>
+    <string name="title_activity_categories_list_quotes_not_boring">CategoriesListQuotesNotBoring</string>
+    <string name="title_activity_facebook__share">Facebook_Share</string>
+
+    <!-- Short text welcoming the user to the application -->
+    <string name="welcome_to_zad">مرحبا ! </string>
+    <string name="welcome_text">زاد هنا .. يفهمك ، يقدم العون ، ويسأل عنك باستمرار</string>
+    <string name="title_activity_about">حول التطبيق</string>
+    <string name="widget_fast">قم بتفعيل الويدجيت لتصلك الحكم بطريقة سريعة وفقا لاختيارك للحكماء و التصنيفات</string>
+    <string name="widget_fast_title">ويدجيت زاد</string>
+    <string name="action_settings">الضبط</string>
+    <string name="facebook_url">fb.com/appZad</string>
+    <string name="google_plus_url">gplus.to/appZad</string>
+    <string name="facebook_name">فيسبوك</string>
+    <string name="google_plus_name">جوجل بلس</string>
+    <string name="bio_placeholder">اتولد عموره المصري .. في احدي ضواحي مدينة دمياط العريقه , نشأ عمرو المصري صبي شط يبيع الفريسكا و يغرز الشموس في الرمال , بعد ذلك اتجه الى العمل التلفزيوني و قدم يرنامج اذاعي علي القناه التسعه المصريه</string>
+    <string name="bio_amr">عمرو المصري</string>
+    <string name="shape1">‘‘</string>
+    <string name="shape2">,,</string>
+    <string name="cat_placholdeer">Life &amp;amp;  People</string>
+    <string name="accept_button">موافق</string>
+    <string name="cancel_button">إلغاء</string>
+    <string name="agree_sending">أوافق على إرسال اسمى الثنائي لإظهاره في قائمة شكر زاد</string>
+    <string name="wiseman_pic">صورة الحكيم</string>
+    <string name="settings_widget">إعدادات الويدجيت</string>
+    <string name="settings">الضبط</string>
+    <string name="enterFirstName">ادخل اسمك الأول</string>
+    <string name="enterLastName">ادخل لقبك</string>
+    <string name="changeFirstName">الاسم الأول</string>
+    <string name="changeLastName">اللقب</string>
+    <string name="changeData">تعديل البيانات</string>
+    <string name="title_activity_billing">الشراء</string>
+    <string name="title_activity_bb">شراء النسخة المميزة</string>
+    <string name="IAPPreference">IAP</string>
+    <string name="isPremium">IsPremium</string>
+    <string name="alreadyPremium">انت بالفعل تستخدم النسخة المميزة من زاد</string>
+    <string name="becamePremium">شكرا لشرائك النسخة المميزة من زاد</string>
+    <string name="premiumZad">زاد المميز</string>
+    <string name="buyPremium">قم بشراء النسخة المميزة من زاد</string>
+    <string name="Premium_line1">التخلص من الاعلانات نهائياً داخل التطبيق</string>
+    <string name="Premium_line4">الحصول على ويدجيت جديدة بقائمة حكمك المفضلة</string>
+    <string name="Premium_line2">شرائك للنسخة المميزة هو دعم منك لمطوري زاد ليستمروا في اضافة كل جديد</string>
+    <string name="Premium_line3">المزيد من الاضافات قادمة قريبا للمستخدم المميز</string>
+    <string name="premiumBenefits">تحتوي النسخة المميزة من زاد علي الاضافات الآتيه:</string>
+    <string name="nike">✔</string>
+    <string name="getPremium">احصل عليها الآن</string>
+    <string name="no_fav_yet">لم تقم باضافة أي حكم للمفضلة</string>
+    <string name="today_quote">حكمة اليوم</string>
+    <string name="random_quotes">حكم عشوائيه</string>
+    <string name="mazag_quotes">حكمة المزاج</string>
+    <string name="widget_mood_text">قم بتغيير المزاج الذي تشعر به الآن لتحصل على حكم تلائم شعورك</string>
+    <string name="zad_for_you">زاد من أجلك</string>
+    <string name="name">الاسم</string>
+    <string name="last_name">اللقب</string>
+    <string name="enter_details">أدخل بياناتك</string>
+    <string name="we_save_privacy">"* نحافظ على خصوصيتك. لن يتم استخدامه الا في ارسال حكم جديده منك الى زاد. و  سيتم تنبيهك مره أخرى عند الارسال "</string>
+    <string name="choose_authors">إختر الحكماء ; لإظهار أقوالهم في الويدجيت</string>
+    <string name="de_select">إلغاء التحديد</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="authors_search">بحث الحكماء</string>
+    <string name="ad_space">مساحة اعلانية</string>
+    <string name="advertise_with_us">أعلن معنا</string>
+    <string name="choose_your_face_mood">اختر الوجه الذي يشابه حالتك النفسية</string>
+    <string name="change_your_mood">غير مزاجك</string>
+    <string name="help_1">ده الشرح1</string>
+    <string name="help_2">ده الشرح2</string>
+    <string name="help_3">ده الشرح3</string>
+    <string name="hide">اخفاء</string>
+    <string name="changing_between_quotes">التبديل بين الحكم</string>
+    <string name="drag_slider">اسحب الزر لليمين أواليسار كعصا التحكم بالألعاب؛ للتغيير</string>
+    <string name="quote_details">تفاصيل الحكمة</string>
+    <string name="click_to_learn_more_quote">اضغط على الحكمة لعرضها بشكل كامل</string>
+
+    <!-- Rashwan -->
+    <string name="zad_help">المساعدة</string>
+    <string name="zad_guide">دليل الاستخدام</string>
+    <string name="search">البحث</string>
+    <string name="menu">القائمة</string>
+    <string name="new_category">اقترح تصنيفا جديدا لهذه الحكمة</string>
+    <string name="report_false">ابلغ عن محتوي خاطئ</string>
+    <string name="search_quotes_authors">ابحث بإسم المؤلف او الحكمة</string>
+    <string name="choose_categ_widget">قم باختيار التصنيفات التي تريد ان تظهر في الويدجيت</string>
+    <string name="quote_refresh_rate">معدل تحديث الويدجيت</string>
+    <string name="minute">دقيقة</string>
+    <string name="_30_">يجب ان يكون اكبر من 30 دقيقة للحفاظ علي استهلاك البطارية</string>
+    <string name="widget_settings">ضبط الويدجيت</string>
+    <string name="enable_notifications">تشغيل التنبيهات</string>
+    <string name="morning_evening_notif">حكمة الصباح والمساء</string>
+    <string name="morning_evening_enable">تشغيل حكمة الصبح والمساء</string>
+    <string name="mood_notif">تنبيهات المزاج</string>
+    <string name="sad">حزين</string>
+    <string name="happy">سعيد</string>
+    <string name="angry">غاضب</string>
+    <string name="stressed">مضغوط</string>
+    <string name="afraid">خائف</string>
+    <string name="loved">مغرم</string>
+    <string name="bored">ملَّان</string>
+    <string name="change_your_mood2">غيِّر مزاجك</string>
+    
+    <!-- RateUs Dialog -->
+    <string name="rd_title">قيِّم زاد</string>
+    <string name="rd_message">تحياتنا :) ..قم بإعطائنا دقيقة من وقتك لتقييم زاد لتساعدنا علي التحسن واضافة مميزات جديدة</string>
+    <string name="rd_no_thanks">لا ، شكرا</string>
+    <string name="rd_remind_me_later">ذكرني لاحقا</string>
+    <string name="rd_rate_now">قيمنا الآن</string>
+    <!-- RateUs Dialog -->
+    <string name="wrong_content">محتوي خاطئ</string>
+    <string name="why_report">لماذا تود الإبلاغ عن محتوي خاطئ في هذه الحكمة؟</string>
+    <string name="_40">40</string>
+    <string name="help">المساعدة</string>
+    <string name="quotes">الحكم</string>
+    <string name="authors">الحكماء</string>
+    <string name="religious">ديني وروحاني</string>
+    <string name="politics">سياسة وحرية</string>
+    <string name="love">حب ورومانسية وجمال</string>
+    <string name="entrepreneurship">ريادة اعمال</string>
+    <string name="life">الحياة والإنسانية والأخلاق</string>
+    <string name="culture">الفنون والثقافة والفلسفة</string>
+    <string name="education">العلم والتعليم والترحال</string>
+    <string name="funny">فكاهة</string>
+    <string name="evil">الشرور والظلم</string>
+    <string name="other">أخري</string>
+    <string name="who_we_are">من نحن</string>
+    <string name="thanks">شكرا لكم</string>
+    <string name="send_when_connected">شكرا ..سيتم ارساال طلبك بمجرد اتصالك بالإنترنت</string>
+    <string name="not_shared">لم يتم مشاركة الحكمة بنجاح ؛ تأكد من اتصالك بالإنترنت</string>
+    <string name="shared">تم مشاركة الحكمة بنجاح</string>
+    <string name="added_to_favorites">تمت الإضافة للمفضلة</string>
+    <string name="error_purchasing">عذرا .. حدثت مشكلة اثناء اتمام عملية الشراء</string>
+    <string name="about_us">عنا</string>
+    <string name="press_change_your_mood">اضغط هنا لتغيير مزاجك</string>
+
+    <!-- Mood Notifications -->
+    
+    <string name="Qm">"؟"</string>
+    
+    <!-- Male -->
+
+    <string name="stay_happy_male">"ابق سعيدًا يا "</string>
+    <string name="still_sad_male">"لازلت حزينًا يا "</string>
+    <string name="still_angry_male">"لازلت غاضبًا يا "</string>
+    <string name="still_scared_male">"لازلت خائفًا  يا "</string>
+    <string name="still_pressed_male">"لازلت مضغوطًا  يا "</string>
+    <string name="still_inlove_male">"دُمتَ مغرمًا يا "</string>
+    <string name="still_bored_male">"لازلت ملانًا يا "</string>
+
+    <!-- Female -->
+    <string name="stay_happy_female">"ابقي سعيدةً يا "</string>
+    <string name="still_sad_female">"لازلتِ حزينةً يا "</string>
+    <string name="still_angry_female">"لازلتِ غاضبةً يا "</string>
+    <string name="still_scared_female">"لازلتِ خائفةً  يا "</string>
+    <string name="still_pressed_female">"لازلتِ مضغوطةً  يا "</string>
+    <string name="still_inlove_female">"دُمتي مغرمةً يا "</string>
+    <string name="still_bored_female">"لازلتِ ملانةً يا "</string>
+
+    <!-- Facebook -->
+    <string name="sharing_quote">مشاركة الحكمة</string>
+    <string name="please_wait">يرجي الانتظار</string>
+    <string name="facebook_namespace">piratescorwdmaasoor</string>
+    <string name="facebook_image">http://www.pictureshack.us/images/48804_1024x1024_white.png</string>
+    <string name="zad_for">" زاد لِ "</string>
+    <string name="preparing_quote_sharing">تحضير الحكمة للمشاركة....</string>
+    <string name="facebook_playstore">http://goo.gl/G3w2j5</string>
+    
+    <string-array name="Gender">
+        <item>ذكر</item>
+        <item>أنثي</item>
+    </string-array>
+    <string-array name="GenderValues">
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+   <string name="gender">النوع</string>
+   <string name="boy">ذكر</string>
+   <string name="girl">أنثي</string>
+   <string name="circle_symbol">●</string>
+   <string name="copied_to_clipboard_">تم نسخ الحكمة الى الحافظة!</string>
+   <string name="only_1">1$</string>
+   <string name="reprot_when_connected">سيتم ارسال بلاغك بمجرد اتصالك بالإنترنت.. شكرا لك</string>
+   <string name="widget_fav_name">زاد مفضلتي</string>
+   <string name="must_buy_for_widget">يتوجب عليك شراء التطبيق حتى تتمكن من استخدام هذه الويدجيت !</string>
+   <string name="must_fav_for_widget">يتوجب عليك إضافة بعض الحكم والمقولات إلى مفضلتك قبل استخدام هذه الويدجيت !</string>
+       <string name="add_to_faves">أعجبتني</string>
+    <string name="add_to_notfaves">لم تعجبني</string>
+   
+</resources>

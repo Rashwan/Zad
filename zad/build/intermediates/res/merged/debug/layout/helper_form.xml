@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/keyline_8dp" >
+
+    <RelativeLayout
+        android:id="@+id/imageo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/formeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <RelativeLayout
+                android:id="@+id/kjkaka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <com.app.zad.helper.EditTexAbove
+                    android:id="@+id/editTextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/keyline_8dp"
+                    android:layout_marginLeft="@dimen/keyline_8dp"
+                    android:layout_marginRight="@dimen/keyline_8dp"
+                    android:gravity="end|center|right"
+                    app:floatLabelTextAppearance="@style/Floating_Label" >
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textNoSuggestions"
+                        android:nextFocusDown="@+id/EditText01"
+                        android:singleLine="true"
+                        android:textColor="@color/text" />
+                </com.app.zad.helper.EditTexAbove>
+
+                <com.app.zad.helper.EditTexAbove
+                    android:id="@+id/editTexAbove1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextName"
+                    android:layout_marginLeft="@dimen/keyline_8dp"
+                    android:layout_marginRight="@dimen/keyline_8dp"
+                    android:gravity="end|center|right"
+                    app:floatLabelTextAppearance="@style/Floating_Label" >
+
+                    <EditText
+                        android:id="@+id/EditText01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="@string/last_name"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:textColor="@color/text" />
+                </com.app.zad.helper.EditTexAbove>
+
+                <RadioGroup
+                    android:id="@+id/male_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/editTexAbove1"
+                    android:layout_alignLeft="@+id/editTexAbove1"
+                    android:layout_alignRight="@+id/editTexAbove1"
+                    android:layout_alignStart="@+id/editTexAbove1"
+                    android:layout_below="@+id/editTexAbove1"
+                    android:layout_margin="@dimen/keyline_8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/keyline_8dp" >
+
+                    <RadioButton
+                        android:id="@+id/Radio_X_yeah"
+                        style="@style/Zad_Theme_Purple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?android:attr/listPreferredItemHeight"
+                        android:layout_weight="1"
+                        android:checkMark="@drawable/zad_theme_purple_btn_radio_holo_light"
+                        android:checked="false"
+                        android:gravity="end|center"
+                        android:text="@string/girl"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_secondary" />
+
+                    <RadioButton
+                        android:id="@+id/CheckedTextView01"
+                        style="@style/Zad_Theme_Purple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?android:attr/listPreferredItemHeight"
+                        android:layout_weight="1"
+                        android:checkMark="@drawable/zad_theme_purple_btn_radio_holo_light"
+                        android:checked="true"
+                        android:gravity="end|center"
+                        android:text="@string/boy"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/text_secondary" />
+                </RadioGroup>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textoo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="bottom|end" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="@dimen/keyline_16dp"
+            android:paddingRight="@dimen/keyline_16dp"
+            android:text="@string/enter_details"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:lineSpacingMultiplier="1.4"
+            android:paddingLeft="@dimen/keyline_16dp"
+            android:paddingRight="@dimen/keyline_16dp"
+            android:paddingTop="@dimen/keyline_8dp"
+            android:text="@string/we_save_privacy"
+            android:textColor="#259b24"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="rd_launch_times">15</integer>
+    <integer name="rd_max_days_after">10</integer>
+
+</resources>

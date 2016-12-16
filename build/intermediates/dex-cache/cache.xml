@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-7.5.0_742ab9de24f5c07978e19721cd3ffb808c0ada36.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-7.5.0_db59127ba133ebdbf92d8ce5d746c1309154c566.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.2.1_e2d7029eadb126ce0f56130f67452904cb710dfc.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_bd7952efaa4399809b3c5f9df3eb9aada0a03928.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/jars/libs/bolts.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="176f35fc6957dc2ba86b391c810a840106c55232">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/bolts_987be84e8c7f940d5d3d11831b261780cc54802e.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-7.5.0_bcacf1c184c039c563dbc4fc9c47045d74728a97.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-22.0.0_adde45c76ce04bc007655f648345f3c910cec0e1.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-7.5.0_5be9028ccca560b58610af11c3e1ccdc5450c68b.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appstate-7.5.0_4b0a6756b4f53e566f3437c0dc70fcf3c79fbc22.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-7.5.0_b55af4dab21d2e136b7e9dcf78088ad1441a3655.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-7.5.0_9a7030e6e110c8a3a8936dae3dfa612d8e4a170a.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.android.support-design-22.2.1_74ccc3c20bca03439b15f108f4d9a2669d4fc2d2.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_5d846590f2d813ca743887e3614cc89f09977490.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/libs/ormlite-core-4.48.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/ormlite-core-4.48_88d113d7bfdd74c0b3dfd86aa03705aa48583b25.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-7.5.0_9eb2ee891369d703c8eefbe2c780f5a9c98e524a.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-7.5.0_cd90387f073d04499716bb75af4a0aed324ee0f3.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-7.5.0_c41e786084f81ea7efd76c978c9d682a1eb646cf.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-7.5.0_37a1c4b258df3fcf53dc84acd596cbb178c029e0.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-7.5.0_49cbdf0bd9f3a0b1928642f8d6be8b3ed61788bd.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ac373f263c5ff28da3b325b843e438e66c074957">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/ZAD-facebookSDK-unspecified_a3e749f02a947308cafa5a0548600b744b376fef.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-7.5.0_a8398c2e92443ec03720f0f5e832aff50c7483ff.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-7.5.0_5af138898a3f2b6260b8eccebb6ae4b137e57ccc.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/simpleFacebook/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="336ba6e8fdc174ebc60601f9cb20e4dcecba207e">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/ZAD-simpleFacebook-unspecified_f0c703decbdb1be184162a6e9b61b97905df552e.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-7.5.0_43f4be4ade15fc64f9765a4492d084c81ef18f41.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/libs/ormlite-android-4.48.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/ormlite-android-4.48_12d5435109353692da0c7ac87f0720cf82797c27.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-7.5.0_b106b6bf3249ee1e45938fbc8c4c7e8a5c75421c.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/internal_impl-22.0.0_442aa4cb12631ef1b9adf943d3dffd6d842f97f9.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.1_86a59094c76b8f94f74ea792362c0a87b507998f.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/libs/svg-android-1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9f7c80e87e9925b691875dc9388869d87515f7d2">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/svg-android-1.1_83949abe12540bbc312d21703c995dfb2136c323.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-7.5.0_1c9357a66dfbd4e3ba744c9a3ba3a9b1569a42f5.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-7.5.0_825442c16b5be1192e30d23dc6b0476461ee7137.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/main/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7c4460f3a8a21a00b801a424caa9af48a494df56">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/ZAD-main-unspecified_269d65a23e965187b16b66c4fe8e5cf42e959084.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-7.5.0_2bf32df7227cb1ef8bbe80e47371f9974c7e3778.jar" />
+    </item>
+    <item
+        jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-7.5.0_cbb027d226ade3c960559aada4a78eac924dc607.jar" />
+    </item>
+
+</items>

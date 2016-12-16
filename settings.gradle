@@ -1,0 +1,4 @@
+include ':facebookSDK'
+include ':simpleFacebook'
+include ':main'
+include ':zad'

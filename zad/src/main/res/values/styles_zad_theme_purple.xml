@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AutoCompleteTextViewZad_Theme_Purple" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/zad_theme_purple_list_selector_holo_light</item>
+        <item name="android:background">@drawable/zad_theme_purple_edit_text_holo_light</item>
+    </style>
+
+    <style name="ButtonZad_Theme_Purple" parent="android:Widget.Holo.Light.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/zad_theme_purple_btn_default_holo_light</item>
+    </style>
+
+    <style name="ImageButtonZad_Theme_Purple" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/zad_theme_purple_btn_default_holo_light</item>
+    </style>
+
+    <style name="SpinnerZad_Theme_Purple" parent="android:Widget.Holo.Spinner">
+        <item name="android:background">@drawable/zad_theme_purple_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/zad_theme_purple_list_selector_holo_light</item>
+        <item name="android:textColorHighlight">@color/text</item>
+        <item name="android:checkMark">@drawable/zad_theme_purple_btn_radio_holo_light</item>
+        <item name="android:textColorHint">@color/text</item>
+        <item name="android:textColorLink">@color/text</item>
+    </style>
+
+    <style name="ScrollBarZad_Theme_Purple">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/zad_theme_purple_fastscroll_thumb_default_holo</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+
+</resources>

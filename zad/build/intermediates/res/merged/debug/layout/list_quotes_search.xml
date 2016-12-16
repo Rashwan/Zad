@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf" >
+
+    <ListView
+        android:id="@+id/listviewix"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@drawable/google_card"
+        android:paddingLeft="@dimen/listView_padding"
+        android:paddingRight="@dimen/listView_padding" >
+    </ListView>
+
+</RelativeLayout>

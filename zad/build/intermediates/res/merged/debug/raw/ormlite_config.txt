@@ -1,0 +1,44 @@
+#
+# generated on 2014/06/23 12:24:31
+#
+# --table-start--
+dataClass=com.app.zad.ui.Quote
+tableName=Quotes
+# --table-fields-start--
+# --field-start--
+fieldName=ID
+# --field-end--
+# --field-start--
+fieldName=Author
+# --field-end--
+# --field-start--
+fieldName=Quote
+# --field-end--
+# --field-start--
+fieldName=Category
+# --field-end--
+# --field-start--
+fieldName=Mood
+# --field-end--
+# --field-start--
+fieldName=Author_Image
+# --field-end--
+# --field-start--
+fieldName=Important
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.app.zad.ui.Wikis
+tableName=Wikis
+# --table-fields-start--
+# --field-start--
+fieldName=Author_Name
+# --field-end--
+# --field-start--
+fieldName=Author_Wiki
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:antialias="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/icon_main_nav_draw_black" />
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@android:color/transparent" />
+
+            <size android:width="60dp" />
+        </shape>
+    </item>
+
+</layer-list>

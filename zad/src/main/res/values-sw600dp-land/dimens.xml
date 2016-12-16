@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="faceSize">100dp</dimen>
+    <dimen name="faceContainer">110dp</dimen>
+
+</resources>

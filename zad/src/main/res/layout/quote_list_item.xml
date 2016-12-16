@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fav_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/material_card"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Author_title_text"
+        android:layout_alignTop="@+id/Quote_text"
+        android:alpha="0.3"
+        android:background="@drawable/selector_shadow"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/Quote_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Star_Button"
+        android:gravity="right"
+        android:lineSpacingMultiplier="1.2"
+        android:minLines="2"
+        android:paddingRight="@dimen/keyline_16dp"
+        android:paddingTop="@dimen/keyline_8dp"
+        android:text="@string/loading"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.app.zad.helper.FlipImageView
+        android:id="@+id/Star_Button"
+        style="@style/ZadFavButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="center"
+        android:src="@drawable/ic_ab_fav"
+        app:flipDrawable="@drawable/ic_ab_fav_clicked"
+        app:flipDuration="500"
+        app:flipInterpolator="@android:anim/anticipate_overshoot_interpolator"
+        app:flipRotations="x|y" />
+
+    <TextView
+        android:id="@+id/Author_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Quote_text"
+        android:layout_marginLeft="@dimen/keyline_24dp"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/keyline_8dp"
+        android:paddingTop="@dimen/keyline_8dp"
+        android:text="@string/loading"
+        android:textColor="@color/Purple_Deep"
+        android:textSize="14sp"
+        android:textStyle="italic|bold" />
+
+</RelativeLayout>

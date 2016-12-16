@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/action_favourite"
+            android:checkable="true"
+            android:icon="@drawable/fav"
+            android:showAsAction="ifRoom"
+            android:title="Add to Favourites"/>
+    </group>
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/icon_actionbar_share"
+        android:showAsAction="always"
+        android:title="Share on facebook"
+        android:titleCondensed="FaceBook Share"/>
+    <!-- Ahmad Code -->
+    <item
+        android:id="@+id/menusetting"
+        android:icon="@drawable/settings"
+        android:showAsAction="always"
+        android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/action_report"
+                android:icon="@android:drawable/ic_dialog_alert"
+                android:showAsAction="ifRoom"
+                android:title="report"
+                android:titleCondensed="Report"/>
+            <item
+                android:id="@+id/action_suggest_edit"
+                android:icon="@android:drawable/ic_menu_edit"
+                android:showAsAction="ifRoom"
+                android:title="edit"
+                android:titleCondensed="Edit"/>
+        </menu>
+    </item>
+    <!-- Ahmad Code -->
+
+</menu>

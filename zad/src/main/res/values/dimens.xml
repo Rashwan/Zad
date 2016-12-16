@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="faveActionHeight">48dp</dimen>
+    <dimen name="faceSize">83dp</dimen>
+    <dimen name="faceContainer">100dp</dimen>
+    
+    <!-- body content -->
+    <dimen name="element_spacing_normal">8dp</dimen>
+    <dimen name="content_padding_normal">16dp</dimen>
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+    <dimen name="speaker_image_size">40dp</dimen>
+
+    <!-- Wizard -->
+    <dimen name="step_pager_tab_width">32dp</dimen>
+    <dimen name="step_pager_tab_height">3dp</dimen>
+    <dimen name="step_pager_tab_spacing">4dp</dimen>
+
+    <!-- KeyLines -->
+    <dimen name="keyline_0dp">0dp</dimen>
+    <dimen name="keyline_8dp">8dp</dimen>
+    <dimen name="keyline_16dp">16dp</dimen>
+    <dimen name="keyline_16dp_minus">-16dp</dimen>
+    <dimen name="keyline_24dp">24dp</dimen>
+    <dimen name="keyline_56dp">56dp</dimen>
+    <dimen name="keyline_72dp">72dp</dimen>
+    <dimen name="keyline_75dp">75dp</dimen>
+    <dimen name="keyline_56dpX">72dp</dimen>
+    <dimen name="listView_padding">0dp</dimen>
+
+    <!-- Widget -->
+    <dimen name="widget_XML_Height">13sp</dimen>
+    <dimen name="widget_preview_normal_height_minHeight">40dip</dimen>
+    <dimen name="widget_preview_normal_height_minResizeHeight">40dip</dimen>
+    <dimen name="widget_preview_width_tablet_largeR">360dp</dimen>
+    <dimen name="widget_preview_width_tablet_large">280.0dip</dimen>
+    <dimen name="widget_image_size">75dp</dimen>
+    <dimen name="widget_quote_size">13sp</dimen>
+    <dimen name="widget_author_size">12sp</dimen>
+
+    <!-- fuckk -->
+
+    <dimen name="buttron_padding">20dp</dimen>
+    <dimen name="home_card_size">150dp</dimen>
+    <dimen name="textview_width">150dp</dimen>
+    <dimen name="ball_radius">30dp</dimen>
+    <dimen name="Ab_item_width">32dp</dimen>
+    <dimen name="header_height">250dp</dimen>
+    <dimen name="header_logo_size">150dp</dimen>
+    <dimen name="font_size">16sp</dimen>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="pattern_item_height">70.0dip</dimen>
+    <dimen name="pattern_item_padding">4.0dip</dimen>
+    <dimen name="widget_settings_text_size">14.0sp</dimen>
+    <dimen name="widget_main_padding">6.0dip</dimen>
+    <dimen name="widget_image_bg_padding">8.0dip</dimen>
+    <dimen name="widget_preview_padding_horizontal">0.0dip</dimen>
+    <dimen name="widget_preview_padding_vertical">4.0dip</dimen>
+    <dimen name="widget_preview_height_tablet_large">160.0dip</dimen>
+    <dimen name="widget_preview_height_tablet_small">86.0dip</dimen>
+    <dimen name="widget_preview_author_img_max_width">110.0dip</dimen>
+    <dimen name="widget_preview_holder_height">100.0dip</dimen>
+    <dimen name="widget_preview_holder_height_large">172.0dip</dimen>
+    <dimen name="widget_preview_holder_height_xlarge">140.0dip</dimen>
+    <dimen name="widget_preview_holder_height_xlargeR">100dip</dimen>
+    <dimen name="widget_page_indicator_item_size">10.0dip</dimen>
+    <dimen name="widget_author_img_max_width">90.0dip</dimen>
+    <dimen name="widget_action_btn_size">36.0dip</dimen>
+    <dimen name="widget_action_btn_padding">0.0dip</dimen>
+    <dimen name="list_divider_height">8.0dip</dimen>
+    <dimen name="main_list_side_padding">16.0dip</dimen>
+    <dimen name="main_list_divider_height">8.0dip</dimen>
+    <dimen name="list_item_padding">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="abc_action_bar_stacked_tab_max_width">180.0dip</dimen>
+    <dimen name="abc_action_bar_default_height">48.0dip</dimen>
+    <dimen name="abc_action_bar_icon_vertical_padding">8.0dip</dimen>
+    <dimen name="abc_action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="abc_action_button_min_width">56.0dip</dimen>
+    <dimen name="abc_action_bar_stacked_max_height">48.0dip</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">40.0dip</dimen>
+    <dimen name="abc_panel_menu_list_width">296.0dip</dimen>
+    <dimen name="abc_search_view_text_min_width">160.0dip</dimen>
+    <dimen name="abc_search_view_preferred_width">320.0dip</dimen>
+    <dimen name="abc_dropdownitem_text_padding_left">8.0dip</dimen>
+    <dimen name="abc_dropdownitem_text_padding_right">8.0dip</dimen>
+    <dimen name="abc_dropdownitem_icon_width">32.0dip</dimen>
+    <dimen name="dialog_fixed_width_major">320.0dip</dimen>
+    <dimen name="dialog_fixed_width_minor">320.0dip</dimen>
+
+    <item name="dialog_fixed_height_major" type="dimen">79.99999%</item>
+    <item name="dialog_fixed_height_minor" type="dimen">100.0%</item>
+
+    <dimen name="com_facebook_picker_place_image_size">64.0dip</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_width">64.0dip</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_height">64.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_left">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_right">16.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_top">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_padding_bottom">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_compound_drawable_padding">12.0dip</dimen>
+    <dimen name="com_facebook_loginview_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50.0dip</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100.0dip</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180.0dip</dimen>
+    <dimen name="default_action_bar_height">44.0dip</dimen>
+    <dimen name="widget_margin">4.0dip</dimen>
+    <dimen name="slidingmenu_offset">240.0dip</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="list_horizontal_padding">16.0dip</dimen>
+    <dimen name="tab_indicator_text_size">12.0sp</dimen>
+    <dimen name="ad_holder_text">14.0sp</dimen>
+    <dimen name="qod_header_text">11.0sp</dimen>
+    <dimen name="qod_image_size">70.0dip</dimen>
+    <dimen name="qod_image_size_speach">20.0dip</dimen>
+    <dimen name="qod_quote_text">14.0sp</dimen>
+    <dimen name="qod_author_text">12.0sp</dimen>
+    <dimen name="qod_author_bottom_margin">4.0sp</dimen>
+    <dimen name="qod_spacing">8.0dip</dimen>
+    <dimen name="qod_spacing_landscape">4.0dip</dimen>
+    <dimen name="qod_random_quote_side_margin">50.0dip</dimen>
+    <dimen name="qod_random_quote_btn">40.0dip</dimen>
+    <dimen name="menu_icon">22.0dip</dimen>
+    <dimen name="menu_text">18.0sp</dimen>
+    <dimen name="side_menu_item_vertical_padding">14.0dip</dimen>
+    <dimen name="side_menu_width">240.0dip</dimen>
+    <dimen name="side_menu_drawable_size">22.0dip</dimen>
+    <dimen name="side_menu_share_icon_size">38.0dip</dimen>
+    <dimen name="myquote_header_view_padding">4.0dip</dimen>
+    <dimen name="quote_padding">0.0dip</dimen>
+    <dimen name="quote_body_text">16.0sp</dimen>
+    <dimen name="quote_author_text">12.0sp</dimen>
+    <dimen name="quote_count_text">12.0sp</dimen>
+    <dimen name="quote_fave_size">26dip</dimen>
+    <dimen name="likes_count_icon_size">10.0dip</dimen>
+    <dimen name="quotes_list_side_padding">16.0dip</dimen>
+    <dimen name="quotes_list_side_padding_large">0.0dip</dimen>
+    <dimen name="quotes_list_side_padding_extra_large">0.0dip</dimen>
+    <dimen name="preview_info_text">12.0sp</dimen>
+    <dimen name="preview_info_verical_padding">4.0dip</dimen>
+    <dimen name="preview_info_horizontal_padding">8.0dip</dimen>
+    <dimen name="preview_myquote_author_text">14.0sp</dimen>
+    <dimen name="preview_category_text">16.0sp</dimen>
+    <dimen name="preview_quote_text">22.0sp</dimen>
+    <dimen name="preview_quote_content_margin">16.0dip</dimen>
+    <dimen name="preview_quote_button_margin">0.0dip</dimen>
+    <dimen name="preview_content_btn_size">44.0dip</dimen>
+    <dimen name="preview_tapzone_width">24.0dip</dimen>
+    <dimen name="author_list_image_size">60.0dip</dimen>
+    <dimen name="author_list_item_height">60.0dip</dimen>
+    <dimen name="author_info_name">22.0sp</dimen>
+    <dimen name="author_info_description">12.0sp</dimen>
+    <dimen name="author_info_image">74.0dip</dimen>
+    <dimen name="face_sizexx">90dp</dimen>
+    <dimen name="author_info_vertical_padding">8.0dip</dimen>
+    <dimen name="dialog_author_info_name">28.0sp</dimen>
+    <dimen name="dialog_author_info_description">15.0sp</dimen>
+    <dimen name="dialog_author_info_image">110.0dip</dimen>
+    <dimen name="ad_holder_min_height">50.0dip</dimen>
+    <dimen name="promo_dialog_top_margin">120.0dip</dimen>
+
+</resources>

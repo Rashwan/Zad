@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rd_title"
+        android:textColor="@color/yellow"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/otherText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rd_message"
+        android:textColor="@color/text"
+        android:textColorHint="@color/text_hint"
+        android:textSize="17sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/keyline_16dp"
+        android:paddingLeft="@dimen/keyline_8dp"
+        android:paddingRight="@dimen/keyline_8dp" >
+
+        <Button
+            android:id="@+id/yes_rate"
+            style="@style/Zad_Button_TextSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_bar_item_drawable"
+            android:enabled="true"
+            android:gravity="center"
+            android:minHeight="36dp"
+            android:minWidth="88dp"
+            android:text="@string/rd_rate_now"
+            android:textAllCaps="true"
+            android:textColor="@color/text_button"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/remind_me_later"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_bar_item_drawable"
+            android:gravity="center"
+            android:minHeight="36dp"
+            android:minWidth="88dp"
+            android:text="@string/rd_remind_me_later"
+            android:textAllCaps="true"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/no_thanks"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_bar_item_drawable"
+            android:gravity="center"
+            android:minHeight="36dp"
+            android:minWidth="88dp"
+            android:text="@string/rd_no_thanks"
+            android:textAllCaps="true"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,344 @@
+[
+    {
+        "outputFile": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/res/merged/androidTest/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 817,
+                    "endColumn": 48,
+                    "endOffset": 861
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 817,
+                        "endColumn": 48,
+                        "endOffset": 861
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 866,
+                    "endColumn": 44,
+                    "endOffset": 906
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 866,
+                        "endColumn": 44,
+                        "endOffset": 906
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 911,
+                    "endColumn": 46,
+                    "endOffset": 953
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 911,
+                        "endColumn": 46,
+                        "endOffset": 953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 958,
+                    "endColumn": 52,
+                    "endOffset": 1006
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 958,
+                        "endColumn": 52,
+                        "endOffset": 1006
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1011,
+                    "endColumn": 53,
+                    "endOffset": 1060
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 1011,
+                        "endColumn": 53,
+                        "endOffset": 1060
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1065,
+                    "endColumn": 43,
+                    "endOffset": 1104
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1065,
+                        "endColumn": 43,
+                        "endOffset": 1104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1109,
+                    "endColumn": 44,
+                    "endOffset": 1149
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1109,
+                        "endColumn": 44,
+                        "endOffset": 1149
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1154,
+                    "endColumn": 46,
+                    "endOffset": 1196
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1154,
+                        "endColumn": 46,
+                        "endOffset": 1196
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1201,
+                    "endColumn": 48,
+                    "endOffset": 1245
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1201,
+                        "endColumn": 48,
+                        "endOffset": 1245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1250,
+                    "endColumn": 33,
+                    "endOffset": 1279
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1250,
+                        "endColumn": 33,
+                        "endOffset": 1279
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1284,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1721
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1284,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 1721
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1726,
+                    "endLine": 28,
+                    "endColumn": 12,
+                    "endOffset": 2070
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1726,
+                        "endLine": 28,
+                        "endColumn": 12,
+                        "endOffset": 2070
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2075,
+                    "endLine": 34,
+                    "endColumn": 12,
+                    "endOffset": 2431
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2075,
+                        "endLine": 34,
+                        "endColumn": 12,
+                        "endOffset": 2431
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2436,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 2590
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 2436,
+                        "endLine": 37,
+                        "endColumn": 12,
+                        "endOffset": 2590
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2595,
+                    "endLine": 42,
+                    "endColumn": 12,
+                    "endOffset": 2824
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2595,
+                        "endLine": 42,
+                        "endColumn": 12,
+                        "endOffset": 2824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2829,
+                    "endLine": 45,
+                    "endColumn": 12,
+                    "endOffset": 2988
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 2829,
+                        "endLine": 45,
+                        "endColumn": 12,
+                        "endOffset": 2988
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 2993,
+                    "endLine": 48,
+                    "endColumn": 12,
+                    "endOffset": 3111
+                },
+                "from": {
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 2993,
+                        "endLine": 48,
+                        "endColumn": 12,
+                        "endOffset": 3111
+                    }
+                }
+            }
+        ]
+    }
+]
