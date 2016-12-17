@@ -32,16 +32,16 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/add_quote.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/helper_form.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/helper_form.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_setup.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/list_quotes_search.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/list_quotes_search.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_setup.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/helper_form.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/helper_form.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
@@ -60,12 +60,12 @@
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/view_pager.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/view_pager.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
         "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/view_pager.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/view_pager.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_activityx.xml",
@@ -112,12 +112,12 @@
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/zad_check_item.xml",
@@ -150,10 +150,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
         "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/com_facebook_tooltip_bubble.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
-        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
@@ -210,10 +206,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
-        "source": "/home/rashwan/.android/build-cache/f9d3a7a240fd6af9933385bb66bd1a1fcfe4c4d3/output/res/layout/mr_media_route_list_item.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/quote_list_item.xml",
@@ -360,10 +352,6 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup_fav.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_action.xml",
-        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_action.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/search_tasty.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/search_tasty.xml"
     },
@@ -382,10 +370,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/empty_fav_layout.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/empty_fav_layout.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
-        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/handy.xml",

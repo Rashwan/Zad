@@ -323,12 +323,12 @@
                 android:layout_below="@+id/fuckinlayout1" >
 
                <RelativeLayout
-                android:id="@+id/sekorelativo"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageViewLogo"
-                android:layout_centerHorizontal="true"
-android:layout_centerVertical="true"                android:gravity="center" >
+                    android:id="@+id/sekorelativo"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center" >
 
                 <ProgressBar
                     android:id="@+id/JoyStickControllerX"

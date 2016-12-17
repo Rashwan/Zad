@@ -58,12 +58,14 @@ public class Facebook_Share extends Activity {
 			@Override
 			public void onCancel() {
 				Log.d(TAG,"canceled");
+				finish();
 			}
 
 			@Override
 			public void onError(FacebookException error) {
 				Log.d(TAG,"error");
 				Toast.makeText(context, getString(R.string.not_shared),Toast.LENGTH_SHORT).show();
+				finish();
 
 			}
 		});

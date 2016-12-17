@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/selector_triangle.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/selector_triangle.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/selector_text.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/selector_text.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/selector_triangle.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/selector_triangle.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/heart_crying_pink.png",
@@ -36,12 +36,12 @@
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/drawable/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/circle_green.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/circle_green.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/line_transparent.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/line_transparent.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/circle_green.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/circle_green.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_background.xml",
@@ -54,10 +54,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/drawable/abc_btn_colored_material.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/progress_horizontal_zad_theme_purple.xml",
@@ -84,16 +80,16 @@
         "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/drawable/design_snackbar_background.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/common_signin_btn_text_light.xml",
-        "source": "/home/rashwan/.android/build-cache/0600e402e523bef105b7998e1851d90e3adee348/output/res/drawable/common_signin_btn_text_light.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/drawable/com_facebook_button_send_background.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/selector_google_card.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/selector_google_card.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
-        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/drawable/com_facebook_button_send_background.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/common_signin_btn_text_light.xml",
+        "source": "/home/rashwan/.android/build-cache/0600e402e523bef105b7998e1851d90e3adee348/output/res/drawable/common_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/card_rotated.xml",
@@ -196,10 +192,6 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/up_drawable_layer.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
-        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/drawable/abc_edit_text_material.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/drawable/abc_text_cursor_material.xml"
     },
@@ -288,20 +280,12 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/squre_corner_fav.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
-        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/drawable/design_bottom_navigation_item_background.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/circle_yellow.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable/circle_yellow.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
-        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/drawable/design_password_eye.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable/circle_grey.xml",

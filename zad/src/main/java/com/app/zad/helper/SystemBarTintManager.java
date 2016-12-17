@@ -1,7 +1,5 @@
 package com.app.zad.helper;
 
-import java.lang.reflect.Method;
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -20,6 +18,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout.LayoutParams;
+
+import java.lang.reflect.Method;
 
 /**
  * Class to manage status and navigation bar tint effects when using KitKat
@@ -77,7 +77,7 @@ public class SystemBarTintManager {
 			TypedArray a = activity.obtainStyledAttributes(attrs);
 			try {
 				mStatusBarAvailable = a.getBoolean(0, false);
-				mNavBarAvailable = a.getBoolean(1, false);
+				mNavBarAvailable = a.getBoolean(0, false);
 			} finally {
 				a.recycle();
 			}

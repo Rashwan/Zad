@@ -333,7 +333,6 @@
                 android:id="@+id/sekorelativo"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageViewLogo"
                 android:layout_centerHorizontal="true"
                 android:gravity="center" >
 
