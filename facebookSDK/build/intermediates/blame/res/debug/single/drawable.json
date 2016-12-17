@@ -64,12 +64,12 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/src/main/res/drawable/com_facebook_button_check.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/res/merged/debug/drawable/com_facebook_usersettingsfragment_background_gradient.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/src/main/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/res/merged/debug/drawable/com_facebook_button_check_on.png",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/src/main/res/drawable/com_facebook_button_check_on.png"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/res/merged/debug/drawable/com_facebook_usersettingsfragment_background_gradient.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/src/main/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/res/merged/debug/drawable/com_facebook_picker_list_longpressed.9.png",

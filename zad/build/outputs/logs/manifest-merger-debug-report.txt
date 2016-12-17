@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-195:12
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12
 	package
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:3:5-26
 		INJECTED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml
@@ -17,99 +17,47 @@ ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xm
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [ZAD:simpleFacebook:unspecified] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/simpleFacebook/unspecified/AndroidManifest.xml:20:5-22:40
-MERGED from [ZAD:facebookSDK:unspecified] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/AndroidManifest.xml:20:5-22:40
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appinvite:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appstate:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-cast:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:mediarouter-v7:22.0.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-drive:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-fitness:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-location:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:28:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-games:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-drive:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-gcm:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-identity:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-location:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:28:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:28:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-nearby:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-panorama:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-plus:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-safetynet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-identity:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:28:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-wearable:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:20:5-43
+MERGED from [ZAD:simpleFacebook:unspecified] /home/rashwan/Work/StudioProjects/ZAD/simpleFacebook/build/intermediates/bundles/default/AndroidManifest.xml:20:5-22:41
+MERGED from [ZAD:facebookSDK:unspecified] /home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services:7.5.0] /home/rashwan/.android/build-cache/082b1560b3de82746a21dfd7d5eb682e2eb594ab/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/.android/build-cache/ed31e24162e941b3446cc09ea28b3483000f53b8/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:7.5.0] /home/rashwan/.android/build-cache/805f928509936e09b4895f34b794190514958122/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:7.5.0] /home/rashwan/.android/build-cache/ac700ad094d32afd3fd4d6b05d06b88977646a59/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appstate:7.5.0] /home/rashwan/.android/build-cache/a631047ae004795a6b043b2e9069cbd3054bdf47/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-cast:7.5.0] /home/rashwan/.android/build-cache/a921e87b2d5d99d6dfe4939bca6af505cfca2653/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:22.0.0] /home/rashwan/.android/build-cache/f9d3a7a240fd6af9933385bb66bd1a1fcfe4c4d3/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-fitness:7.5.0] /home/rashwan/.android/build-cache/3a209d31af0eb22c4166ea7ea330b69acec98a29/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:7.5.0] /home/rashwan/.android/build-cache/97e93e3f622ce943aac536d091318fcae645098f/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:7.5.0] /home/rashwan/.android/build-cache/abb8e1f0aee9708c16fdc9181d092532d0e74333/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:7.5.0] /home/rashwan/.android/build-cache/dbc50b3bbaefbf419c6588dab7fb8a5e8dc58285/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:7.5.0] /home/rashwan/.android/build-cache/5b67a61be2db316ce409afc96ff6eee076374182/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:7.5.0] /home/rashwan/.android/build-cache/968d182065f3f1b6432a4416ba8fbd92ef4b7e53/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:7.5.0] /home/rashwan/.android/build-cache/657463b0708f455502637d5fc8930ccbdc92ecfe/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:7.5.0] /home/rashwan/.android/build-cache/e3d9a8e48dd0aea81bd02a84a9906d09de8bbf13/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:7.5.0] /home/rashwan/.android/build-cache/3b8b646f06aa3564d518dc3a0bd29f3ed27f1fbf/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:7.5.0] /home/rashwan/.android/build-cache/bdae5001d17520a3ba3dbef948c6796278b7ab57/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:28:5-42
+MERGED from [com.google.android.gms:play-services-wearable:7.5.0] /home/rashwan/.android/build-cache/b1da23033adfc898c90ffbbf8bc0016cc47aa384/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/.android/build-cache/0600e402e523bef105b7998e1851d90e3adee348/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:25.1.0] /home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.1.0] /home/rashwan/.android/build-cache/6d4050513e6c0eba346baec41c33951f49cc79b1/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.1.0] /home/rashwan/.android/build-cache/9181eacaebef4336825511b958d4f3cecd56abba/output/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:25.1.0] /home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.1.0] /home/rashwan/.android/build-cache/102e165e929765b7183c520400d2371a7090af2a/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] /home/rashwan/.android/build-cache/6c623eedfe024774fae90d4d5269ad5573006568/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] /home/rashwan/.android/build-cache/eaf7d282624acde632d79de84d8f37f57b4caca9/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] /home/rashwan/.android/build-cache/b3a57d50bf06c5580df1fae64fccbf416a98e3ae/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] /home/rashwan/.android/build-cache/1530a9b5a3009dd4a351af64ee5f6546d110f85e/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] /home/rashwan/.android/build-cache/8311cbe0be77003395a93d58f4c897f2b2cdb37e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] /home/rashwan/.android/build-cache/d57b66d49b40b1ff72b2272e728c82da7a8c5962/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:cardview-v7:25.0.0] /home/rashwan/.android/build-cache/5585ae49e30543dcb529f67ced83d0b70d2a2e58/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.0.0] /home/rashwan/.android/build-cache/8ccd7519239445b75e106c8830908974890749d6/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:25.1.0] /home/rashwan/.android/build-cache/e4baf89b1cab0a709830a95189ef0715cb7685bf/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.1.0] /home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml
@@ -124,27 +72,19 @@ ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xm
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:11:22-63
 uses-permission#android.permission.INTERNET
 ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:12:5-67
-MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/AndroidManifest.xml:19:5-67
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/.android/build-cache/ed31e24162e941b3446cc09ea28b3483000f53b8/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:7.5.0] /home/rashwan/.android/build-cache/ac700ad094d32afd3fd4d6b05d06b88977646a59/output/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:21:5-66
 	android:name
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:12:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:13:5-79
-MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-nearby:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/AndroidManifest.xml:19:5-79
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/.android/build-cache/ed31e24162e941b3446cc09ea28b3483000f53b8/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:7.5.0] /home/rashwan/.android/build-cache/968d182065f3f1b6432a4416ba8fbd92ef4b7e53/output/AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:20:5-78
 	android:name
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
@@ -156,100 +96,45 @@ ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xm
 	android:name
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:15:22-64
 application
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:17:5-193:19
-MERGED from [ZAD:simpleFacebook:unspecified] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/simpleFacebook/unspecified/AndroidManifest.xml:24:5-20
-MERGED from [ZAD:facebookSDK:unspecified] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/AndroidManifest.xml:24:5-20
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/AndroidManifest.xml:20:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appstate:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-cast:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:mediarouter-v7:22.0.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-fitness:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:29:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-games:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-gcm:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:29:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:29:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-nearby:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/AndroidManifest.xml:20:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-panorama:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-plus:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:24:5-35:19
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:29:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-wearable:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/AndroidManifest.xml:22:5-20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:17:5-198:19
+MERGED from [ZAD:simpleFacebook:unspecified] /home/rashwan/Work/StudioProjects/ZAD/simpleFacebook/build/intermediates/bundles/default/AndroidManifest.xml:24:5-20
+MERGED from [ZAD:facebookSDK:unspecified] /home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services:7.5.0] /home/rashwan/.android/build-cache/082b1560b3de82746a21dfd7d5eb682e2eb594ab/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/.android/build-cache/ed31e24162e941b3446cc09ea28b3483000f53b8/output/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:7.5.0] /home/rashwan/.android/build-cache/805f928509936e09b4895f34b794190514958122/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:7.5.0] /home/rashwan/.android/build-cache/ac700ad094d32afd3fd4d6b05d06b88977646a59/output/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-appstate:7.5.0] /home/rashwan/.android/build-cache/a631047ae004795a6b043b2e9069cbd3054bdf47/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-cast:7.5.0] /home/rashwan/.android/build-cache/a921e87b2d5d99d6dfe4939bca6af505cfca2653/output/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:22.0.0] /home/rashwan/.android/build-cache/f9d3a7a240fd6af9933385bb66bd1a1fcfe4c4d3/output/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-fitness:7.5.0] /home/rashwan/.android/build-cache/3a209d31af0eb22c4166ea7ea330b69acec98a29/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:7.5.0] /home/rashwan/.android/build-cache/97e93e3f622ce943aac536d091318fcae645098f/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:7.5.0] /home/rashwan/.android/build-cache/abb8e1f0aee9708c16fdc9181d092532d0e74333/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:7.5.0] /home/rashwan/.android/build-cache/dbc50b3bbaefbf419c6588dab7fb8a5e8dc58285/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-location:7.5.0] /home/rashwan/.android/build-cache/5b67a61be2db316ce409afc96ff6eee076374182/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-nearby:7.5.0] /home/rashwan/.android/build-cache/968d182065f3f1b6432a4416ba8fbd92ef4b7e53/output/AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-panorama:7.5.0] /home/rashwan/.android/build-cache/657463b0708f455502637d5fc8930ccbdc92ecfe/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:7.5.0] /home/rashwan/.android/build-cache/e3d9a8e48dd0aea81bd02a84a9906d09de8bbf13/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:7.5.0] /home/rashwan/.android/build-cache/3b8b646f06aa3564d518dc3a0bd29f3ed27f1fbf/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:24:5-35:19
+MERGED from [com.google.android.gms:play-services-identity:7.5.0] /home/rashwan/.android/build-cache/bdae5001d17520a3ba3dbef948c6796278b7ab57/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-wearable:7.5.0] /home/rashwan/.android/build-cache/b1da23033adfc898c90ffbbf8bc0016cc47aa384/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/.android/build-cache/0600e402e523bef105b7998e1851d90e3adee348/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:design:25.1.0] /home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.0] /home/rashwan/.android/build-cache/9181eacaebef4336825511b958d4f3cecd56abba/output/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:28:5-38:19
+MERGED from [com.android.support:appcompat-v7:25.1.0] /home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] /home/rashwan/.android/build-cache/102e165e929765b7183c520400d2371a7090af2a/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] /home/rashwan/.android/build-cache/6c623eedfe024774fae90d4d5269ad5573006568/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] /home/rashwan/.android/build-cache/eaf7d282624acde632d79de84d8f37f57b4caca9/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] /home/rashwan/.android/build-cache/b3a57d50bf06c5580df1fae64fccbf416a98e3ae/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] /home/rashwan/.android/build-cache/1530a9b5a3009dd4a351af64ee5f6546d110f85e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] /home/rashwan/.android/build-cache/8311cbe0be77003395a93d58f4c897f2b2cdb37e/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] /home/rashwan/.android/build-cache/d57b66d49b40b1ff72b2272e728c82da7a8c5962/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:cardview-v7:25.0.0] /home/rashwan/.android/build-cache/5585ae49e30543dcb529f67ced83d0b70d2a2e58/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:25.0.0] /home/rashwan/.android/build-cache/8ccd7519239445b75e106c8830908974890749d6/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-compat:25.1.0] /home/rashwan/.android/build-cache/e4baf89b1cab0a709830a95189ef0715cb7685bf/output/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:20:9-41
 	android:windowSoftInputMode
@@ -260,345 +145,338 @@ MERGED from [com.android.support:support-v4:22.2.1] /home/rashwan/Work/StudioPro
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:19:9-45
 	android:theme
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:21:9-42
+	android:name
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:23:9-39
 meta-data#com.google.android.gms.version
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:23:9-25:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/AndroidManifest.xml:21:9-23:69
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:24:9-26:69
+MERGED from [com.google.android.gms:play-services-base:7.5.0] /home/rashwan/.android/build-cache/0600e402e523bef105b7998e1851d90e3adee348/output/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:25:13-66
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:26:13-66
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:24:13-58
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:25:13-58
 activity#com.google.android.gms.ads.AdActivity
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:27:9-29:125
-MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:26:9-29:64
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:28:9-30:125
+MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:29:13-122
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:30:13-122
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:29:13-61
+		ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:29:13-61
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:28:13-65
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:29:13-65
 activity#com.app.zad.ui.Magic_Activity
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:30:9-43:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:31:9-44:20
 	android:label
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:32:13-45
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:33:13-45
 	android:theme
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:33:13-52
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:34:13-52
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:31:13-57
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:32:13-57
 meta-data#android.app.default_searchable
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:34:13-36:62
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:35:13-37:62
 	android:value
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:36:17-59
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:37:17-59
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:35:17-62
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:36:17-62
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:38:13-42:29
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:39:13-43:29
 action#android.intent.action.MAIN
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:39:17-69
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:39:25-66
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:40:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:41:17-77
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:42:17-77
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:41:27-74
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:42:27-74
 activity#com.app.zad.ui.Search_Tabs
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:46:9-64:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:47:9-65:20
 	android:parentActivityName
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:49:13-60
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:50:13-60
 	android:launchMode
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:48:13-43
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:49:13-43
 	android:theme
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:50:13-50
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:51:13-50
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:47:13-54
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:48:13-54
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:51:13-53:65
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:52:13-54:65
 	android:value
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:53:17-62
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:54:17-62
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:52:17-63
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:53:17-63
 intent-filter#android.intent.action.SEARCH+android.intent.category.DEFAULT
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:55:13-59:29
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:56:13-60:29
 action#android.intent.action.SEARCH
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:56:17-71
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:57:17-71
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:56:25-68
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:57:25-68
 category#android.intent.category.DEFAULT
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:58:17-76
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:59:17-76
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:58:27-73
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:59:27-73
 meta-data#android.app.searchable
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:61:13-63:54
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:62:13-64:54
 	android:resource
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:63:17-51
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:64:17-51
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:62:17-54
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:63:17-54
 activity#com.app.zad.ui.Quote_view_pager_activity
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:67:9-73:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:68:9-74:20
 	android:parentActivityName
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:69:13-60
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:70:13-60
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:68:13-68
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:69:13-68
 receiver#com.app.zad.widget.Widget
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:75:9-86:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:76:9-87:20
 	android:label
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:78:13-45
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:79:13-45
 	android:installLocation
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:77:13-51
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:78:13-51
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:76:13-53
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:77:13-53
 intent-filter#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:79:13-81:29
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:80:13-82:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:80:17-84
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:81:17-84
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:80:25-81
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:81:25-81
 meta-data#android.appwidget.provider
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:83:13-85:50
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:84:13-86:50
 	android:resource
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:85:17-47
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:86:17-47
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:84:17-58
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:85:17-58
 activity#com.app.zad.widget.Configuration
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:88:9-92:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:89:9-93:20
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:88:19-66
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:89:19-66
 intent-filter#android.appwidget.action.APPWIDGET_CONFIGURE
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:89:13-91:29
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:90:13-92:29
 action#android.appwidget.action.APPWIDGET_CONFIGURE
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:90:17-87
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:91:17-87
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:90:25-84
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:91:25-84
 receiver#com.app.zad.widgetPremium.Widget
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:94:9-105:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:95:9-106:20
 	android:label
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:97:13-52
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:98:13-52
 	android:installLocation
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:96:13-51
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:97:13-51
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:95:13-60
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:96:13-60
 activity#com.app.zad.widgetPremium.Configuration
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:107:9-111:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:108:9-112:20
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:107:19-73
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:108:19-73
 activity#com.app.zad.ui.UserSettingActivity
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:112:9-120:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:113:9-121:20
 	android:label
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:114:13-45
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:115:13-45
 	android:parentActivityName
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:115:13-60
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:116:13-60
 	android:theme
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:116:13-47
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:117:13-47
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:113:13-62
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:114:13-62
 service#com.app.zad.widget.WidgetService
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:122:9-123:19
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:123:9-124:19
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:122:18-65
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:123:18-65
 service#com.app.zad.widgetPremium.WidgetService
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:124:9-125:19
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:125:9-126:19
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:124:18-72
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:125:18-72
 service#com.app.zad.work_in_background.TodayQuote_Service
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:126:9-128:38
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:127:9-129:38
 	android:enabled
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:128:13-35
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:129:13-35
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:127:13-77
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:128:13-77
 service#com.app.zad.work_in_background.Random_Quote_Service
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:129:9-131:38
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:130:9-132:38
 	android:enabled
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:131:13-35
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:132:13-35
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:130:13-79
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:131:13-79
 service#com.app.zad.work_in_background.morning_evening_Service
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:132:9-134:38
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:133:9-135:38
 	android:enabled
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:134:13-35
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:135:13-35
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:133:13-82
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:134:13-82
 service#com.app.zad.work_in_background.mood_Freq_Question_Service
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:135:9-137:38
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:136:9-138:38
 	android:enabled
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:137:13-35
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:138:13-35
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:136:13-85
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:137:13-85
 receiver#com.app.zad.work_in_background.Today_Quote_Reciever
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:139:9-88
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:140:9-88
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:139:19-85
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:140:19-85
 receiver#com.app.zad.work_in_background.Random_Quote_Reciever
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:140:9-89
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:141:9-89
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:140:19-86
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:141:19-86
 receiver#com.app.zad.work_in_background.morning_evening_Reciever
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:141:9-92
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:142:9-92
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:141:19-89
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:142:19-89
 receiver#com.app.zad.work_in_background.mood_Freq_Question_Reciever
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:142:9-95
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:143:9-95
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:142:19-92
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:143:19-92
 receiver#com.app.zad.work_in_background.PingReciever
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:143:9-80
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:144:9-80
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:143:19-77
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:144:19-77
 receiver#com.app.zad.work_in_background.on_Boot_Reciever
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:144:9-148:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:145:9-149:20
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:144:19-81
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:145:19-81
 intent-filter#android.intent.action.BOOT_COMPLETED
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:145:13-147:29
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:146:13-148:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:146:17-79
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:147:17-79
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:146:25-76
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:147:25-76
 activity#com.app.zad.ui.Authors_list_quotes_notBoring
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:150:9-158:20
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:151:9-159:20
 	android:label
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:152:13-60
-	android:parentActivityName
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:153:13-60
-	android:theme
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:154:13-54
-	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:151:13-72
-activity#com.app.zad.ui.Facebook_Share
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:159:9-160:20
-	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:159:19-63
-activity#com.app.zad.widget.ChooseAuthor
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:161:9-68
-	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:161:19-65
-activity#com.app.zad.widget.ChooseCategory
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:162:9-70
-	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:162:19-67
-activity#com.app.zad.ui.AboutActivity
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:163:9-166:53
-	android:label
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:165:13-32
-	android:theme
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:166:13-50
-	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:164:13-56
-activity#com.facebook.LoginActivity
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:167:9-63
-	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:167:19-60
-meta-data#com.facebook.sdk.ApplicationId
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:169:9-171:46
-	android:value
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:171:13-43
-	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:170:13-58
-activity#com.app.zad.ui.CategoriesListQuotesNotBoring
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:173:9-181:20
-	android:label
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:175:13-85
 	android:parentActivityName
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:176:13-60
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:154:13-60
 	android:theme
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:177:13-54
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:155:13-54
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:174:13-72
-activity#com.app.zad.ui.IntroActivity
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:182:9-186:20
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:152:13-72
+activity#com.app.zad.ui.Facebook_Share
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:160:9-161:20
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:182:19-62
-intent-filter#android.intent.action.MAIN
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:183:13-185:29
-activity#com.app.zad.ui.Billing
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:187:9-190:20
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:160:19-63
+activity#com.app.zad.widget.ChooseAuthor
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:162:9-68
+	android:name
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:162:19-65
+activity#com.app.zad.widget.ChooseCategory
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:163:9-70
+	android:name
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:163:19-67
+activity#com.app.zad.ui.AboutActivity
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:164:9-167:53
+	android:label
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:166:13-32
 	android:theme
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:189:13-50
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:167:13-50
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:188:13-50
-activity#com.android.vending.billing.Bill
-ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:191:9-192:20
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:165:13-56
+activity#com.facebook.LoginActivity
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:168:9-63
 	android:name
-		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:191:19-66
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-195:12 reason: com.github.amlcurran.showcaseview has a targetSdkVersion < 4
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:22:5-80
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:22:5-80
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:22:5-80
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:22:5-80
-android:uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-195:12 reason: com.github.amlcurran.showcaseview has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-195:12 reason: com.github.amlcurran.showcaseview requested WRITE_EXTERNAL_STORAGE
-activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:30:9-31:52
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:31:13-50
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/AndroidManifest.xml:30:19-91
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:23:5-80
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:23:5-80
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:23:5-80
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:23:5-80
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:23:22-78
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:24:5-26:33
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:24:5-26:33
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:24:5-26:33
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:24:5-26:33
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:25:8-40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/AndroidManifest.xml:26:8-31
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:21:5-70
-	android:name
-		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:21:22-68
-uses-permission#android.permission.USE_CREDENTIALS
-ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:22:5-73
-	android:name
-		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:22:22-71
-meta-data#com.google.android.gms.wallet.api.enabled
-ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:25:9-27:36
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:168:19-60
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:170:9-172:55
 	android:value
-		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:27:13-33
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:172:13-52
 	android:name
-		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:26:13-69
-receiver#com.google.android.gms.wallet.EnableWalletOptimizationReceiver
-ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:28:9-34:20
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:171:13-58
+activity#com.app.zad.ui.CategoriesListQuotesNotBoring
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:174:9-182:20
+	android:label
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:176:13-85
+	android:parentActivityName
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:177:13-60
+	android:theme
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:178:13-54
+	android:name
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:175:13-72
+activity#com.app.zad.ui.IntroActivity
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:183:9-187:20
+	android:name
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:183:19-62
+intent-filter#android.intent.action.MAIN
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:184:13-186:29
+activity#com.app.zad.ui.Billing
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:188:9-191:20
+	android:theme
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:190:13-50
+	android:name
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:189:13-50
+activity#com.android.vending.billing.Bill
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:192:9-193:20
+	android:name
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:192:19-66
+provider#com.facebook.FacebookContentProvider
+ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:194:9-197:38
+	android:authorities
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:195:13-90
 	android:exported
-		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:30:13-37
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:197:13-36
 	android:name
-		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:29:13-90
+		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:196:13-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12 reason: com.github.amlcurran.showcaseview has a targetSdkVersion < 4
+MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:22:5-80
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12 reason: com.github.amlcurran.showcaseview has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12 reason: com.github.amlcurran.showcaseview requested WRITE_EXTERNAL_STORAGE
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:30:9-31:52
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:31:13-50
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:30:19-91
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:21:5-70
+	android:name
+		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:21:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:22:5-73
+	android:name
+		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:22:22-71
+meta-data#com.google.android.gms.wallet.api.enabled
+ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:25:9-27:36
+	android:value
+		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:27:13-33
+	android:name
+		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:26:13-69
+receiver#com.google.android.gms.wallet.EnableWalletOptimizationReceiver
+ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:28:9-34:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:29:13-90
 intent-filter#com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION
-ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:31:13-33:29
+ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:31:13-33:29
 action#com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION
-ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:32:17-99
+ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:32:17-99
 	android:name
-		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/AndroidManifest.xml:32:25-96
+		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:32:25-96
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:23:5-80
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:23:22-78
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:24:5-26:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:25:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:26:8-31
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:33:9-36:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:34:13-58
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:37:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:37:19-68

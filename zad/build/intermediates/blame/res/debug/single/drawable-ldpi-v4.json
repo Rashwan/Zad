@@ -1,22 +1,6 @@
 [
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable-ldpi-v4/widget_colored.png",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable-ldpi/widget_colored.png"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_ab_guide.png",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable-ldpi/ic_ab_guide.png"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_close.png",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable-ldpi/ic_close.png"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable-ldpi-v4/com_facebook_close.png",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/drawable-ldpi-v4/com_facebook_close.png"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/drawable-ldpi-v4/widget_colored_fav.png",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/drawable-ldpi/widget_colored_fav.png"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/drawable-ldpi-v4/com_facebook_close.png"
     }
 ]

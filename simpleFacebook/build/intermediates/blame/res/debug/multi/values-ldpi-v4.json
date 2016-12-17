@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/rashwan/Work/StudioProjects/ZAD/simpleFacebook/build/intermediates/res/merged/debug/values-ldpi-v4/values-ldpi-v4.xml",
+        "outputFile": "/home/rashwan/Work/StudioProjects/ZAD/simpleFacebook/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldpi-v4/values-ldpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 114
                 },
                 "from": {
-                    "file": "/home/rashwan/Work/StudioProjects/ZAD/simpleFacebook/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/values-ldpi-v4/values-ldpi-v4.xml",
+                    "file": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/values-ldpi-v4/values-ldpi-v4.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

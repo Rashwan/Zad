@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout-sw600dp-v13/layout_snackbar.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout-sw600dp/layout_snackbar.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout-sw600dp-v13/about_fragment.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout-sw600dp/about_fragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout-sw600dp-v13/home.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout-sw600dp/home.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     }
 ]

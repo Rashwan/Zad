@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/values-land/values-land.xml",
+        "outputFile": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
         "map": [
             {
                 "to": {
@@ -87,13 +87,13 @@
                     "endOffset": 377
                 },
                 "from": {
-                    "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-land/values-land.xml",
+                    "file": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/values-land/values-land.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 908,
+                        "startOffset": 55,
                         "endColumn": 69,
-                        "endOffset": 973
+                        "endOffset": 120
                     }
                 }
             },
@@ -102,27 +102,8 @@
                     "startLine": 7,
                     "startColumn": 4,
                     "startOffset": 382,
-                    "endColumn": 69,
-                    "endOffset": 447
-                },
-                "from": {
-                    "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-land/values-land.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 978,
-                        "endColumn": 69,
-                        "endOffset": 1043
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 452,
                     "endColumn": 67,
-                    "endOffset": 515
+                    "endOffset": 445
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -137,11 +118,11 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 520,
+                    "startOffset": 450,
                     "endColumn": 63,
-                    "endOffset": 579
+                    "endOffset": 509
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -156,11 +137,11 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 584,
+                    "startOffset": 514,
                     "endColumn": 68,
-                    "endOffset": 648
+                    "endOffset": 578
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -175,11 +156,11 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 653,
+                    "startOffset": 583,
                     "endColumn": 64,
-                    "endOffset": 713
+                    "endOffset": 643
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -194,11 +175,11 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 718,
+                    "startOffset": 648,
                     "endColumn": 65,
-                    "endOffset": 779
+                    "endOffset": 709
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -213,11 +194,11 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 784,
+                    "startOffset": 714,
                     "endColumn": 61,
-                    "endOffset": 841
+                    "endOffset": 771
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -232,20 +213,39 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 846,
+                    "startOffset": 776,
                     "endColumn": 70,
-                    "endOffset": 912
+                    "endOffset": 842
                 },
                 "from": {
-                    "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-land/values-land.xml",
+                    "file": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/values-land/values-land.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 1595,
+                        "startOffset": 189,
                         "endColumn": 70,
-                        "endOffset": 1661
+                        "endOffset": 255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 847,
+                    "endColumn": 67,
+                    "endOffset": 910
+                },
+                "from": {
+                    "file": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 260,
+                        "endColumn": 67,
+                        "endOffset": 323
                     }
                 }
             },
@@ -253,28 +253,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 917,
-                    "endColumn": 67,
-                    "endOffset": 980
-                },
-                "from": {
-                    "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-land/values-land.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1666,
-                        "endColumn": 67,
-                        "endOffset": 1729
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 985,
+                    "startOffset": 915,
                     "endColumn": 47,
-                    "endOffset": 1028
+                    "endOffset": 958
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -289,11 +270,11 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1033,
+                    "startOffset": 963,
                     "endColumn": 47,
-                    "endOffset": 1076
+                    "endOffset": 1006
                 },
                 "from": {
                     "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/values-land/dimens.xml",
@@ -308,22 +289,22 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1081,
-                    "endLine": 21,
+                    "startOffset": 1011,
+                    "endLine": 20,
                     "endColumn": 12,
-                    "endOffset": 1258
+                    "endOffset": 1188
                 },
                 "from": {
-                    "file": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-land/values-land.xml",
+                    "file": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/values-land/values-land.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 286,
-                        "endLine": 7,
+                        "startOffset": 55,
+                        "endLine": 5,
                         "endColumn": 12,
-                        "endOffset": 463
+                        "endOffset": 232
                     }
                 }
             }

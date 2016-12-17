@@ -1,27 +1,27 @@
 [
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_media.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_fav.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_fav.xml"
     },
     {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item.xml"
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/grid_view.xml",
@@ -32,12 +32,12 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/add_quote.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_setup.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/list_quotes_search.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/list_quotes_search.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_setup.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/helper_form.xml",
@@ -45,15 +45,15 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_usersettingsfragment.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_usersettingsfragment.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_usersettingsfragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_content_include.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/layout_snackbar_include.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar_include.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/messenger_button_send_white_small.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/quote_view.xml",
@@ -61,7 +61,11 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_layout_tab_icon.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/view_pager.xml",
@@ -89,7 +93,7 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment_list_row.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_placepickerfragment_list_row.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_placepickerfragment_list_row.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/view_header_placeholder.xml",
@@ -101,11 +105,11 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_friendpickerfragment.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_friendpickerfragment.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_friendpickerfragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/zad_text_item.xml",
@@ -113,43 +117,47 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/layout/mr_media_route_controller_material_dialog_b.xml"
+        "source": "/home/rashwan/.android/build-cache/f9d3a7a240fd6af9933385bb66bd1a1fcfe4c4d3/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_placepickerfragment.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_placepickerfragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/zad_check_item.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/zad_check_item.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_lines.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/messenger_button_send_blue_large.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_header.xml"
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_search_view.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_big_media.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/zad_radio_item.xml",
@@ -157,7 +165,11 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_tooltip_bubble.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/messenger_button_send_white_round.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/categories_fragment.xml",
@@ -173,23 +185,31 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_part_time.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/helper_mood.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/helper_mood.xml"
     },
     {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_mode_bar.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/messenger_button_send_white_large.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_dialog_title_material.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_choose_cat_frag.xml",
@@ -197,23 +217,23 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/showcase_button.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/main/unspecified/res/layout/showcase_button.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/default/res/layout/showcase_button.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_search_bar_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_search_bar_layout.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/layout/mr_media_route_list_item.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_search_bar_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/quote_list_item.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/quote_list_item.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_login_activity_layout.xml",
@@ -221,11 +241,11 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_row.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_list_row.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_list_row.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_part_chronometer.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/activity_billing.xml",
@@ -236,12 +256,20 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/tabs_bg.xml"
     },
     {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_text_input_password_icon.xml"
+    },
+    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_toolbar.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/home.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/home.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/rate_us_layout.xml",
@@ -249,7 +277,7 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_subheader.xml"
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_navigation_item_subheader.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/custom_drawer_item.xml",
@@ -261,51 +289,43 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_activity_chooser_view.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/layout/mr_media_route_chooser_dialog.xml"
+        "source": "/home/rashwan/.android/build-cache/f9d3a7a240fd6af9933385bb66bd1a1fcfe4c4d3/output/res/layout/mr_media_route_chooser_dialog.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_title_item.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/helper_hey.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/helper_hey.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_media_cancel_action.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/activity_facebook__share.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/activity_facebook__share.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_simple_dropdown_hint.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_simple_dropdown_hint.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_media_action.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_alert_dialog_material.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/messenger_button_send_blue_round.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_checkbox.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_checkbox.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_checkbox.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/layout_snackbar.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_bottom_navigation_item.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/grid_view_search.xml",
@@ -317,11 +337,19 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar_stub.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_title_bar_stub.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_title_bar_stub.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/com_facebook_login_fragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/submit_new_cat.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/submit_new_cat.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_template_media_custom.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_choose_time.xml",
@@ -329,15 +357,15 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_separator.xml"
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_item_material.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/about_fragment.xml",
@@ -349,7 +377,7 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_menu.xml"
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_setup_fav.xml",
@@ -364,12 +392,16 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/thanks_list_layout.xml"
     },
     {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_section_header.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_list_section_header.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_list_section_header.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/empty_fav_layout.xml",
@@ -377,11 +409,23 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/handy.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/main/unspecified/res/layout/handy.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/default/res/layout/handy.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_menu_layout.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_layout_snackbar.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/footer_layout.xml",
@@ -389,35 +433,43 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_activity_circle_row.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_activity_circle_row.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_activity_circle_row.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_simple.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_title_bar.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_title_bar.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/magic_activity.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/magic_activity.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/layout_tab_icon.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_icon.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_up_container.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/com_facebook_activity_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_image.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_image.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_image.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_select_dialog_material.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/fragment_pager.xml",
@@ -429,19 +481,15 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_search_box.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/ZAD/facebookSDK/unspecified/res/layout/com_facebook_picker_search_box.xml"
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_search_box.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_menu_item_layout.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/helper_wid.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/helper_wid.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/layout_tab_text.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_text.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/authors_not_boring.xml",
@@ -449,10 +497,14 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/layout/design_layout_snackbar_include.xml"
     }
 ]

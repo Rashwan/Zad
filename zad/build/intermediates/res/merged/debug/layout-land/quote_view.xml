@@ -35,6 +35,15 @@
             android:paddingLeft="@dimen/abc_action_bar_icon_vertical_padding"
             android:paddingRight="@dimen/abc_action_bar_icon_vertical_padding"
             android:src="@drawable/icon_actionbar_share" />
+        <com.facebook.share.widget.ShareButton
+            android:id="@+id/fb_share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/share_button"
+            android:paddingLeft="@dimen/abc_action_bar_icon_vertical_padding"
+            android:paddingRight="@dimen/abc_action_bar_icon_vertical_padding"
+            />
 
         <ImageView
             android:id="@+id/quote_copy"
@@ -42,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/share_button"
+            android:layout_toLeftOf="@+id/fb_share_button"
             android:clickable="true"
             android:paddingLeft="@dimen/abc_action_bar_icon_vertical_padding"
             android:paddingRight="@dimen/abc_action_bar_icon_vertical_padding"

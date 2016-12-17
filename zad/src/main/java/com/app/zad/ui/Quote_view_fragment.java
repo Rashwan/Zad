@@ -1,13 +1,5 @@
 package com.app.zad.ui;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.ComponentName;
@@ -59,13 +51,24 @@ import com.app.zad.helper.Drawable_into_Bitmap;
 import com.app.zad.helper.FlipImageView;
 import com.app.zad.helper.GetCroppedBitmap;
 import com.app.zad.work_in_background.HttpUtility;
+import com.facebook.CallbackManager;
+import com.facebook.share.widget.ShareButton;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 public class Quote_view_fragment extends Fragment {
 
-	static SharedPreferences sp;
+    private static final String TAG = "QUOTEVIEWFRAGMENT";
+    static SharedPreferences sp;
 	SharedPreferences.Editor editor;
 	static Set<String> ids;
 	static ArrayList<String> idlist;
@@ -91,15 +94,21 @@ public class Quote_view_fragment extends Fragment {
 	private Boolean isPremium = false;
 	private RelativeLayout adLayout;
 	private Button advertiseBtn;
+    CallbackManager callbackManager;
 
-	@SuppressLint("SimpleDateFormat")
+
+
+    @SuppressLint("SimpleDateFormat")
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.quote_view,
+
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.quote_view,
 				container, false);
 		final Context m = getActivity().getApplicationContext();
+        ShareButton fbShareButton = (ShareButton) rootView.findViewById(R.id.fb_share_button);
 
-		// Create an ad.
+
+        // Create an ad.
 		adLayout = (RelativeLayout) rootView.findViewById(R.id.ad_layout);
 		adView = (AdView) rootView.findViewById(R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().build();
@@ -365,11 +374,25 @@ public class Quote_view_fragment extends Fragment {
 			}
 		});
 
-		return rootView;
+        fbShareButton.setEnabled(true);
+        fbShareButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG,"clicked share");
+                Intent intent = new Intent(getActivity(),Facebook_Share.class);
+                intent.putExtra("shareQuote", getArguments().getString("quote"));
+                intent.putExtra("shareAuthor", getArguments().getString("author"));
+                startActivity(intent);
+            }
+        });
+
+        return rootView;
 
 	}
 
-	public static Quote_view_fragment newinstance(String quote, String author,
+
+
+    public static Quote_view_fragment newinstance(String quote, String author,
 			String wiki, Integer idInteger, Boolean fromwhere) {
 		Quote_view_fragment instance = new Quote_view_fragment();
 		Bundle b = new Bundle();
@@ -739,7 +762,14 @@ public class Quote_view_fragment extends Fragment {
 		// EasyTracker.getInstance(this).activityStop(this); // Add this method.
 	}
 
-	public class AdViewZadListener extends AdListener {
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode,resultCode,data);
+
+    }
+
+    public class AdViewZadListener extends AdListener {
 
 		private String LOG_TAG = "Ad_Error";
 
