@@ -21,12 +21,12 @@ public final class R {
         public static final int sv_titleTextColor = 0x7f010139;
     }
     public static final class dimen {
-        public static final int action_bar_offset = 0x7f090076;
-        public static final int button_margin = 0x7f090082;
-        public static final int showcase_radius = 0x7f090113;
-        public static final int showcase_radius_inner = 0x7f090114;
-        public static final int showcase_radius_outer = 0x7f090115;
-        public static final int text_padding = 0x7f090120;
+        public static final int action_bar_offset = 0x7f090075;
+        public static final int button_margin = 0x7f090081;
+        public static final int showcase_radius = 0x7f090112;
+        public static final int showcase_radius_inner = 0x7f090113;
+        public static final int showcase_radius_outer = 0x7f090114;
+        public static final int text_padding = 0x7f09011f;
     }
     public static final class drawable {
         public static final int btn_cling_normal = 0x7f020066;
@@ -36,7 +36,7 @@ public final class R {
         public static final int cling = 0x7f020088;
         public static final int cling_bleached = 0x7f020089;
         public static final int cling_button_bg = 0x7f02008a;
-        public static final int hand = 0x7f0200fc;
+        public static final int hand = 0x7f0200df;
     }
     public static final class id {
         public static final int showcase_button = 0x7f0f0009;
@@ -44,11 +44,11 @@ public final class R {
         public static final int showcase_title_text = 0x7f0f000b;
     }
     public static final class layout {
-        public static final int handy = 0x7f03004d;
-        public static final int showcase_button = 0x7f030076;
+        public static final int handy = 0x7f030040;
+        public static final int showcase_button = 0x7f030069;
     }
     public static final class string {
-        public static final int ok = 0x7f080109;
+        public static final int ok = 0x7f0800f9;
     }
     public static final class style {
         public static final int ShowcaseButton = 0x7f0a00fa;

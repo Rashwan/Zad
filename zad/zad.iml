@@ -147,9 +147,6 @@
     <orderEntry type="library" exported="" name="appcompat-v7-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-maps-7.5.0" level="project" />
-    <orderEntry type="module" module-name="facebookSDK" exported="" />
     <orderEntry type="module" module-name="main" exported="" />
-    <orderEntry type="module" module-name="simpleFacebook" exported="" />
-    <orderEntry type="library" exported="" name="bolts" level="project" />
   </component>
 </module>

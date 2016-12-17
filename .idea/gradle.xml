@@ -10,9 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/facebookSDK" />
             <option value="$PROJECT_DIR$/main" />
-            <option value="$PROJECT_DIR$/simpleFacebook" />
             <option value="$PROJECT_DIR$/zad" />
           </set>
         </option>

@@ -20,7 +20,6 @@ android {
 
 dependencies {
     compile project(':main')
-    compile project(':simpleFacebook')
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.google.android.gms:play-services:7.5.0'
     compile files('libs/ormlite-android-4.48.jar')

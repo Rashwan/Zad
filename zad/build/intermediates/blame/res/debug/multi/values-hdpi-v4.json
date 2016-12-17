@@ -7,28 +7,9 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 63,
-                    "endOffset": 114
-                },
-                "from": {
-                    "file": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/values-hdpi-v4/values-hdpi-v4.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 63,
-                        "endOffset": 114
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 119,
-                    "endLine": 7,
+                    "endLine": 6,
                     "endColumn": 13,
-                    "endOffset": 391
+                    "endOffset": 327
                 },
                 "from": {
                     "file": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/values-hdpi-v4/values-hdpi-v4.xml",
