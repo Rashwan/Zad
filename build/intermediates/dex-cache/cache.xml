@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/97e93e3f622ce943aac536d091318fcae645098f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b610d5c2bb6550a0ac74d3992ca4d7d7532b9a27/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/rashwan/.android/build-cache/8311cbe0be77003395a93d58f4c897f2b2cdb37e/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -36,24 +27,6 @@
         revision="25.0.2"
         sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
         <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_e7a72db5b50b454ddbc082ee4517307ac7b9b2cf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2b3ddf0dff5a5d31f029afb3294f0ddd464aee6c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f08ff69dee9af1bbce060ef753302fc086e64d96/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,15 +66,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/dbc50b3bbaefbf419c6588dab7fb8a5e8dc58285/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f5d13ac03561e3854129bbc78a3128edb11f5e78/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/rashwan/.android/build-cache/ac700ad094d32afd3fd4d6b05d06b88977646a59/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -129,6 +93,132 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/rashwan/Work/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_702816b061de2c441e3b82f822e3ae966ad56419/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/5b67a61be2db316ce409afc96ff6eee076374182/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10f8337ecd08ba4a04a7b1a6c15a5103947fd5c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/a631047ae004795a6b043b2e9069cbd3054bdf47/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1e47b850f8420bdc35a6fc6739d23695c4027f47/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a171826f7165daf749c51ea2476196619c4be0f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_2a1eb3558b8e3fe2cdd13c8bf33a8f74e5c7d5db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/b1da23033adfc898c90ffbbf8bc0016cc47aa384/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcb191de8b3cb391760f6f5dab63f656254613bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/f9d3a7a240fd6af9933385bb66bd1a1fcfe4c4d3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f92513cbc25793a3a6693b7a3f8b8231f4a048c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/3b8b646f06aa3564d518dc3a0bd29f3ed27f1fbf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_018c86619d0ce9dc77eae17596a0326dfbbcce4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/805f928509936e09b4895f34b794190514958122/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee1999e5ed307308c1fb41d747d660f2e230183f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/d57b66d49b40b1ff72b2272e728c82da7a8c5962/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a79a1f8c773112167f80f713d09833d2f1caa3e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/97e93e3f622ce943aac536d091318fcae645098f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b610d5c2bb6550a0ac74d3992ca4d7d7532b9a27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2b3ddf0dff5a5d31f029afb3294f0ddd464aee6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f08ff69dee9af1bbce060ef753302fc086e64d96/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rashwan/.android/build-cache/dbc50b3bbaefbf419c6588dab7fb8a5e8dc58285/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f5d13ac03561e3854129bbc78a3128edb11f5e78/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/rashwan/.android/build-cache/eaf7d282624acde632d79de84d8f37f57b4caca9/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -144,15 +234,6 @@
         revision="25.0.2"
         sha1="9f7c80e87e9925b691875dc9388869d87515f7d2">
         <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/2/svg-android-1.1_83949abe12540bbc312d21703c995dfb2136c323/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/rashwan/Work/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_702816b061de2c441e3b82f822e3ae966ad56419/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,24 +264,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/5b67a61be2db316ce409afc96ff6eee076374182/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10f8337ecd08ba4a04a7b1a6c15a5103947fd5c4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/a631047ae004795a6b043b2e9069cbd3054bdf47/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1e47b850f8420bdc35a6fc6739d23695c4027f47/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/rashwan/.android/build-cache/0600e402e523bef105b7998e1851d90e3adee348/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -216,15 +279,6 @@
         revision="25.0.2"
         sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
         <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_21d468c3c38163641934c178a9ab43e41ca5fd87/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a171826f7165daf749c51ea2476196619c4be0f1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,15 +309,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/libs/bolts.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b976b9e58687db63a9420181eec2e786b3a1159a">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/8/bolts_fc55586d5b3de0609cab39bce46b7193967299ee/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -282,15 +327,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_2a1eb3558b8e3fe2cdd13c8bf33a8f74e5c7d5db/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/rashwan/.android/build-cache/abb8e1f0aee9708c16fdc9181d092532d0e74333/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -300,30 +336,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/b1da23033adfc898c90ffbbf8bc0016cc47aa384/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcb191de8b3cb391760f6f5dab63f656254613bd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/rashwan/.android/build-cache/6c623eedfe024774fae90d4d5269ad5573006568/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_335279ccd40e24feaef0844e1de1553661161321/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/f9d3a7a240fd6af9933385bb66bd1a1fcfe4c4d3/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f92513cbc25793a3a6693b7a3f8b8231f4a048c9/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -354,39 +372,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/3b8b646f06aa3564d518dc3a0bd29f3ed27f1fbf/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_018c86619d0ce9dc77eae17596a0326dfbbcce4f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/805f928509936e09b4895f34b794190514958122/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee1999e5ed307308c1fb41d747d660f2e230183f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2b4b96c3e63b38c9c856c2b55e4cc41e27b49c06">
+        sha1="ba095be96d8f9f578f6f664b80abcb79de54bc4e">
         <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c1f4eea25da9e5a2c91a8b0ae20afdebf25f920e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/rashwan/.android/build-cache/d57b66d49b40b1ff72b2272e728c82da7a8c5962/output/jars/classes.jar"
+        jar="/home/rashwan/.android/build-cache/4e20d3c6ab28ef9c5f84fc4c49a1c62faccc1b79/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a79a1f8c773112167f80f713d09833d2f1caa3e8/classes.dex" />
+        sha1="a06b0579dbe59192ef460e3de04657720925d05b">
+        <dex dex="/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea2b2cf43f270ecf0730f5357d85c518caa47ecd/classes.dex" />
     </item>
     <item
         is-multidex="true"

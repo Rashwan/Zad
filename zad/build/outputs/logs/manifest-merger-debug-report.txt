@@ -17,6 +17,7 @@ ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xm
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.amlcurran.showcaseview:library:5.4.3] /home/rashwan/.android/build-cache/4e20d3c6ab28ef9c5f84fc4c49a1c62faccc1b79/output/AndroidManifest.xml:22:5-24:41
 MERGED from [com.google.android.gms:play-services:7.5.0] /home/rashwan/.android/build-cache/082b1560b3de82746a21dfd7d5eb682e2eb594ab/output/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:23:5-42
 MERGED from [com.google.android.gms:play-services-analytics:7.5.0] /home/rashwan/.android/build-cache/ed31e24162e941b3446cc09ea28b3483000f53b8/output/AndroidManifest.xml:18:5-42
@@ -409,13 +410,6 @@ ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xm
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:197:13-36
 	android:name
 		ADDED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:196:13-64
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12 reason: com.github.amlcurran.showcaseview has a targetSdkVersion < 4
-MERGED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:22:5-80
-uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12 reason: com.github.amlcurran.showcaseview has a targetSdkVersion < 4
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12 reason: com.github.amlcurran.showcaseview requested WRITE_EXTERNAL_STORAGE
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
 ADDED from [com.google.android.gms:play-services-ads:7.5.0] /home/rashwan/.android/build-cache/dbdecf0a6d02e8a577c61a4ea8af4242cd7760d0/output/AndroidManifest.xml:30:9-31:52
 	android:theme
@@ -448,6 +442,10 @@ action#com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION
 ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:32:17-99
 	android:name
 		ADDED from [com.google.android.gms:play-services-wallet:7.5.0] /home/rashwan/.android/build-cache/00d16530c8de5700d3b6ac7b0bd4a1df9380dcba/output/AndroidManifest.xml:32:25-96
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:22:5-80
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:22:22-78
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:23:5-80
 	android:name
@@ -458,6 +456,8 @@ ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.andr
 		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:25:8-40
 	android:required
 		ADDED from [com.google.android.gms:play-services-maps:7.5.0] /home/rashwan/.android/build-cache/0054043ce0704b05fa703e2bcd5d971a6f4ba018/output/AndroidManifest.xml:26:8-31
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/rashwan/Work/StudioProjects/ZAD/zad/src/main/AndroidManifest.xml:2:1-200:12 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
 activity#com.facebook.FacebookActivity
 ADDED from [com.facebook.android:facebook-android-sdk:4.18.0] /home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/AndroidManifest.xml:29:9-32:66
 	android:configChanges

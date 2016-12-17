@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZAD.iml" filepath="$PROJECT_DIR$/ZAD.iml" />
-      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/zad/zad.iml" filepath="$PROJECT_DIR$/zad/zad.iml" />
     </modules>
   </component>

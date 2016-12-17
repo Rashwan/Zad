@@ -952,6 +952,7 @@
     <dimen name="shadow_width">15.0dip</dimen>
     <dimen name="showcase_radius">94dp</dimen>
     <dimen name="showcase_radius_inner">96dp</dimen>
+    <dimen name="showcase_radius_material">48dip</dimen>
     <dimen name="showcase_radius_outer">128dp</dimen>
     <dimen name="side_menu_drawable_size">22.0dip</dimen>
     <dimen name="side_menu_item_vertical_padding">14.0dip</dimen>

@@ -116,12 +116,12 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/anim/to_top.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
-        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/anim/design_fab_out.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
         "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/home/rashwan/.android/build-cache/25fb981c193e588bec6d0c8f9ce79c9c425e7143/output/res/anim/design_fab_out.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",

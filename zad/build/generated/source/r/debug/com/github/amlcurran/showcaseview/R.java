@@ -25,8 +25,9 @@ public final class R {
         public static final int button_margin = 0x7f090081;
         public static final int showcase_radius = 0x7f090112;
         public static final int showcase_radius_inner = 0x7f090113;
-        public static final int showcase_radius_outer = 0x7f090114;
-        public static final int text_padding = 0x7f09011f;
+        public static final int showcase_radius_material = 0x7f090114;
+        public static final int showcase_radius_outer = 0x7f090115;
+        public static final int text_padding = 0x7f090120;
     }
     public static final class drawable {
         public static final int btn_cling_normal = 0x7f020066;

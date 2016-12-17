@@ -36,16 +36,12 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/helper_form.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_setup.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/list_quotes_search.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/list_quotes_search.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_usersettingsfragment.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_usersettingsfragment.xml"
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/widget_setup.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
@@ -92,10 +88,6 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/intro_setup.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment_list_row.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_placepickerfragment_list_row.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/view_header_placeholder.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/view_header_placeholder.xml"
     },
@@ -106,10 +98,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_friendpickerfragment.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_friendpickerfragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/zad_text_item.xml",
@@ -130,10 +118,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_placepickerfragment.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_placepickerfragment.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/zad_check_item.xml",
@@ -221,15 +205,11 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/showcase_button.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/default/res/layout/showcase_button.xml"
+        "source": "/home/rashwan/.android/build-cache/4e20d3c6ab28ef9c5f84fc4c49a1c62faccc1b79/output/res/layout/showcase_button.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_search_bar_layout.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_search_bar_layout.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
@@ -246,10 +226,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_login_activity_layout.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/com_facebook_login_activity_layout.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_row.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_list_row.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
@@ -324,10 +300,6 @@
         "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/messenger_button_send_blue_round.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_checkbox.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_checkbox.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_alert_dialog_material.xml"
     },
@@ -342,10 +314,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/cat_not_boring.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/cat_not_boring.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar_stub.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_title_bar_stub.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
@@ -392,12 +360,12 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/widget_setup_fav.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/search_tasty.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/search_tasty.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/notification_action.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/search_tasty.xml",
+        "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/search_tasty.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/thanks_list_layout.xml",
@@ -412,10 +380,6 @@
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_list_section_header.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_list_section_header.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/empty_fav_layout.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/empty_fav_layout.xml"
     },
@@ -425,7 +389,7 @@
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/handy.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/main/build/intermediates/bundles/default/res/layout/handy.xml"
+        "source": "/home/rashwan/.android/build-cache/4e20d3c6ab28ef9c5f84fc4c49a1c62faccc1b79/output/res/layout/handy.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
@@ -448,16 +412,8 @@
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/footer_layout.xml"
     },
     {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_activity_circle_row.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_activity_circle_row.xml"
-    },
-    {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/home/rashwan/.android/build-cache/cf5fcd99974d26b250f8462f5d6370771382d4ff/output/res/layout/abc_screen_simple.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_title_bar.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_title_bar.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/magic_activity.xml",
@@ -466,10 +422,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
         "source": "/home/rashwan/.android/build-cache/008f93a12b0ccf1b5ddea3010cece4fbd90e9bf5/output/res/layout/com_facebook_activity_layout.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_image.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_image.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
@@ -494,10 +446,6 @@
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/view_kenburns.xml",
         "source": "/home/rashwan/Work/StudioProjects/ZAD/zad/src/main/res/layout/view_kenburns.xml"
-    },
-    {
-        "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/com_facebook_picker_search_box.xml",
-        "source": "/home/rashwan/Work/StudioProjects/ZAD/facebookSDK/build/intermediates/bundles/default/res/layout/com_facebook_picker_search_box.xml"
     },
     {
         "merged": "/home/rashwan/Work/StudioProjects/ZAD/zad/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
