@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_drawer_dashboard"
+            android:title="الرئيسية"
+            />
+        <item
+            android:id="@+id/nav_authors"
+            android:title="الحكماء"
+            android:icon="@drawable/ic_drawer_authors"
+            />
+        <item
+            android:id="@+id/nav_categories"
+            android:title="الحكماء"
+            android:icon="@drawable/ic_drawer_categories"/>
+        <item
+            android:id="@+id/nav_quotes"
+            android:title="الحكم"
+            android:icon="@drawable/ic_drawer_quotes"/>
+        <item
+            android:id="@+id/nav_fav"
+            android:title="مفضلتي"
+            android:icon="@drawable/ic_drawer_fav"/>
+        <item
+            android:id="@+id/nav_suggest"
+            android:title="اقترح قول مأثور"
+            android:icon="@drawable/ic_drawer_suggest"/>
+        <item
+            android:id="@+id/nav_premium"
+            android:title="شراء النسخة المميزة"
+            android:icon="@drawable/ic_lock"/>
+        <item
+            android:id="@+id/nav_footer"
+            app:actionLayout="@layout/footer_layout"
+            android:title="Social"/>
+
+
+    </group>
+
+</menu>

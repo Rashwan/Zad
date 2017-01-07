@@ -3,21 +3,21 @@
 <!-- Generated with http://android-holo-colors.com -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AutoCompleteTextViewZad_Theme_Purple" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+    <style name="AutoCompleteTextViewZad_Theme_Purple" parent="android:Widget.DeviceDefault.AutoCompleteTextView">
         <item name="android:dropDownSelector">@drawable/zad_theme_purple_list_selector_holo_light</item>
         <item name="android:background">@drawable/zad_theme_purple_edit_text_holo_light</item>
     </style>
 
-    <style name="ButtonZad_Theme_Purple" parent="android:Widget.Holo.Light.Button">
+    <style name="ButtonZad_Theme_Purple" parent="android:Widget.DeviceDefault.Button">
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/zad_theme_purple_btn_default_holo_light</item>
     </style>
 
-    <style name="ImageButtonZad_Theme_Purple" parent="android:Widget.Holo.Light.ImageButton">
+    <style name="ImageButtonZad_Theme_Purple" parent="android:Widget.DeviceDefault.ImageButton">
         <item name="android:background">@drawable/zad_theme_purple_btn_default_holo_light</item>
     </style>
 
-    <style name="SpinnerZad_Theme_Purple" parent="android:Widget.Holo.Spinner">
+    <style name="SpinnerZad_Theme_Purple" parent="android:Widget.Spinner">
         <item name="android:background">@drawable/zad_theme_purple_spinner_background_holo_light</item>
         <item name="android:dropDownSelector">@drawable/zad_theme_purple_list_selector_holo_light</item>
         <item name="android:textColorHighlight">@color/text</item>

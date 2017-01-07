@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        <style name="TransparentTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <style name="TransparentTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@null</item>
         <item name="android:actionBarStyle">@style/ActionBarStyle.Transparent</item>
         <item name="android:windowActionBarOverlay">true</item>

@@ -1,15 +1,5 @@
 package com.app.zad.ui;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-
-import RateUs.RatingDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,11 +9,11 @@ import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -40,14 +30,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.CheckedTextView;
 import android.widget.ImageView;
-import android.widget.ListView;
 
 import com.android.vending.billing.Bill;
 import com.app.zad.R;
 import com.app.zad.work_in_background.HttpUtility;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+
+import RateUs.RatingDialog;
 
 @SuppressWarnings("deprecation")
 public class Magic_Activity extends FragmentActivity implements
@@ -67,7 +66,7 @@ public class Magic_Activity extends FragmentActivity implements
 	protected final String REQUESTURL = "https://docs.google.com/forms/d/1bGTUD2eROLnto8lxyQx8Z5NKMHGZ1LwKVLXeiEp-CSw/formResponse";
 
 	private DrawerLayout mDrawerLayout;
-	private ListView mDrawerList;
+//	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
 	DatabaseHelper dbHelper;
 	private CharSequence mDrawerTitle;
@@ -104,11 +103,17 @@ public class Magic_Activity extends FragmentActivity implements
 	private Boolean isPremium = false;
 	private Window window;
 	private int PublicPos = 1;
+	NavigationView navigationView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
 		setContentView(R.layout.magic_activity);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.nvView);
+		setupDrawerContent(navigationView);
+
+
 		mContext = this;
 		if (PublicPos > 0) {
 			if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -119,6 +124,7 @@ public class Magic_Activity extends FragmentActivity implements
 						R.color.Purple_Deep_Black));
 			}
 		}
+
 
 		// Checking if the user is premium or not and save his/her status in a
 		// shared prefernece
@@ -139,8 +145,7 @@ public class Magic_Activity extends FragmentActivity implements
 		mTitle = mDrawerTitle = getTitle();
 		mPlanetTitles = getResources()
 				.getStringArray(R.array.NavBarDrawerNames);
-		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-		mDrawerList = (ListView) findViewById(R.id.left_drawer);
+//		mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
 		List<DrawerItem> Data_Adapter = new ArrayList<DrawerItem>();
 
@@ -176,7 +181,7 @@ public class Magic_Activity extends FragmentActivity implements
 				.findViewById(R.id.twitter);
 		ImageView GplusButton = (ImageView) footerView
 				.findViewById(R.id.googleplus);
-		mDrawerList.addFooterView(footerView);
+//		mDrawerList.addFooterView(footerView);
 
 		String url1 = "https://www.facebook.com/pages/Zad/1519898524894813";
 		String url2 = "https://twitter.com/appZad";
@@ -218,16 +223,16 @@ public class Magic_Activity extends FragmentActivity implements
 			}
 		});
 
-		mDrawerList.setAdapter(D_adapter);
-		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+//		mDrawerList.setAdapter(D_adapter);
+//		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getActionBar().setHomeButtonEnabled(true);
-		getActionBar().setIcon(
-				new ColorDrawable(getResources().getColor(
-						android.R.color.transparent)));
-		getActionBar().setBackgroundDrawable(
-				getResources().getDrawable(R.color.transparent));
+//		getActionBar().setDisplayHomeAsUpEnabled(true);
+//		getActionBar().setHomeButtonEnabled(true);
+//		getActionBar().setIcon(
+//				new ColorDrawable(getResources().getColor(
+//						android.R.color.transparent)));
+//		getActionBar().setBackgroundDrawable(
+//				getResources().getDrawable(R.color.transparent));
 
 		Display display = ((WindowManager) getApplicationContext()
 				.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
@@ -245,21 +250,19 @@ public class Magic_Activity extends FragmentActivity implements
 				RotKo[HotBaby], R.string.drawer_open, R.string.drawer_close) {
 
 			public void onDrawerClosed(View view) {
-				getActionBar().setTitle(mTitle);
+//				getActionBar().setTitle(mTitle);
 
 				invalidateOptionsMenu();
 			}
 
 			public void onDrawerOpened(View drawerView) {
-				getActionBar().setTitle(mDrawerTitle);
+//				getActionBar().setTitle(mDrawerTitle);
 
 				invalidateOptionsMenu();
 			}
 		};
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
-		if (savedInstanceState == null) {
-			selectItem(0);
-		}
+
 
 		open_Zabatly_from_notif();
 
@@ -267,7 +270,12 @@ public class Magic_Activity extends FragmentActivity implements
 		// NEW - MELEGY
 		sendUnsetRequest();
 		// -------------
-	}
+
+        if (savedInstanceState == null){
+            selectItem(navigationView.getMenu().findItem(R.id.nav_home));
+        }
+
+    }
 
 	// NEW - MELEGY
 	private void sendUnsetRequest() {
@@ -361,8 +369,8 @@ public class Magic_Activity extends FragmentActivity implements
 
 	@Override
 	public boolean onPrepareOptionsMenu(Menu menu) {
-		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-		menu.findItem(R.id.action_search).setVisible(!drawerOpen);
+//		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
+//		menu.findItem(R.id.action_search).setVisible(!drawerOpen);
 
 		// hide home help button in menu
 		if (PublicPos == 0) {
@@ -430,20 +438,20 @@ public class Magic_Activity extends FragmentActivity implements
 		}
 	}
 
-	private class DrawerItemClickListener implements
-			ListView.OnItemClickListener {
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position,
-				long id) {
-			selectItem(position);
-			uncheckAllChildrenCascade(parent);
-			CheckedTextView txtview = ((CheckedTextView) view
-					.findViewById(R.id.title));
-			txtview.setChecked(true);
-
-		}
-
-	}
+//	private class DrawerItemClickListener implements
+//			ListView.OnItemClickListener {
+//		@Override
+//		public void onItemClick(AdapterView<?> parent, View view, int position,
+//				long id) {
+//			selectItem(position);
+//			uncheckAllChildrenCascade(parent);
+//			CheckedTextView txtview = ((CheckedTextView) view
+//					.findViewById(R.id.title));
+//			txtview.setChecked(true);
+//
+//		}
+//
+//	}
 
 	// unColor All Drawer items
 	private void uncheckAllChildrenCascade(ViewGroup vg) {
@@ -456,63 +464,76 @@ public class Magic_Activity extends FragmentActivity implements
 			}
 		}
 	}
+	private void setupDrawerContent(NavigationView navigationView) {
+		navigationView.setNavigationItemSelectedListener(
+				new NavigationView.OnNavigationItemSelectedListener() {
+					@Override
+					public boolean onNavigationItemSelected(MenuItem menuItem) {
+						selectItem(menuItem);
+						return true;
+					}
+				});
+        navigationView.setCheckedItem(R.id.nav_home);
 
-	private void selectItem(int position) {
 
-		PublicPos = position;
-		switch (position) {
+	}
 
-		case 0:
-			Home_Fragment homeFrag = new Home_Fragment();
-			fragmentManager = getSupportFragmentManager();
-			fragmentManager.beginTransaction()
-					.replace(R.id.content_frame, homeFrag, "home").commit();
 
-			break;
+	private void selectItem(MenuItem menuItem) {
 
-		case 1:
-			Authors_Fragment Authors_Frag = new Authors_Fragment();
-			fragmentManager = getSupportFragmentManager();
-			fragmentManager.beginTransaction()
-					.replace(R.id.content_frame, Authors_Frag).commit();
+            switch (menuItem.getItemId()) {
 
-			break;
+                case R.id.nav_home:
+                    Home_Fragment homeFrag = new Home_Fragment();
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, homeFrag, "home").commit();
 
-		case 2:
-			CategoriesFragment catfragment = new CategoriesFragment();
-			fragmentManager = getSupportFragmentManager();
-			fragmentManager.beginTransaction()
-					.replace(R.id.content_frame, catfragment).commit();
+                    break;
 
-			break;
+                case R.id.nav_authors:
+                    Authors_Fragment Authors_Frag = new Authors_Fragment();
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, Authors_Frag).commit();
 
-		case 3:
-			Quotes_Fragment Quotes_fragment = new Quotes_Fragment();
-			fragmentManager = getSupportFragmentManager();
-			fragmentManager.beginTransaction()
-					.replace(R.id.content_frame, Quotes_fragment).commit();
+                    break;
 
-			break;
-		case 4:
-			Fav_Quotes_Fragment fav_Quotes_fragment = new Fav_Quotes_Fragment();
-			fav_Quotes_fragment.CheckFavourable(true);
-			fragmentManager = getSupportFragmentManager();
-			fragmentManager.beginTransaction()
-					.replace(R.id.content_frame, fav_Quotes_fragment).commit();
-			break;
-		case 5:
-			AddQuote_Fragment add_quote = new AddQuote_Fragment();
-			fragmentManager = getSupportFragmentManager();
-			fragmentManager.beginTransaction()
-					.replace(R.id.content_frame, add_quote).commit();
-			break;
-		case 6:
+                case R.id.nav_categories:
+                    CategoriesFragment catfragment = new CategoriesFragment();
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, catfragment).commit();
 
-			Intent billingX = new Intent(getApplicationContext(), Billing.class);
-			startActivity(billingX);
-			break;
+                    break;
 
-		}
+                case R.id.nav_quotes:
+                    Quotes_Fragment Quotes_fragment = new Quotes_Fragment();
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, Quotes_fragment).commit();
+
+                    break;
+                case R.id.nav_fav:
+                    Fav_Quotes_Fragment fav_Quotes_fragment = new Fav_Quotes_Fragment();
+                    fav_Quotes_fragment.CheckFavourable(true);
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, fav_Quotes_fragment).commit();
+                    break;
+                case R.id.nav_suggest:
+                    AddQuote_Fragment add_quote = new AddQuote_Fragment();
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame, add_quote).commit();
+                    break;
+                case R.id.nav_premium:
+
+                    Intent billingX = new Intent(getApplicationContext(), Billing.class);
+                    startActivity(billingX);
+                    break;
+
+            }
 
 		if (PublicPos > 0 && 6 > PublicPos) {
 
@@ -524,18 +545,18 @@ public class Magic_Activity extends FragmentActivity implements
 						R.color.Purple_Deep_Black));
 			}
 		}
-		mDrawerList.setItemChecked(position, true);
+//		mDrawerList.setItemChecked(position, true);
 
-		if (position < 6) {
-			setTitle(mPlanetTitles[position]);
-		}
-		mDrawerLayout.closeDrawer(mDrawerList);
+
+		menuItem.setChecked(true);
+		mDrawerLayout.closeDrawers();
+//		mDrawerLayout.closeDrawer(mDrawerList);
 	}
 
 	@Override
 	public void setTitle(CharSequence title) {
 		mTitle = title;
-		getActionBar().setTitle(mTitle);
+//		getActionBar().setTitle(mTitle);
 	}
 
 	@Override
