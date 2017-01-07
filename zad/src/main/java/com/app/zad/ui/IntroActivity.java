@@ -1,8 +1,5 @@
 package com.app.zad.ui;
 
-import java.util.List;
-
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -28,6 +25,8 @@ import com.app.zad.helpUI.ReviewFragment;
 import com.app.zad.helpUI.StepPagerStrip;
 import com.app.zad.helpUI.Welcome3Fragment;
 
+import java.util.List;
+
 public class IntroActivity extends FragmentActivity implements
 		PageFragmentCallbacks, ReviewFragment.Callbacks, ModelCallbacks {
 	private ViewPager mPager;
@@ -46,7 +45,7 @@ public class IntroActivity extends FragmentActivity implements
 	private StepPagerStrip mStepPagerStrip;
 
 	final Context context = IntroActivity.this;
-	private ActionBar ab;
+//	private ActionBar ab;
 	SharedPreferences sp;
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -54,9 +53,9 @@ public class IntroActivity extends FragmentActivity implements
 
 		setContentView(R.layout.intro_setup);
 		// KAZAKY
-		ab = getActionBar();
+//		ab = getActionBar();
 
-		ab.hide();
+//		ab.hide();
 
 		Window window;
 
