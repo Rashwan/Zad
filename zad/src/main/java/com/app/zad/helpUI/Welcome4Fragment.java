@@ -2,13 +2,12 @@ package com.app.zad.helpUI;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.larvalabs.svgandroid.SVG;
-import com.larvalabs.svgandroid.SVGParser;
 import com.app.zad.R;
 
 public class Welcome4Fragment extends Fragment {
@@ -30,8 +29,7 @@ public class Welcome4Fragment extends Fragment {
 		View view = inflater.inflate(R.layout.helper_wid, container, false);
 
 		ImageView meego = (ImageView) view.findViewById(R.id.image_Faces);
-		SVG svg = SVGParser.getSVGFromResource(getResources(), R.raw.widget);
-		meego.setImageDrawable(svg.createPictureDrawable());
+		meego.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.ic_widget));
 		meego.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
 		return view;

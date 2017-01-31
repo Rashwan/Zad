@@ -10,6 +10,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,8 +26,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.app.zad.R;
-import com.larvalabs.svgandroid.SVG;
-import com.larvalabs.svgandroid.SVGParser;
 
 @SuppressWarnings("deprecation")
 public class AboutActivity extends FragmentActivity implements
@@ -190,8 +189,7 @@ public class AboutActivity extends FragmentActivity implements
 					.findViewById(R.id.about_googleplus);
 			ImageView meego = (ImageView) rootView
 					.findViewById(R.id.imageViewLogo);
-			SVG svg = SVGParser.getSVGFromResource(getResources(), R.raw.zad);
-			meego.setImageDrawable(svg.createPictureDrawable());
+			meego.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.ic_zad));
 			meego.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
 			WebsiteBtn.setOnClickListener(this);
