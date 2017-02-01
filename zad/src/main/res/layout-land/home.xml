@@ -213,8 +213,7 @@
             android:id="@+id/relativeLayout2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingBottom="15dp"
-            android:paddingTop="?android:attr/actionBarSize" >
+            android:paddingBottom="15dp">
 
             <ImageButton
                 android:id="@+id/imageViewLogo"

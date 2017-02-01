@@ -206,7 +206,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textViewx"
-        android:layout_weight="0"
         android:background="@drawable/card_color_yellow" >
 
         <RelativeLayout
@@ -214,7 +213,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="15dp"
-            android:paddingTop="?android:attr/actionBarSize" >
+           >
 
             <ImageButton
                 android:id="@+id/imageViewLogo"
