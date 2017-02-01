@@ -7,12 +7,6 @@
 
     <!-- Remember : Add Material like , image beside every topic & Material Padding -->
 
-    <RelativeLayout
-        android:id="@+id/color_layout"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/Purple_Deep" />
-
     <ScrollView
         android:id="@+id/Scrolly"
         style="@style/ScrollBarZad_Theme_Purple"
