@@ -26,10 +26,9 @@
         <item name="android:fastScrollThumbDrawable">@drawable/zad_theme_purple_fastscroll_thumb_holo</item>
         <item name="android:editTextStyle">@style/ZadEditText.Style</item>
         <item name="android:windowBackground">@null</item>
-        <item name="android:actionBarStyle">@style/ZadActionBarStyle.Transparent</item>
-        <item name="android:windowActionBarOverlay">true</item>
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_drawable</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 
     <style name="Zad_text">
@@ -51,31 +50,31 @@
         <item name="android:gravity">right</item>
     </style>
 
-    <style name="ZadActionBarStyle.Transparent" parent="Widget.AppCompat.ActionBar">
-        <item name="android:button">@style/ZadActionButton</item>
-        <item name="android:background">@null</item>
-        <item name="android:actionBarItemBackground">@drawable/selectable_background_zad_theme_purple</item>
-        <item name="android:popupMenuStyle">@style/PopupMenu.Zad_theme_purple</item>
-        <item name="android:dropDownListViewStyle">@style/DropDownListView.Zad_theme_purple</item>
-        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Zad_theme_purple</item>
-        <item name="android:actionDropDownStyle">@style/DropDownNav.Zad_theme_purple</item>
-        <item name="android:actionBarStyle">@style/ActionBar.Solid.Zad_theme_purple</item>
-        <item name="android:actionModeBackground">@drawable/cab_background_top_zad_theme_purple</item>
-        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_zad_theme_purple</item>
-        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Zad_theme_purple</item>
+    <!--<style name="ZadActionBarStyle.Transparent" parent="Widget.AppCompat.ActionBar">-->
+        <!--<item name="android:button">@style/ZadActionButton</item>-->
+        <!--<item name="android:background">@null</item>-->
+        <!--<item name="android:actionBarItemBackground">@drawable/selectable_background_zad_theme_purple</item>-->
+        <!--<item name="android:popupMenuStyle">@style/PopupMenu.Zad_theme_purple</item>-->
+        <!--<item name="android:dropDownListViewStyle">@style/DropDownListView.Zad_theme_purple</item>-->
+        <!--<item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Zad_theme_purple</item>-->
+        <!--<item name="android:actionDropDownStyle">@style/DropDownNav.Zad_theme_purple</item>-->
+        <!--<item name="android:actionBarStyle">@style/ActionBar.Solid.Zad_theme_purple</item>-->
+        <!--<item name="android:actionModeBackground">@drawable/cab_background_top_zad_theme_purple</item>-->
+        <!--<item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_zad_theme_purple</item>-->
+        <!--<item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Zad_theme_purple</item>-->
 
-        <!-- Light.DarkActionBar specific -->
-        <item name="android:actionBarWidgetTheme">@style/Theme.Zad_theme_purple.Widget</item>
-        <item name="android:editTextBackground">@drawable/zad_theme_purple_edit_text_holo_light</item>
-        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
-        <item name="android:titleTextStyle">@style/ZadActionBarStyle.Transparent.TitleTextStyle</item>
-    </style>
+        <!--&lt;!&ndash; Light.DarkActionBar specific &ndash;&gt;-->
+        <!--<item name="android:actionBarWidgetTheme">@style/Theme.Zad_theme_purple.Widget</item>-->
+        <!--<item name="android:editTextBackground">@drawable/zad_theme_purple_edit_text_holo_light</item>-->
+        <!--<item name="android:displayOptions">homeAsUp|showHome|showTitle</item>-->
+        <!--<item name="android:titleTextStyle">@style/ZadActionBarStyle.Transparent.TitleTextStyle</item>-->
+    <!--</style>-->
 
-    <style name="ZadActionBarStyle.Transparent.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:paddingLeft">20dp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
+    <!--<style name="ZadActionBarStyle.Transparent.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">-->
+        <!--<item name="android:textColor">@android:color/white</item>-->
+        <!--<item name="android:paddingLeft">20dp</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+    <!--</style>-->
 
     <style name="TextAppearanceFinish" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@color/white</item>
@@ -113,17 +112,17 @@
         <item name="android:paddingRight">12dp</item>
     </style>
 
-    <style name="ActionBar.Solid.Zad_theme_purple" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/ab_solid_zad_theme_purple</item>
-        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_zad_theme_purple</item>
-        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_zad_theme_purple</item>
-        <item name="android:progressBarStyle">@style/ProgressBar.Zad_theme_purple</item>
-    </style>
+    <!--<style name="ActionBar.Solid.Zad_theme_purple" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">-->
+        <!--<item name="android:background">@drawable/ab_solid_zad_theme_purple</item>-->
+        <!--<item name="android:backgroundStacked">@drawable/ab_stacked_solid_zad_theme_purple</item>-->
+        <!--<item name="android:backgroundSplit">@drawable/ab_bottom_solid_zad_theme_purple</item>-->
+        <!--<item name="android:progressBarStyle">@style/ProgressBar.Zad_theme_purple</item>-->
+    <!--</style>-->
 
-    <style name="ActionBar.Transparent.Zad_theme_purple" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@drawable/ab_transparent_zad_theme_purple</item>
-        <item name="android:progressBarStyle">@style/ProgressBar.Zad_theme_purple</item>
-    </style>
+    <!--<style name="ActionBar.Transparent.Zad_theme_purple" parent="Widget.AppCompat.ActionBar">-->
+        <!--<item name="android:background">@drawable/ab_transparent_zad_theme_purple</item>-->
+        <!--<item name="android:progressBarStyle">@style/ProgressBar.Zad_theme_purple</item>-->
+    <!--</style>-->
 
     <style name="PopupMenu.Zad_theme_purple" parent="Widget.AppCompat.ListPopupWindow">
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_zad_theme_purple</item>
@@ -133,9 +132,9 @@
         <item name="android:listSelector">@drawable/selectable_background_zad_theme_purple</item>
     </style>
 
-    <style name="ActionBarTabStyle.Zad_theme_purple" parent="Widget.AppCompat.ActionBar.TabView">
-        <item name="android:background">@drawable/tab_indicator_ab_zad_theme_purple</item>
-    </style>
+    <!--<style name="ActionBarTabStyle.Zad_theme_purple" parent="Widget.AppCompat.ActionBar.TabView">-->
+        <!--<item name="android:background">@drawable/tab_indicator_ab_zad_theme_purple</item>-->
+    <!--</style>-->
 
     <style name="DropDownNav.Zad_theme_purple" parent="Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/spinner_background_ab_zad_theme_purple</item>
@@ -174,15 +173,17 @@
         <item name="android:fastScrollThumbDrawable">@drawable/zad_theme_purple_fastscroll_thumb_holo</item>
         <item name="android:editTextStyle">@style/ZadEditText.Style</item>
         <item name="android:windowBackground">@color/black</item>
-        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_drawable</item>
         <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+
     </style>
 
     <style name="Zad_yellow_Overlay" parent="@style/_Zad_Theme_yellow">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar.Transparent</item>
+        <!--<item name="android:actionBarStyle">@style/Widget.Styled.ActionBar.Transparent</item>-->
     </style>
 
 </resources>

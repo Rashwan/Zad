@@ -15,8 +15,9 @@
             />
         <item
             android:id="@+id/nav_categories"
-            android:title="الحكماء"
-            android:icon="@drawable/ic_drawer_categories"/>
+            android:title="التصنيفات"
+            android:icon="@drawable/ic_drawer_categories"
+            />
         <item
             android:id="@+id/nav_quotes"
             android:title="الحكم"
@@ -36,7 +37,7 @@
         <item
             android:id="@+id/nav_footer"
             app:actionLayout="@layout/footer_layout"
-            android:title="Social"/>
+            android:title="" />
 
 
     </group>

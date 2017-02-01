@@ -1,10 +1,7 @@
 package com.app.zad.ui;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Random;
-
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -17,13 +14,18 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +44,6 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.app.zad.R;
-import com.app.zad.helper.ButtonTransitionDrawable;
 import com.app.zad.helper.Drawable_into_Bitmap;
 import com.app.zad.helper.GetCroppedBitmap;
 import com.app.zad.helper.JoyStickAnimation;
@@ -51,6 +52,11 @@ import com.app.zad.work_in_background.Alarms_Set_up;
 import com.github.amlcurran.showcaseview.ShowcaseView;
 import com.github.amlcurran.showcaseview.targets.Target;
 import com.github.amlcurran.showcaseview.targets.ViewTarget;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Random;
 
 public class Home_Fragment extends Fragment implements OnClickListener {
 
@@ -152,8 +158,10 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 	private Animation grow;
 	private TextView right_Red;
 	private TextView left_Red;
+    private ActionBar actionBar;
 
-	public class ShowCaseViewOnClick implements View.OnClickListener {
+
+    public class ShowCaseViewOnClick implements View.OnClickListener {
 
 		@Override
 		public void onClick(View v) {
@@ -208,11 +216,8 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 			final ViewGroup container, final Bundle savedInstanceState) {
 
 		view = inflater.inflate(R.layout.home, container, false);
-		if (android.os.Build.VERSION.SDK_INT >= 21) {
-			window = getActivity().getWindow();
-			window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-			window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-		}
+        actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+
 
 		a = getActivity();
 
@@ -254,12 +259,15 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 		mCallback.onMazagGet(lastMazgID);
 		CurrentFaceValue = lastMazgID;
-		Color_layout.setBackgroundDrawable(ColorToDrawable(CurrentFaceValue));
-		if (android.os.Build.VERSION.SDK_INT >= 21) {
-			window.setStatusBarColor(MazagToColor(CurrentFaceValue));
-		}
+		Color_layout.setBackground(new ColorDrawable(getMatchingColor(CurrentFaceValue)));
+        actionBar.setBackgroundDrawable(new ColorDrawable(getMatchingColor(CurrentFaceValue)));
+        if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+            window = getActivity().getWindow();
+            window.setStatusBarColor(MazagToColor(CurrentFaceValue));
+        }
 
-		JoyStick = (SeekBar) view.findViewById(R.id.JoyStickController);
+
+        JoyStick = (SeekBar) view.findViewById(R.id.JoyStickController);
 		btnRefresh = (ImageView) view.findViewById(R.id.Refresh_button);
 		vibro = (Vibrator) this.getActivity().getSystemService(
 				Context.VIBRATOR_SERVICE);
@@ -489,7 +497,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 			Intent intro = new Intent(getActivity(), IntroActivity.class);
 			startActivityForResult(intro, 1);
 
-			SharedPreferences.Editor editor = Hmprefs.edit();
+			Editor editor = Hmprefs.edit();
 			editor.putBoolean("firstTime", true);
 			editor.commit();
 		}
@@ -736,13 +744,13 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 	}
 
 	@Override
-	public void onAttach(Activity activity) {
-		super.onAttach(activity);
+	public void onAttach(Context context) {
+		super.onAttach(context);
 
 		try {
-			mCallback = (OnMazagSelectedListener) activity;
+			mCallback = (OnMazagSelectedListener) context;
 		} catch (ClassCastException e) {
-			throw new ClassCastException(activity.toString()
+			throw new ClassCastException(context.getClass().getSimpleName()
 					+ " must implement OnHeadlineSelectedListener");
 		}
 	}
@@ -858,20 +866,32 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 			break;
 
 		case R.id.happy:
-			Color_layout.setBackgroundDrawable(MagicBack(CurrentFaceValue, 0));
+            dlg.dismiss();
 
-			CurrentFaceValue = 0;
+            animateToolbar(getMatchingColor(CurrentFaceValue), getMatchingColor(0));
+            animateCard(getMatchingColor(CurrentFaceValue), getMatchingColor(0));
+            if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+                animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(0));
+            }
+
+            CurrentFaceValue = 0;
 			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			update_Mazag_Card(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 
-			dlg.dismiss();
+
 			SetSelectedFAB(true);
 
 			break;
 		case R.id.loved:
-			Color_layout.setBackgroundDrawable(MagicBack(CurrentFaceValue, 1));
+            dlg.dismiss();
+
+            animateToolbar(getMatchingColor(CurrentFaceValue), getMatchingColor(1));
+            animateCard(getMatchingColor(CurrentFaceValue), getMatchingColor(1));
+            if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+                animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(1));
+            }
 			CurrentFaceValue = 1;
 			mCallback.onMazagGet(CurrentFaceValue);
 
@@ -879,70 +899,99 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
 
-			dlg.dismiss();
 			SetSelectedFAB(true);
 
 			break;
 		case R.id.afraid:
-			Color_layout.setBackgroundDrawable(MagicBack(CurrentFaceValue, 2));
+            dlg.dismiss();
+
+            animateToolbar(getMatchingColor(CurrentFaceValue), getMatchingColor(2));
+            animateCard(getMatchingColor(CurrentFaceValue), getMatchingColor(2));
+            if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+                animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(2));
+            }
+
 			CurrentFaceValue = 2;
 			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
 
-			dlg.dismiss();
 			SetSelectedFAB(true);
 
 			break;
 		case R.id.Angry:
-			Color_layout.setBackgroundDrawable(MagicBack(CurrentFaceValue, 3));
+            dlg.dismiss();
+
+            animateToolbar(getMatchingColor(CurrentFaceValue), getMatchingColor(3));
+            animateCard(getMatchingColor(CurrentFaceValue), getMatchingColor(3));
+            if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+                animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(3));
+            }
+
 			CurrentFaceValue = 3;
 			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
 
-			dlg.dismiss();
 			SetSelectedFAB(true);
 
 			break;
 
 		case R.id.Sad:
-			Color_layout.setBackgroundDrawable(MagicBack(CurrentFaceValue, 4));
+            dlg.dismiss();
+
+            animateToolbar(getMatchingColor(CurrentFaceValue), getMatchingColor(4));
+            animateCard(getMatchingColor(CurrentFaceValue), getMatchingColor(4));
+            if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+                animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(4));
+            }
+
 			CurrentFaceValue = 4;
 			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
 
-			dlg.dismiss();
 			SetSelectedFAB(true);
 
 			break;
 
 		case R.id.compressed:
-			Color_layout.setBackgroundDrawable(MagicBack(CurrentFaceValue, 5));
+            dlg.dismiss();
+
+            animateToolbar(getMatchingColor(CurrentFaceValue), getMatchingColor(5));
+            animateCard(getMatchingColor(CurrentFaceValue), getMatchingColor(5));
+            if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+                animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(5));
+            }
+
 			CurrentFaceValue = 5;
 			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
 
-			dlg.dismiss();
 			SetSelectedFAB(true);
 
 			break;
 
 		case R.id.mabdoon:
-			Color_layout.setBackgroundDrawable(MagicBack(CurrentFaceValue, 6));
+            dlg.dismiss();
+
+            animateToolbar(getMatchingColor(CurrentFaceValue), getMatchingColor(6));
+            animateCard(getMatchingColor(CurrentFaceValue), getMatchingColor(6));
+            if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
+                animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(6));
+            }
+
 			CurrentFaceValue = 6;
 			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
 
-			dlg.dismiss();
 			SetSelectedFAB(true);
 
 			break;
@@ -1139,9 +1188,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		if (isAnime) {
 			MzagyFaceMutton.startAnimation(grow_fade);
 		}
-		if (android.os.Build.VERSION.SDK_INT >= 21) {
-			window.setStatusBarColor(MazagToColor(CurrentFaceValue));
-		}
+
 	}
 
 	private void PreSelectedFace() {
@@ -1156,7 +1203,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 						R.drawable.face_stressed),
 				getActivity().getResources().getDrawable(R.drawable.face_bored) };
 
-		Drawable d = getResources().getDrawable(
+		Drawable d = ContextCompat.getDrawable(getActivity(),
 				R.drawable.add_schedule_fab_checked_default);
 		// Drawable d2 = getResources().getDrawable(
 		// R.drawable.add_schedule_fab_checked_black);
@@ -1175,26 +1222,26 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 		switch (z) {
 		case 0:
-			happy_big.setBackgroundDrawable(btd);
+			happy_big.setBackground(btd);
 
 			break;
 		case 1:
-			loved_big.setBackgroundDrawable(btd);
+			loved_big.setBackground(btd);
 			break;
 		case 2:
-			afraid_big.setBackgroundDrawable(btd);
+			afraid_big.setBackground(btd);
 			break;
 		case 3:
-			angry_big.setBackgroundDrawable(btd);
+			angry_big.setBackground(btd);
 			break;
 		case 4:
-			sad_big.setBackgroundDrawable(btd);
+			sad_big.setBackground(btd);
 			break;
 		case 5:
-			compress_big.setBackgroundDrawable(btd);
+			compress_big.setBackground(btd);
 			break;
 		case 6:
-			mabdoon_big.setBackgroundDrawable(btd);
+			mabdoon_big.setBackground(btd);
 			break;
 
 		default:
@@ -1203,16 +1250,16 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 	}
 
-	public Drawable ColorToDrawable(int GiveMeNumber) {
-		Drawable[] MazgaatColors = {
-				getActivity().getResources().getDrawable(R.color.yellow),
-				getActivity().getResources().getDrawable(R.color.pink),
-				getActivity().getResources().getDrawable(R.color.blue_grey),
-				getActivity().getResources().getDrawable(R.color.red),
-				getActivity().getResources().getDrawable(R.color.grey),
-				getActivity().getResources().getDrawable(R.color.orange),
-				getActivity().getResources().getDrawable(R.color.green),
-				getActivity().getResources().getDrawable(R.color.white)
+	public int getMatchingColor(int GiveMeNumber) {
+		int[] MazgaatColors = {
+				ContextCompat.getColor(getActivity(),R.color.yellow),
+                ContextCompat.getColor(getActivity(),R.color.pink),
+                ContextCompat.getColor(getActivity(),R.color.blue_grey),
+                ContextCompat.getColor(getActivity(),R.color.red),
+                ContextCompat.getColor(getActivity(),R.color.grey),
+				ContextCompat.getColor(getActivity(),R.color.orange),
+                ContextCompat.getColor(getActivity(),R.color.green),
+                ContextCompat.getColor(getActivity(),R.color.white)
 
 		};
 
@@ -1223,8 +1270,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		int[] MazgaatColorsX = {
 				getActivity().getResources().getColor(R.color.yellow_clicked),
 				getActivity().getResources().getColor(R.color.pink_clicked),
-				getActivity().getResources()
-						.getColor(R.color.blue_grey_clicked),
+				getActivity().getResources().getColor(R.color.blue_grey_clicked),
 				getActivity().getResources().getColor(R.color.red_reverse),
 				getActivity().getResources().getColor(R.color.grey_clicked),
 				getActivity().getResources().getColor(R.color.orange_reverse),
@@ -1232,30 +1278,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		return MazgaatColorsX[GiveMeNumber];
 	}
 
-	public ButtonTransitionDrawable MagicBack(int fromColor, int ToColor) {
-		Drawable[] MazgaatColors = {
-				getActivity().getResources().getDrawable(R.color.yellow),
-				getActivity().getResources().getDrawable(R.color.pink),
-				getActivity().getResources().getDrawable(R.color.blue_grey),
-				getActivity().getResources().getDrawable(R.color.red),
-				getActivity().getResources().getDrawable(R.color.grey),
-				getActivity().getResources().getDrawable(R.color.orange),
-				getActivity().getResources().getDrawable(R.color.green),
-				getActivity().getResources().getDrawable(R.color.white)
 
-		};
-
-		Drawable[] ResultMagic = new Drawable[2];
-		ResultMagic[0] = MazgaatColors[fromColor];
-		ResultMagic[1] = MazgaatColors[ToColor];
-
-		ButtonTransitionDrawable btd = new ButtonTransitionDrawable(ResultMagic);
-		btd.startTransition(1000, 100);
-
-		save_My_Mazag(ToColor);
-		return btd;
-
-	}
 
 	private void Open_Zabtly_or_Not() {
 
@@ -1362,16 +1385,46 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 	}
 
-	@Override
-	public void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-	}
+	private void animateToolbar(int colorFrom,int colorTo){
+        ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
+        colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                actionBar.setBackgroundDrawable(new ColorDrawable((Integer) animation.getAnimatedValue()));
+            }
+        });
+        colorAnimation.setDuration(1000);
+        colorAnimation.setStartDelay(100);
+        colorAnimation.start();
+    }
+    private void animateCard(int colorFrom,int colorTo){
+        ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
+        colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                Color_layout.setBackground(new ColorDrawable((Integer) animation.getAnimatedValue()));
+            }
+        });
+        colorAnimation.setDuration(1000);
+        colorAnimation.setStartDelay(100);
+        colorAnimation.start();
+    }
 
-	@Override
-	public void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
-	}
+    @RequiresApi(api = VERSION_CODES.LOLLIPOP)
+    private void animateStatusBar(int colorFrom,int colorTo){
+
+        final Window window = getActivity().getWindow();
+        ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
+        colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                window.setStatusBarColor((Integer) animation.getAnimatedValue());
+            }
+        });
+        colorAnimation.setDuration(1000);
+        colorAnimation.setStartDelay(100);
+        colorAnimation.start();
+
+    }
 
 }
