@@ -23,7 +23,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
             android:paddingBottom="13dp"
-            android:paddingTop="?android:attr/actionBarSize" >
+           >
 
             <ImageButton
                 android:id="@+id/imageViewLogo"

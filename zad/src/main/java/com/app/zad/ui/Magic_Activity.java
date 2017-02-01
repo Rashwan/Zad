@@ -14,12 +14,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -49,7 +50,7 @@ import java.util.Map;
 import RateUs.RatingDialog;
 
 @SuppressWarnings("deprecation")
-public class Magic_Activity extends FragmentActivity implements
+public class Magic_Activity extends AppCompatActivity implements
 		Home_Fragment.OnMazagSelectedListener {
 	private static final String QUOTE__TO_REPORT_FIELD = "entry.1495570162";
 	private static final String REASON_FIELD = "entry.2098680843";
@@ -112,6 +113,14 @@ public class Magic_Activity extends FragmentActivity implements
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nvView);
 		setupDrawerContent(navigationView);
+		Toolbar toolbar = (Toolbar) findViewById(R.id.home_toolbar);
+		setSupportActionBar(toolbar);
+        mDrawerToggle = new ActionBarDrawerToggle(this,mDrawerLayout,toolbar,R.string.drawer_open
+        ,R.string.drawer_close);
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
 
 
 		mContext = this;
@@ -226,12 +235,12 @@ public class Magic_Activity extends FragmentActivity implements
 //		mDrawerList.setAdapter(D_adapter);
 //		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
-//		getActionBar().setDisplayHomeAsUpEnabled(true);
-//		getActionBar().setHomeButtonEnabled(true);
-//		getActionBar().setIcon(
+//		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//		getSupportActionBar().setHomeButtonEnabled(true);
+//		getSupportActionBar().setIcon(
 //				new ColorDrawable(getResources().getColor(
 //						android.R.color.transparent)));
-//		getActionBar().setBackgroundDrawable(
+//		getSupportActionBar().setBackgroundDrawable(
 //				getResources().getDrawable(R.color.transparent));
 
 		Display display = ((WindowManager) getApplicationContext()
@@ -246,22 +255,22 @@ public class Magic_Activity extends FragmentActivity implements
 		} else {
 			HotBaby = 1;
 		}
-		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-				RotKo[HotBaby], R.string.drawer_open, R.string.drawer_close) {
-
-			public void onDrawerClosed(View view) {
-//				getActionBar().setTitle(mTitle);
-
-				invalidateOptionsMenu();
-			}
-
-			public void onDrawerOpened(View drawerView) {
-//				getActionBar().setTitle(mDrawerTitle);
-
-				invalidateOptionsMenu();
-			}
-		};
-		mDrawerLayout.setDrawerListener(mDrawerToggle);
+//		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
+//				RotKo[HotBaby], R.string.drawer_open, R.string.drawer_close) {
+//
+//			public void onDrawerClosed(View view) {
+////				getActionBar().setTitle(mTitle);
+//
+//				invalidateOptionsMenu();
+//			}
+//
+//			public void onDrawerOpened(View drawerView) {
+////				getActionBar().setTitle(mDrawerTitle);
+//
+//				invalidateOptionsMenu();
+//			}
+//		};
+//		mDrawerLayout.setDrawerListener(mDrawerToggle);
 
 
 		open_Zabatly_from_notif();
@@ -556,7 +565,7 @@ public class Magic_Activity extends FragmentActivity implements
 	@Override
 	public void setTitle(CharSequence title) {
 		mTitle = title;
-//		getActionBar().setTitle(mTitle);
+		getSupportActionBar().setTitle(mTitle);
 	}
 
 	@Override

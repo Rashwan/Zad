@@ -11,7 +11,7 @@
 
     <style name="Zad_Theme_Purple" parent="@style/_Zad_Theme_Purple" />
 
-    <style name="_Zad_Theme_Purple" parent="Theme.AppCompat">
+    <style name="_Zad_Theme_Purple" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:editTextBackground">@drawable/zad_theme_purple_edit_text_holo_light</item>
         <item name="android:textColorHint">@color/grey</item>
         <item name="textAppearanceFinish">@style/TextAppearanceFinish</item>
@@ -159,7 +159,7 @@
 
     <style name="Zad_yellow" parent="@style/_Zad_Theme_yellow" />
 
-    <style name="_Zad_Theme_yellow" parent="Theme.AppCompat">
+    <style name="_Zad_Theme_yellow" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:editTextBackground">@drawable/zad_theme_purple_edit_text_holo_light</item>
         <item name="android:textColorHint">@color/grey</item>
         <item name="textAppearanceFinish">@style/TextAppearanceFinish</item>

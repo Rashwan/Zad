@@ -1,32 +1,33 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/icon_actionbar_search"
-        android:showAsAction="always"
+        app:showAsAction="always"
         android:title="@string/search"/>
     <item
         android:id="@+id/menusetting"
         android:icon="@drawable/menu_overflow"
-        android:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:title="@string/menu">
         <menu>
             <item
                 android:id="@+id/Settings"
                 android:icon="@drawable/ic_ab_settings"
-                android:showAsAction="never"
+                app:showAsAction="never"
                 android:title="@string/settings">
             </item>
             <item
                 android:id="@+id/Help"
                 android:icon="@drawable/ic_ab_guide"
-                android:showAsAction="never"
+                app:showAsAction="never"
                 android:title="@string/zad_guide">
             </item>
             <item
                 android:id="@+id/Help_showcase"
                 android:icon="@drawable/ic_ab_help"
-                android:showAsAction="never"
+                app:showAsAction="never"
                 android:title="@string/zad_help">
             </item>
         </menu>
