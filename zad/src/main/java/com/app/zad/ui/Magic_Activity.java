@@ -16,7 +16,7 @@ import android.os.StrictMode;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -155,122 +155,39 @@ public class Magic_Activity extends AppCompatActivity implements
 				.getStringArray(R.array.NavBarDrawerNames);
 //		mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
-		List<DrawerItem> Data_Adapter = new ArrayList<DrawerItem>();
+//		List<DrawerItem> Data_Adapter = new ArrayList<DrawerItem>();
+//
+//		Data_Adapter.add(new DrawerItem(mPlanetTitles[0],
+//				R.drawable.ic_drawer_dashboard));
+//		Data_Adapter.add(new DrawerItem(mPlanetTitles[1],
+//				R.drawable.ic_drawer_authors));
+//		Data_Adapter.add(new DrawerItem(mPlanetTitles[2],
+//				R.drawable.ic_drawer_categories));
+//		Data_Adapter.add(new DrawerItem(mPlanetTitles[3],
+//				R.drawable.ic_drawer_quotes));
+//		Data_Adapter.add(new DrawerItem(mPlanetTitles[4],
+//				R.drawable.ic_drawer_fav));
+//		Data_Adapter.add(new DrawerItem(mPlanetTitles[5],
+//				R.drawable.ic_drawer_suggest));
 
-		Data_Adapter.add(new DrawerItem(mPlanetTitles[0],
-				R.drawable.ic_drawer_dashboard));
-		Data_Adapter.add(new DrawerItem(mPlanetTitles[1],
-				R.drawable.ic_drawer_authors));
-		Data_Adapter.add(new DrawerItem(mPlanetTitles[2],
-				R.drawable.ic_drawer_categories));
-		Data_Adapter.add(new DrawerItem(mPlanetTitles[3],
-				R.drawable.ic_drawer_quotes));
-		Data_Adapter.add(new DrawerItem(mPlanetTitles[4],
-				R.drawable.ic_drawer_fav));
-		Data_Adapter.add(new DrawerItem(mPlanetTitles[5],
-				R.drawable.ic_drawer_suggest));
-
-		if (isPremium == false) {
-			Data_Adapter.add(new DrawerItem(mPlanetTitles[6],
-					R.drawable.ic_lock));
-			mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow,
-					GravityCompat.START);
+		if (!isPremium) {
+			navigationView.getMenu().findItem(R.id.nav_premium).setVisible(true);
 		}
 
-		D_adapter = new Drawer_Adapter(this, R.layout.custom_drawer_item,
-				Data_Adapter);
-		View footerView = ((LayoutInflater) getApplicationContext()
-				.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(
-				R.layout.footer_layout, null, true);
 
-		footerView.setClickable(false);
-		ImageView fbButton = (ImageView) footerView.findViewById(R.id.facebook);
-		ImageView TwitButton = (ImageView) footerView
-				.findViewById(R.id.twitter);
-		ImageView GplusButton = (ImageView) footerView
-				.findViewById(R.id.googleplus);
-//		mDrawerList.addFooterView(footerView);
+        setupNavigationFooter();
 
-		String url1 = "https://www.facebook.com/pages/Zad/1519898524894813";
-		String url2 = "https://twitter.com/appZad";
-		String url3 = "https://google.com/+appzad";
-
-		i1 = new Intent(Intent.ACTION_VIEW);
-		try {
-			getPackageManager().getPackageInfo("com.facebook.katana", 0);
-
-			i1.setData(Uri.parse("fb://page/1519898524894813"));
-
-		} catch (Exception e) {
-			i1.setData(Uri.parse(url1));
-
-		}
-
-		i2 = new Intent(Intent.ACTION_VIEW);
-		i2.setData(Uri.parse(url2));
-
-		i3 = new Intent(Intent.ACTION_VIEW);
-		i3.setData(Uri.parse(url3));
-
-		fbButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(i1);
-			}
-		});
-		TwitButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(i2);
-			}
-		});
-		GplusButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(i3);
-			}
-		});
-
-//		mDrawerList.setAdapter(D_adapter);
-//		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-
-//		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//		getSupportActionBar().setHomeButtonEnabled(true);
-//		getSupportActionBar().setIcon(
-//				new ColorDrawable(getResources().getColor(
-//						android.R.color.transparent)));
-//		getSupportActionBar().setBackgroundDrawable(
-//				getResources().getDrawable(R.color.transparent));
 
 		Display display = ((WindowManager) getApplicationContext()
 				.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 		int rotation = display.getRotation();
 
-		int[] RotKo = { R.drawable.drawer_drawable_layer,
-				R.drawable.drawer_drawable_layer_black };
 
 		if (rotation == Surface.ROTATION_0 | rotation == Surface.ROTATION_180) {
 			HotBaby = 0;
 		} else {
 			HotBaby = 1;
 		}
-//		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-//				RotKo[HotBaby], R.string.drawer_open, R.string.drawer_close) {
-//
-//			public void onDrawerClosed(View view) {
-////				getActionBar().setTitle(mTitle);
-//
-//				invalidateOptionsMenu();
-//			}
-//
-//			public void onDrawerOpened(View drawerView) {
-////				getActionBar().setTitle(mDrawerTitle);
-//
-//				invalidateOptionsMenu();
-//			}
-//		};
-//		mDrawerLayout.setDrawerListener(mDrawerToggle);
-
 
 		open_Zabatly_from_notif();
 
@@ -285,7 +202,56 @@ public class Magic_Activity extends AppCompatActivity implements
 
     }
 
-	// NEW - MELEGY
+    private void setupNavigationFooter() {
+        MenuItem footerItem = navigationView.getMenu().findItem(R.id.nav_footer);
+        View footerView = MenuItemCompat.getActionView(footerItem);
+
+        ImageView fbButton = (ImageView) footerView.findViewById(R.id.facebook);
+        ImageView TwitButton = (ImageView) footerView.findViewById(R.id.twitter);
+        ImageView GplusButton = (ImageView) footerView.findViewById(R.id.googleplus);
+
+        String url1 = "https://www.facebook.com/pages/Zad/1519898524894813";
+        String url2 = "https://twitter.com/appZad";
+        String url3 = "https://google.com/+appzad";
+
+        i1 = new Intent(Intent.ACTION_VIEW);
+        try {
+            getPackageManager().getPackageInfo("com.facebook.katana", 0);
+
+            i1.setData(Uri.parse("fb://page/1519898524894813"));
+
+        } catch (Exception e) {
+            i1.setData(Uri.parse(url1));
+
+        }
+
+        i2 = new Intent(Intent.ACTION_VIEW);
+        i2.setData(Uri.parse(url2));
+
+        i3 = new Intent(Intent.ACTION_VIEW);
+        i3.setData(Uri.parse(url3));
+
+        fbButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i1);
+            }
+        });
+        TwitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i2);
+            }
+        });
+        GplusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i3);
+            }
+        });
+    }
+
+    // NEW - MELEGY
 	private void sendUnsetRequest() {
 
 		SharedPreferences prefs = getSharedPreferences("MyPref", 0);
@@ -427,7 +393,7 @@ public class Magic_Activity extends AppCompatActivity implements
 					UserSettingActivity.class);
 			startActivity(i2);
 			return true;
-		case R.id.Help:
+		case R.id.intro:
 
 			Intent i3 = new Intent(Magic_Activity.this, IntroActivity.class);
 			startActivity(i3);

@@ -26,10 +26,13 @@
         <item name="android:fastScrollThumbDrawable">@drawable/zad_theme_purple_fastscroll_thumb_holo</item>
         <item name="android:editTextStyle">@style/ZadEditText.Style</item>
         <item name="android:windowBackground">@null</item>
-        <item name="android:actionBarItemBackground">@drawable/action_bar_item_drawable</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowTranslucentStatus">true</item>
     </style>
+    <style name="quote_toolbar" parent="Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/white</item>
+
+    </style>
+
 
     <style name="Zad_text">
         <item name="android:textColor">@color/black</item>
@@ -124,9 +127,7 @@
         <!--<item name="android:progressBarStyle">@style/ProgressBar.Zad_theme_purple</item>-->
     <!--</style>-->
 
-    <style name="PopupMenu.Zad_theme_purple" parent="Widget.AppCompat.ListPopupWindow">
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_zad_theme_purple</item>
-    </style>
+
 
     <style name="DropDownListView.Zad_theme_purple" parent="Widget.AppCompat.ListView.DropDown">
         <item name="android:listSelector">@drawable/selectable_background_zad_theme_purple</item>
@@ -136,11 +137,7 @@
         <!--<item name="android:background">@drawable/tab_indicator_ab_zad_theme_purple</item>-->
     <!--</style>-->
 
-    <style name="DropDownNav.Zad_theme_purple" parent="Widget.AppCompat.Spinner">
-        <item name="android:background">@drawable/spinner_background_ab_zad_theme_purple</item>
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_zad_theme_purple</item>
-        <item name="android:dropDownSelector">@drawable/selectable_background_zad_theme_purple</item>
-    </style>
+
 
     <style name="ProgressBar.Zad_theme_purple" parent="Widget.AppCompat.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_zad_theme_purple</item>
@@ -150,11 +147,7 @@
         <item name="android:background">@drawable/btn_cab_done_zad_theme_purple</item>
     </style>
 
-    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
-    <style name="Theme.Zad_theme_purple.Widget" parent="Theme.AppCompat">
-        <item name="android:popupMenuStyle">@style/PopupMenu.Zad_theme_purple</item>
-        <item name="android:dropDownListViewStyle">@style/DropDownListView.Zad_theme_purple</item>
-    </style>
+
 
     <style name="Zad_yellow" parent="@style/_Zad_Theme_yellow" />
 
@@ -175,7 +168,6 @@
         <item name="android:windowBackground">@color/black</item>
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_drawable</item>
         <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
-        <item name="android:windowTranslucentStatus">true</item>
 
 
     </style>
@@ -183,7 +175,6 @@
     <style name="Zad_yellow_Overlay" parent="@style/_Zad_Theme_yellow">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowActionBarOverlay">true</item>
-        <!--<item name="android:actionBarStyle">@style/Widget.Styled.ActionBar.Transparent</item>-->
     </style>
 
 </resources>

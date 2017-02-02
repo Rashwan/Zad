@@ -1,12 +1,5 @@
 package com.app.zad.work_in_background;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -28,6 +21,13 @@ import android.util.Log;
 import com.app.zad.R;
 import com.app.zad.ui.Quote;
 import com.app.zad.ui.Quote_view_pager_activity;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
 
 public class morning_evening_Service extends Service {
 
@@ -181,7 +181,7 @@ public class morning_evening_Service extends Service {
 		PendingIntent shareIntent = PendingIntent.getBroadcast(this, 0,
 				shIntent, PendingIntent.FLAG_ONE_SHOT);
 
-		builder.addAction(R.drawable.icon_actionbar_share, getString(R.string.share_quote), shareIntent); // ed-1 replace ic_launher with share icon
+		builder.addAction(R.drawable.ic_share_white_24dp, getString(R.string.share_quote), shareIntent); // ed-1 replace ic_launher with share icon
 
 		//Like Action
 		favcheck = isFav(quote_id);

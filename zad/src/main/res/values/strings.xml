@@ -324,6 +324,7 @@
    <string name="girl">أنثي</string>
    <string name="circle_symbol">●</string>
    <string name="copied_to_clipboard_">تم نسخ الحكمة الى الحافظة!</string>
+   <string name="copy_to_clipboard">نسخ الحكمة الى الحافظة</string>
    <string name="only_1">1$</string>
    <string name="reprot_when_connected">سيتم ارسال بلاغك بمجرد اتصالك بالإنترنت.. شكرا لك</string>
    <string name="widget_fav_name">زاد مفضلتي</string>

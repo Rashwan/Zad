@@ -10,8 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
-        android:background="@color/yellow"
+        android:background="@color/Purple_Deep"
         android:fitsSystemWindows="true"
+        app:theme="@style/quote_toolbar"
         >
 
         <LinearLayout

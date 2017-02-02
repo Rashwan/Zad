@@ -5,35 +5,36 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_drawer_dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
             android:title="الرئيسية"
             />
         <item
             android:id="@+id/nav_authors"
             android:title="الحكماء"
-            android:icon="@drawable/ic_drawer_authors"
+            android:icon="@drawable/ic_account_circle_black_24dp"
             />
         <item
             android:id="@+id/nav_categories"
             android:title="التصنيفات"
-            android:icon="@drawable/ic_drawer_categories"
+            android:icon="@drawable/ic_format_align_justify_black_24dp"
             />
         <item
             android:id="@+id/nav_quotes"
             android:title="الحكم"
-            android:icon="@drawable/ic_drawer_quotes"/>
+            android:icon="@drawable/ic_format_quote_black_24dp"/>
         <item
             android:id="@+id/nav_fav"
             android:title="مفضلتي"
-            android:icon="@drawable/ic_drawer_fav"/>
+            android:icon="@drawable/ic_favorite_black_24dp"/>
         <item
             android:id="@+id/nav_suggest"
             android:title="اقترح قول مأثور"
-            android:icon="@drawable/ic_drawer_suggest"/>
+            android:icon="@drawable/ic_edit_black_24dp"/>
         <item
             android:id="@+id/nav_premium"
             android:title="شراء النسخة المميزة"
-            android:icon="@drawable/ic_lock"/>
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:visible="false"/>
         <item
             android:id="@+id/nav_footer"
             app:actionLayout="@layout/footer_layout"
