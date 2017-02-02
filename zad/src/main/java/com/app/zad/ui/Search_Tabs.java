@@ -1,20 +1,15 @@
 package com.app.zad.ui;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Comparator;
-
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.app.ActionBar;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,36 +24,36 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import com.app.zad.R;
 
-public class Search_Tabs extends FragmentActivity {
-	static Author_Grid_adapter adapter;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Comparator;
+
+public class Search_Tabs extends AppCompatActivity {
 	private FragmentTabHost mTabHost;
-	SearchView mSearchView = null;
+	android.support.v7.widget.SearchView mSearchView = null;
 	String mQuery = "";
-	static ListView listView;
-	static GridView grid;
+    static ListView listView;
+    static GridView grid;
 	static ArrayList<String> all;
 	private static ArrayList<Quote> allQuotesObjects;
 	static ArrayList<Author_Grid_Item> Authors_items;
 	static ArrayList<Quote> tempArrayList = new ArrayList<Quote>();
 	static ArrayList<Author_Grid_Item> tempAuthorArrayList = new ArrayList<Author_Grid_Item>();
-	static Quotes_List_adapter myadapter;
+    Quotes_List_adapter myadapter;
 	MenuItem searchItem;
-	public static Context mContext;
+	public  Context mContext;
 
 	static String quote_retrived1;
 	static String author_retrieved1;
 	static private String author_retrived2;
 	int numColumns = 1;
-	static Author_Grid_adapter Gridadapter;
+    Author_Grid_adapter Gridadapter;
 	SearchManager searchManager;
-	private ActionBar ab;
 
 	@SuppressLint("NewApi")
 	@Override
@@ -66,35 +61,26 @@ public class Search_Tabs extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.search_tasty);
 
-		ab = getActionBar();
-		ab.setTitle("");
-
-		// KAZAKY FX Yeah
+		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
+		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.search_toolbar);
+        setSupportActionBar(toolbar);
 		Window window;
 
 		if (android.os.Build.VERSION.SDK_INT >= 21) {
 			window = getWindow();
 			window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 			window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-			window.setStatusBarColor(getResources().getColor(R.color.Purple_Deep_Black));
+			window.setStatusBarColor(ContextCompat.getColor(this,R.color.Purple_Deep_Black));
 		}
-		// KAZAKY FX Yeah
 
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getActionBar().setIcon(
-				new ColorDrawable(getResources().getColor(
-						android.R.color.transparent)));
-		getActionBar().setHomeButtonEnabled(true);
-		if (android.os.Build.VERSION.SDK_INT >= 18) {
-			ab.setHomeAsUpIndicator(getResources().getDrawable(
-					R.drawable.up_drawable_layer));
-		}
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayShowTitleEnabled(false);
+		getSupportActionBar().setHomeButtonEnabled(true);
+
 		String query = getIntent().getStringExtra(SearchManager.QUERY);
 		query = query == null ? "" : query;
 		mQuery = query;
-
-		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
-		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
 		View tabview1 = createTabView(mTabHost.getContext(), getString(R.string.quotes));
 		View tabview2 = createTabView(mTabHost.getContext(), getString(R.string.authors));
@@ -103,13 +89,6 @@ public class Search_Tabs extends FragmentActivity {
 		mTabHost.addTab(mTabHost.newTabSpec(getString(R.string.authors)).setIndicator(tabview2),
 				Search_Tabs.Authors_Fragment_Own.class, null);
 
-		mTabHost.setOnTabChangedListener(new OnTabChangeListener() {
-
-			@Override
-			public void onTabChanged(String tabId) {
-
-			}
-		});
 
 		if (mSearchView != null) {
 			mSearchView.setQuery(query, false);
@@ -142,90 +121,87 @@ public class Search_Tabs extends FragmentActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		super.onCreateOptionsMenu(menu);
-		getMenuInflater().inflate(R.menu.search, menu);
+        getMenuInflater().inflate(R.menu.search, menu);
+        searchItem = menu.findItem(R.id.menu_search);
+        if (searchItem != null) {
+            searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+            final android.support.v7.widget.SearchView view = (android.support.v7.widget.SearchView) searchItem.getActionView();
+            mSearchView = view;
 
-		searchItem = menu.findItem(R.id.menu_search);
+            if (view != null) {
+                view.setSearchableInfo(searchManager
+                        .getSearchableInfo(getComponentName()));
+                view.setIconified(false);
+                view.setOnQueryTextListener(new android.support.v7.widget.SearchView.OnQueryTextListener() {
+                    @Override
+                    public boolean onQueryTextSubmit(String query) {
+                        view.clearFocus();
+                        return true;
+                    }
 
-		if (searchItem != null) {
-			searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-			final SearchView view = (SearchView) searchItem.getActionView();
-			mSearchView = view;
-			if (view == null) {
-			} else {
-				view.setSearchableInfo(searchManager
-						.getSearchableInfo(getComponentName()));
-				view.setIconified(false);
-				view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-					@Override
-					public boolean onQueryTextSubmit(String s) {
-						view.clearFocus();
-						return true;
-					}
+                    @Override
+                    public boolean onQueryTextChange(String newText) {
+                        int textlength = newText.length();
+                        tempArrayList = new ArrayList<>();
+                        tempAuthorArrayList = new ArrayList<>();
 
-					@Override
-					public boolean onQueryTextChange(String s) {
-						int textlength = s.length();
-						tempArrayList = new ArrayList<Quote>();
-						tempAuthorArrayList = new ArrayList<Author_Grid_Item>();
+                        if (mTabHost.getCurrentTab() == 0) {
 
-						if (mTabHost.getCurrentTab() == 0) {
-							for (Quote c : allQuotesObjects) {
-								if (textlength <= c.Quote.length()) {
-									if (c.Quote.contains(s.toString())) {
-										tempArrayList.add(c);
-									}
-								}
-							}
-							myadapter = new Quotes_List_adapter(
-									getApplicationContext(), tempArrayList,
-									true);
-							listView.setAdapter(myadapter);
-						}
+                            for (Quote c : allQuotesObjects) {
+                                if (textlength <= c.Quote.length()) {
+                                    if (c.Quote.contains(newText)) {
+                                        tempArrayList.add(c);
+                                    }
+                                }
+                            }
+                            myadapter = new Quotes_List_adapter(
+                                    getApplicationContext(), tempArrayList,
+                                    true);
+                            listView.setAdapter(myadapter);
+                        } else {
+                            for (Author_Grid_Item c2 : Authors_items) {
+                                if (textlength <= c2.getAuthor_Title().length()) {
+                                    if (c2.getAuthor_Title().contains(
+                                            newText)) {
+                                        tempAuthorArrayList.add(c2);
+                                    }
+                                }
+                            }
+                            Gridadapter = new Author_Grid_adapter(
+                                    getApplicationContext(),
+                                    tempAuthorArrayList);
 
-						else {
-							for (Author_Grid_Item c2 : Authors_items) {
-								if (textlength <= c2.getAuthor_Title().length()) {
-									if (c2.getAuthor_Title().contains(
-											s.toString())) {
-										tempAuthorArrayList.add(c2);
-									}
-								}
-							}
-							Gridadapter = new Author_Grid_adapter(
-									getApplicationContext(),
-									tempAuthorArrayList);
-							grid.setAdapter(Gridadapter);
-						}
-						return true;
-					}
-				});
-				mSearchView
-						.setOnCloseListener(new SearchView.OnCloseListener() {
-							@Override
-							public boolean onClose() {
-								finish();
-								return false;
-							}
-						});
-			}
+                            grid.setAdapter(Gridadapter);
+                        }
+                        return true;
+                    }
+                });
 
-			if (!TextUtils.isEmpty(mQuery)) {
-				view.setQuery(mQuery, false);
-			}
-		}
-		int searchPlateId = mSearchView.getContext().getResources()
-				.getIdentifier("android:id/search_plate", null, null);
-		View searchPlate = mSearchView.findViewById(searchPlateId);
-		if (searchPlate != null) {
-			searchPlate.setBackground(getResources().getDrawable(
-					R.drawable.transparent));
 
-			int searchTextId = searchPlate.getContext().getResources()
-					.getIdentifier("android:id/search_src_text", null, null);
+                mSearchView.setOnCloseListener(new android.support.v7.widget.SearchView.OnCloseListener() {
+                    @Override
+                    public boolean onClose() {
+                        finish();
+                        return false;
+                    }
+                });
 
-			TextView searchText = (TextView) searchPlate
-					.findViewById(searchTextId);
+                if (!TextUtils.isEmpty(mQuery)) {
+                    view.setQuery(mQuery, false);
+                }
+            }
+            int searchPlateId = mSearchView.getContext().getResources()
+                    .getIdentifier("android:id/search_plate", null, null);
+            View searchPlate = mSearchView.findViewById(searchPlateId);
+            if (searchPlate != null) {
+                searchPlate.setBackground(ContextCompat.getDrawable(this,
+                        R.drawable.transparent));
+
+                int searchTextId = searchPlate.getContext().getResources()
+                        .getIdentifier("android:id/search_src_text", null, null);
+
+                TextView searchText = (TextView) searchPlate
+                        .findViewById(searchTextId);
 			/*
 			 * RelativeLayout.LayoutParams lps = new
 			 * RelativeLayout.LayoutParams( ViewGroup.LayoutParams.WRAP_CONTENT,
@@ -233,25 +209,28 @@ public class Search_Tabs extends FragmentActivity {
 			 * lps.addRule(RelativeLayout.ALIGN_PARENT_TOP);
 			 * lps.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
 			 */
-			// lps.setMargins(0, 0, 0, 0);
+                // lps.setMargins(0, 0, 0, 0);
 
-			if (searchText != null) {
+                if (searchText != null) {
 
-				searchText.setTextColor(getResources().getColor(
-						R.color.text__inverse));
-				searchText.setHintTextColor(getResources().getColor(
-						R.color.text_hint));
-			}
+                    searchText.setTextColor(ContextCompat.getColor(this,
+                            R.color.text__inverse));
+                    searchText.setHintTextColor(ContextCompat.getColor(this,
+                            R.color.text_hint));
+                }
 
-			int closeButtonId = getResources().getIdentifier(
-					"android:id/search_close_btn", null, null);
-			ImageView closeButtonImage = (ImageView) mSearchView
-					.findViewById(closeButtonId);
-			closeButtonImage.setImageResource(R.drawable.tour_icon_close);
+                int closeButtonId = getResources().getIdentifier(
+                        "android:id/search_close_btn", null, null);
+                ImageView closeButtonImage = (ImageView) mSearchView
+                        .findViewById(closeButtonId);
+                closeButtonImage.setImageResource(R.drawable.tour_icon_close);
 
-		}
-		return true;
-	}
+            }
+            return true;
+        }
+        return false;
+    }
+
 
 	@Override
 	protected void onPause() {
@@ -282,13 +261,15 @@ public class Search_Tabs extends FragmentActivity {
 		private ToggleButton StarFavourite;
 		private boolean oneQuote;
 		private String wiki;
+        private Context context;
+        private Quotes_List_adapter myadapter;
 
-		@Override
+        @Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View view = inflater.inflate(R.layout.list_quotes_search,
 					container, false);
-			mContext = getActivity().getApplicationContext();
+            context = getActivity().getApplicationContext();
 			myadapter = null;
 			try {
 				myadapter = new Quotes_List_adapter(getActivity(),
@@ -297,13 +278,13 @@ public class Search_Tabs extends FragmentActivity {
 				e.printStackTrace();
 			}
 
-			listView = (ListView) view.findViewById(R.id.listviewix);
+            listView = (ListView) view.findViewById(R.id.listviewix);
 
 			listView.setAdapter(myadapter);
-			listView.setDivider(getResources().getDrawable(
+			listView.setDivider(ContextCompat.getDrawable(context,
 					R.drawable.transparent));
 
-			listView.setOnItemClickListener((OnItemClickListener) this);
+			listView.setOnItemClickListener(this);
 
 			StarFavourite = (ToggleButton) view.findViewById(R.id.Star_Button);
 			return view;
@@ -311,7 +292,7 @@ public class Search_Tabs extends FragmentActivity {
 
 		private ArrayList<Quote> generateData() throws SQLException {
 			Quote quoteInstance = new Quote();
-			allQuotesObjects = quoteInstance.getAllObjects(mContext);
+			allQuotesObjects = quoteInstance.getAllObjects(context);
 			return allQuotesObjects;
 		}
 
@@ -323,13 +304,13 @@ public class Search_Tabs extends FragmentActivity {
 			try {
 				quote_retrived1 = tempArrayList.get(position).Quote;
 				author_retrieved1 = tempArrayList.get(position).Author;
-				wiki = tempArrayList.get(position).getwiki(mContext,
+				wiki = tempArrayList.get(position).getwiki(context,
 						tempArrayList.get(position));
 			} catch (Exception e) {
-				quote_retrived1 = myadapter.getItem(position).Quote;
-				author_retrieved1 = myadapter.getItem(position).Author;
-				wiki = myadapter.getItem(position).getwiki(mContext,
-						myadapter.getItem(position));
+				quote_retrived1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Quote;
+				author_retrieved1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Author;
+				wiki = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).getwiki(context,
+                        ((Quotes_List_adapter)parent.getAdapter()).getItem(position));
 				e.printStackTrace();
 			}
 			Intent i1 = new Intent(getActivity(),
@@ -345,12 +326,13 @@ public class Search_Tabs extends FragmentActivity {
 
 	public static class Authors_Fragment_Own extends Fragment {
 
-		@Override
+        private Author_Grid_adapter adapter;
+
+        @Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View view = inflater.inflate(R.layout.grid_view_search, container,
 					false);
-			mContext = getActivity().getApplicationContext();
 
 			adapter = new Author_Grid_adapter(getActivity(), generateData());
 
@@ -391,9 +373,9 @@ public class Search_Tabs extends FragmentActivity {
 		}
 
 		private ArrayList<Author_Grid_Item> generateData() {
-			Authors_items = new ArrayList<Author_Grid_Item>();
+			Authors_items = new ArrayList<>();
 
-			all = new ArrayList<String>(Magic_Activity.allunknowncleaned);
+			all = new ArrayList<>(Magic_Activity.allunknowncleaned);
 			all.addAll(Magic_Activity.allknowncleaned);
 			for (int i = 0; i < Magic_Activity.allunknowncleaned.size(); i++) {
 				Authors_items
@@ -417,37 +399,7 @@ public class Search_Tabs extends FragmentActivity {
 		outState.putString("sv1", mSearchView.getQuery().toString());
 	}
 
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		super.onRestoreInstanceState(savedInstanceState);
-	}
 
-	/*
-	 * int[] tabDrwables = { R.drawable.tab_bg_pressed };
-	 * 
-	 * public StateListDrawable koky(int CurrentColor) {
-	 * 
-	 * StateListDrawable states = new StateListDrawable(); states.addState(new
-	 * int[] { android.R.attr.state_focused },
-	 * getResources().getDrawable(R.drawable.action_search));
-	 * 
-	 * return states; }
-	 */
-	@TargetApi(19)
-	private void setTranslucentStatus(boolean on) {
-		Window win = getWindow();
-		WindowManager.LayoutParams winParams = win.getAttributes();
-		final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
-		final int bits2 = WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION;
-		if (on) {
-			winParams.flags |= bits;
-			winParams.flags |= bits2;
-		} else {
-			winParams.flags &= ~bits;
-			winParams.flags &= ~bits2;
-		}
-
-		win.setAttributes(winParams);
-
-	}
 }
+
+
