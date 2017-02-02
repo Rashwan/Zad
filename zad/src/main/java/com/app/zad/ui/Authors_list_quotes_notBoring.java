@@ -1,21 +1,18 @@
 package com.app.zad.ui;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.RectF;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.util.Log;
@@ -40,7 +37,10 @@ import com.app.zad.helper.SystemBarTintManager;
 import com.app.zad.notboring.ActionBarMagicView;
 import com.app.zad.notboring.AlphaForegroundColorSpan;
 
-public class Authors_list_quotes_notBoring extends Activity {
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class Authors_list_quotes_notBoring extends AppCompatActivity {
 	Parcelable ListView_State;
 	private int mActionBarTitleColor;
 	private int mActionBarHeight;
@@ -69,7 +69,6 @@ public class Authors_list_quotes_notBoring extends Activity {
 	Context mContext;
 	Integer pos;
 	Drawable author_Image = Magic_Activity.autortopic.get("آرثر سي كلارك");
-	private ActionBar ab;
 	private TextView author_name;
 
 	@SuppressLint("NewApi")
@@ -89,8 +88,9 @@ public class Authors_list_quotes_notBoring extends Activity {
 
 		}
 		setContentView(R.layout.authors_not_boring);
-		mContext = getApplicationContext();
-		ab = getActionBar();
+        Toolbar toolbar = (Toolbar) findViewById(R.id.author_toolbar);
+        setSupportActionBar(toolbar);
+		mContext = this;
 
 		if (android.os.Build.VERSION.SDK_INT >= 19) {
 			setTranslucentStatus(true);
@@ -99,16 +99,13 @@ public class Authors_list_quotes_notBoring extends Activity {
 			tintManager.setStatusBarTintResource(R.color.transparent);
 		}
 
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getActionBar().setIcon(
-				new ColorDrawable(getResources().getColor(
-						android.R.color.transparent)));
-		getActionBar().setHomeButtonEnabled(true);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//		getSupportActionBar().setIcon(
+//				new ColorDrawable(getResources().getColor(
+//						android.R.color.transparent)));
+		getSupportActionBar().setHomeButtonEnabled(true);
 
-		if (android.os.Build.VERSION.SDK_INT >= 19) {
-			ab.setHomeAsUpIndicator(getResources().getDrawable(
-					R.drawable.up_drawable_layer));
-		}
+
 
 		mListView = (ListView) findViewById(R.id.listviewMine);
 
@@ -128,7 +125,7 @@ public class Authors_list_quotes_notBoring extends Activity {
 		final Bitmap bm = imageIntent.getParcelableExtra("Image");
 
 		author_name.setText(author_retrived);
-		author_name.setAlpha(255);
+		author_name.setAlpha(1.0f);
 		// Restore ListView state
 		if (ListView_State != null) {
 			Log.d("Quotes_Frag", "trying to restore listview state..");
@@ -180,7 +177,7 @@ public class Authors_list_quotes_notBoring extends Activity {
 		mAlphaForegroundColorSpan = new AlphaForegroundColorSpan(
 				mActionBarTitleColor);
 
-		setupActionBar();
+//		setupActionBar();
 		setupListView();
 	}
 
