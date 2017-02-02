@@ -71,10 +71,7 @@ public class Quote_view_fragment extends Fragment {
 	SharedPreferences.Editor editor;
 	 Set<String> ids;
 	 ArrayList<String> idlist;
-	 Boolean fav_not;
-	 String idfavstring;
 	 Integer idintbun;
-	Boolean favcheck;
 	Quote quote2 = new Quote();
 	Drawable author_image = Magic_Activity.autortopic.get("الأصمعي");
 	String[] arrayCat;
@@ -784,7 +781,9 @@ public class Quote_view_fragment extends Fragment {
     @Override
 	public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-
+			case android.R.id.home:
+				getActivity().onBackPressed();
+                return true;
             case R.id.action_copy:
                 Copy_process();
                 return true;

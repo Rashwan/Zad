@@ -81,6 +81,8 @@ public class Quote_view_pager_activity extends AppCompatActivity {
 		setContentView(R.layout.view_pager);
 		Toolbar toolbar = (Toolbar) findViewById(R.id.quote_toolbar);
 		setSupportActionBar(toolbar);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setHomeButtonEnabled(true);
         fav_image = (FlipImageView) findViewById(R.id.Fav_button);
         ShareButton fbShareButton = (ShareButton) findViewById(R.id.fb_share_button);
         fbShareButton.setEnabled(true);
@@ -263,11 +265,7 @@ public class Quote_view_pager_activity extends AppCompatActivity {
 	}
 
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-//		getMenuInflater().inflate(R.menu.quote_menu, menu);
-		return false;
-	}
+
 
 
 	private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
