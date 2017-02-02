@@ -1,44 +1,37 @@
 package com.app.zad.ui;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ShareActionProvider;
+
+import com.app.zad.R;
+import com.app.zad.helper.FlipImageView;
+import com.facebook.share.widget.ShareButton;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import android.app.ActionBar;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.Bitmap.CompressFormat;
-import android.net.Uri;
-import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.ShareActionProvider;
-import android.widget.Toast;
-
-import com.app.zad.R;
-
-public class Quote_view_pager_activity extends FragmentActivity {
+public class Quote_view_pager_activity extends AppCompatActivity {
 
 	private static int NUM_PAGES = 1;
 
@@ -55,7 +48,6 @@ public class Quote_view_pager_activity extends FragmentActivity {
 	private String quote;
 	private String wiki = null;
 
-	ActionBar ab;
 
 	private PagerAdapter mPagerAdapter;
 	public Context mContext;
@@ -79,13 +71,27 @@ public class Quote_view_pager_activity extends FragmentActivity {
 	Boolean notification;
 	Boolean Mazag;
 	Integer mazagID;
+    FlipImageView fav_image;
+    boolean favcheck;
 
-	@Override
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.view_pager);
-
-		ab = getActionBar();
+		Toolbar toolbar = (Toolbar) findViewById(R.id.quote_toolbar);
+		setSupportActionBar(toolbar);
+        fav_image = (FlipImageView) findViewById(R.id.Fav_button);
+        ShareButton fbShareButton = (ShareButton) findViewById(R.id.fb_share_button);
+        fbShareButton.setEnabled(true);
+        fbShareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareFb();
+            }
+        });
+//
+//        ab = getSupportActionBar();
 
 		// KAZAKY FX Yeah
 		Window window;
@@ -97,15 +103,13 @@ public class Quote_view_pager_activity extends FragmentActivity {
 			window.setStatusBarColor(getResources().getColor(R.color.Purple_Deep_Black));
 		}
 
-		ab.hide();
-		ImageView view = (ImageView) findViewById(android.R.id.home);
-		view.setPadding(10, 0, 0, 0);
+
 		mContext = getApplicationContext();
 		sp = mContext.getSharedPreferences("com.app.zad.fav_id",
 				Context.MODE_PRIVATE);
 		editor = sp.edit();
 		ids = sp.getStringSet("ids", new HashSet<String>());
-		idlist = new ArrayList<String>(ids);
+		idlist = new ArrayList<>(ids);
 		Intent sourceIntent = getIntent();
 		oneQuote = sourceIntent.getExtras().getBoolean("oneQuote");
 		favo = sourceIntent.getExtras().getBoolean("favo");
@@ -137,7 +141,7 @@ public class Quote_view_pager_activity extends FragmentActivity {
 		} catch (Exception exception) {
 			notification = false;
 		}
-		if ((oneQuote == true) && ((widget == false)) && notification == false) {
+		if ((oneQuote) && ((!widget)) && !notification) {
 			author = sourceIntent.getExtras().getString("authorRetrived");
 			quote = sourceIntent.getExtras().getString("quoteRetrived");
 			Quote thequote = new Quote();
@@ -166,7 +170,7 @@ public class Quote_view_pager_activity extends FragmentActivity {
 			NUM_PAGES = all.size();
 			runUserTour();
 
-		} else if (widget == true) {
+		} else if (widget) {
 			quote = sourceIntent.getExtras().getString("quoteRetrived");
 			author = sourceIntent.getExtras().getString("authorRetrived");
 			Quote thequote = new Quote();
@@ -175,7 +179,7 @@ public class Quote_view_pager_activity extends FragmentActivity {
 			NUM_PAGES = 1;
 			bitmap = (Bitmap) sourceIntent.getParcelableExtra("pic");
 
-		} else if (notification == true) {
+		} else if (notification) {
 			quote = sourceIntent.getExtras().getString("quoteRetrived");
 			author = sourceIntent.getExtras().getString("authorRetrived");
 			Quote thequote = new Quote();
@@ -184,7 +188,7 @@ public class Quote_view_pager_activity extends FragmentActivity {
 			NUM_PAGES = 1;
 			bitmap = (Bitmap) sourceIntent.getParcelableExtra("pic");
 
-		} else if (Mazag == true) {
+		} else if (Mazag) {
 			pos = sourceIntent.getExtras().getInt("Position") + 1;
 			all = Home_Fragment.MazagList;
 			NUM_PAGES = all.size();
@@ -201,8 +205,18 @@ public class Quote_view_pager_activity extends FragmentActivity {
 
 		mPager = (ViewPager) findViewById(R.id.pager);
 		mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
-		mPager.setAdapter(mPagerAdapter);
-		mPager.setCurrentItem(pos - 1);
+        mPager.setAdapter(mPagerAdapter);
+        setFavoriteState();
+        mPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener(){
+            @Override
+            public void onPageSelected(int position) {
+                setFavoriteState();
+                super.onPageSelected(position);
+            }
+        });
+        mPager.setCurrentItem(pos - 1);
+
+        like();
 	}
 	public void runUserTour() {
 
@@ -251,45 +265,10 @@ public class Quote_view_pager_activity extends FragmentActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-
-		mymenu = menu;
-		myinflater = getMenuInflater();
-		myinflater.inflate(R.menu.quote_menu, mymenu);
-		return super.onCreateOptionsMenu(menu);
+//		getMenuInflater().inflate(R.menu.quote_menu, menu);
+		return false;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		ActionFav = mymenu.findItem(R.id.action_favourite);
-
-		switch (item.getItemId()) {
-
-		case R.id.action_share:
-			/*
-			 * Intent shareintent = new Intent(getApplicationContext(),
-			 * Facebook_Share.class); startActivity(shareintent);
-			 */
-			break;
-
-		case R.id.action_favourite:
-
-			if (item.isChecked()) {
-				item.setChecked(false);
-				Toast.makeText(getApplicationContext(),
-						getString(R.string.removed_from_favourites),
-						Toast.LENGTH_SHORT).show();
-
-			} else {
-				item.setChecked(true);
-				Toast.makeText(getApplicationContext(),
-						R.string.add_to_favourites, Toast.LENGTH_SHORT).show();
-			}
-			break;
-
-		}
-
-		return super.onOptionsItemSelected(item);
-	}
 
 	private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 		public ScreenSlidePagerAdapter(FragmentManager fm) {
@@ -298,7 +277,8 @@ public class Quote_view_pager_activity extends FragmentActivity {
 
 		@Override
 		public Fragment getItem(int position) {
-			if (oneQuote == true) {
+            supportInvalidateOptionsMenu();
+			if (oneQuote) {
 
 				if (widget || notification) {
 					return Quote_view_fragment.newinstance(quote, author, wiki,
@@ -341,61 +321,65 @@ public class Quote_view_pager_activity extends FragmentActivity {
 			return NUM_PAGES;
 		}
 	}
+	private void shareFb(){
+        Intent intent = new Intent(this,Facebook_Share.class);
+        Quote_view_fragment selectedFragment = (Quote_view_fragment)
+                ((ScreenSlidePagerAdapter) mPager.getAdapter())
+                .getItem(mPager.getCurrentItem());
 
-	public void saveBitmap(Bitmap bitmap) {
-		filePath = Environment.getExternalStorageDirectory() + File.separator
-				+ "Pictures/quote.png";
-		File imagePath = new File(filePath);
-		FileOutputStream fos;
-		try {
-			fos = new FileOutputStream(imagePath);
-			bitmap.compress(CompressFormat.PNG, 100, fos);
-			fos.flush();
-			fos.close();
-		} catch (FileNotFoundException e) {
-		} catch (IOException e) {
-		}
+        intent.putExtra("shareQuote",selectedFragment.getCurrentQuote());
+        intent.putExtra("shareAuthor", selectedFragment.getCurrentAuthor());
+        startActivity(intent);
 	}
+	private void setFavoriteState(){
+        Log.d("BLABLA","CHECK");
+        Quote_view_fragment selectedFragment = (Quote_view_fragment)
+                ((ScreenSlidePagerAdapter) mPager.getAdapter())
+                        .getItem(mPager.getCurrentItem());
+        if (isFav(selectedFragment.getCurrentId())) {
+            fav_image.setRotationReversed(true);
+            fav_image.setChecked(true);
+            favcheck = true;
+        } else {
+            fav_image.setRotationReversed(false);
+            fav_image.setChecked(false);
+            favcheck = false;
+        }
+    }
+	private void like(){
+        fav_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Quote_view_fragment selectedFragment = (Quote_view_fragment)
+                        ((ScreenSlidePagerAdapter) mPager.getAdapter())
+                                .getItem(mPager.getCurrentItem());
+                final Quote quoteinstance1 = new Quote().getAnObjects(v.getContext(),
+                        "Quote", selectedFragment.getCurrentQuote()).get(0);
+                Integer idfav = quoteinstance1.ID;
+                String idfavstring5 = idfav.toString();
+                if (favcheck) {
+                    fav_image.setRotationReversed(false);
+                    fav_image.setChecked(false);
+                    ids.remove(idfavstring5);
+                    favcheck = false;
+                } else {
+                    fav_image.setRotationReversed(true);
+                    fav_image.setChecked(true);
+                    ids.add(idfavstring5);
+                    favcheck = true;
+                }
+                editor.clear();
+                editor.putStringSet("ids", ids);
+                editor.commit();
+            }
+        });
+    }
+    private Boolean isFav(Integer idInteger) {
+        String idFavString = idInteger.toString();
+        Set<String> allIds = sp.getStringSet("ids", new HashSet<String>());
+        ArrayList<String> allIdsList = new ArrayList<>(allIds);
+        return allIdsList.contains(idFavString);
+    }
 
-	public void SetShareImageIntent(String path) {
-		Intent myIntent = new Intent(Intent.ACTION_SEND);
-		myIntent.setType("image/png");
-		Uri myUri = Uri.parse("file://" + path);
-		myIntent.putExtra(Intent.EXTRA_STREAM, myUri);
-		myShareActionProvider.setShareIntent(myIntent);
-
-	}
-
-	@SuppressWarnings("unused")
-	private void setShareIntent() {
-		Intent intent = new Intent(Intent.ACTION_SEND);
-		intent.setType("plain/text");
-		intent.putExtra(Intent.EXTRA_TEXT, author);
-		myShareActionProvider.setShareIntent(intent);
-	}
-
-	@SuppressWarnings("unused")
-	private void shiftHomeView(float offset) {
-		try {
-			View grandParentView = (View) ((View) findViewById(
-					android.R.id.home).getParent()).getParent();
-
-			View upView = ((ViewGroup) ((ViewGroup) grandParentView)
-					.getChildAt(0)).getChildAt(0);
-
-			grandParentView.setX(grandParentView.getX() - offset);
-			upView.setX(upView.getX() + offset);
-
-			if ((getActionBar().getDisplayOptions() & ActionBar.DISPLAY_SHOW_CUSTOM) != 0)
-				getActionBar().getCustomView().setX(
-						getActionBar().getCustomView().getX() - offset);
-		} catch (Exception e) {
-		}
-	}
-
-	@Override
-	public void onBackPressed() {
-		super.onBackPressed();
-	}
 
 }

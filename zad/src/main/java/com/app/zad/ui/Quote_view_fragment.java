@@ -28,6 +28,8 @@ import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -41,18 +43,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.zad.R;
 import com.app.zad.helper.Drawable_into_Bitmap;
-import com.app.zad.helper.FlipImageView;
 import com.app.zad.helper.GetCroppedBitmap;
 import com.app.zad.work_in_background.HttpUtility;
 import com.facebook.CallbackManager;
-import com.facebook.share.widget.ShareButton;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -70,11 +69,11 @@ public class Quote_view_fragment extends Fragment {
     private static final String TAG = "QUOTEVIEWFRAGMENT";
     static SharedPreferences sp;
 	SharedPreferences.Editor editor;
-	static Set<String> ids;
-	static ArrayList<String> idlist;
-	static Boolean fav_not;
-	static String idfavstring;
-	static Integer idintbun;
+	 Set<String> ids;
+	 ArrayList<String> idlist;
+	 Boolean fav_not;
+	 String idfavstring;
+	 Integer idintbun;
 	Boolean favcheck;
 	Quote quote2 = new Quote();
 	Drawable author_image = Magic_Activity.autortopic.get("الأصمعي");
@@ -104,9 +103,10 @@ public class Quote_view_fragment extends Fragment {
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.quote_view,
 				container, false);
-		final Context m = getActivity().getApplicationContext();
-        ShareButton fbShareButton = (ShareButton) rootView.findViewById(R.id.fb_share_button);
 
+        final Context m = getActivity().getApplicationContext();
+
+        setHasOptionsMenu(true);
 
         // Create an ad.
 		adLayout = (RelativeLayout) rootView.findViewById(R.id.ad_layout);
@@ -118,29 +118,24 @@ public class Quote_view_fragment extends Fragment {
 				"com.app.zad.fav_id", Context.MODE_PRIVATE);
 		editor = sp.edit();
 		ids = sp.getStringSet("ids", new HashSet<String>());
-		idlist = new ArrayList<String>(ids);
+		idlist = new ArrayList<>(ids);
 		arrayCat = getActivity().getApplicationContext().getResources()
 				.getStringArray(R.array.categories);
 
-		TextView quote_text = (TextView) rootView
+		final TextView quote_text = (TextView) rootView
 				.findViewById(R.id.Quote_Main_text);
 		TextView quote_text_shadow = (TextView) rootView
 				.findViewById(R.id.text_shadow);
-		TextView author_name = (TextView) rootView
+		final TextView author_name = (TextView) rootView
 				.findViewById(R.id.Author_Main_title);
 		TextView wiki_text = (TextView) rootView
 				.findViewById(R.id.Author_Main_Bio);
 		ImageView author_image_view = (ImageView) rootView
 				.findViewById(R.id.Author_Main_Pic);
-		final FlipImageView fav_image = (FlipImageView) rootView
-				.findViewById(R.id.Fav_button);
-		final ImageView Share_button = (ImageView) rootView
-				.findViewById(R.id.share_button);
-		final ImageView copy_btn = (ImageView) rootView
-				.findViewById(R.id.quote_copy);
+//		final FlipImageView fav_image = (FlipImageView) rootView
+//				.findViewById(R.id.Fav_button);
 		TextView category_text = (TextView) rootView
 				.findViewById(R.id.Category_Text);
-		ImageView up_Button = (ImageView) rootView.findViewById(R.id.Up_button);
 
 		// adSpaceBanner = (RelativeLayout)
 		// rootView.findViewById(R.id.ad_space);
@@ -198,20 +193,9 @@ public class Quote_view_fragment extends Fragment {
 			quote_text_shadow.setTypeface(type);
 
 		}
-		// Up Button Navigate
-		up_Button.setOnClickListener(new View.OnClickListener() {
 
-			@Override
-			public void onClick(View v) {
-				// Intent home = new Intent(getActivity(),
-				// Magic_Activity.class);
-				// NavUtils.navigateUpTo(getActivity(), home);
-				getActivity().onBackPressed();
-			}
-		});
 
-		final ImageView OverFlowMenu = (ImageView) rootView
-				.findViewById(R.id.Quote_overFlow);
+
 
 		idintbun = getArguments().getInt("idint") + 1;
 
@@ -221,49 +205,41 @@ public class Quote_view_fragment extends Fragment {
 		final Quote quoteinstance1 = quote2.getAnObjects(getActivity(),
 				"Quote", getArguments().getString("quote")).get(0);
 
-		if (isFav(idintbun - 1)) {
-			fav_image.setRotationReversed(true);
-			fav_image.setChecked(true);
-			favcheck = true;
-		} else {
-			fav_image.setRotationReversed(false);
-			fav_image.setChecked(false);
-			favcheck = false;
-		}
-
-		OverFlowMenu.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-
-				showPopupMenu(v);
-
-			}
-		});
-		fav_image.setOnClickListener(new View.OnClickListener() {
-
-			Integer idfav = quoteinstance1.ID;
-			String idfavstring5 = idfav.toString();
-
-			@Override
-			public void onClick(View v) {
-
-				if (favcheck) {
-					fav_image.setRotationReversed(false);
-					fav_image.setChecked(false);
-					ids.remove(idfavstring5);
-					favcheck = false;
-				} else {
-					fav_image.setRotationReversed(true);
-					fav_image.setChecked(true);
-					ids.add(idfavstring5);
-					favcheck = true;
-				}
-				editor.clear();
-				editor.putStringSet("ids", ids);
-				editor.commit();
-			}
-		});
+//		if (isFav(idintbun - 1)) {
+//			fav_image.setRotationReversed(true);
+//			fav_image.setChecked(true);
+//			favcheck = true;
+//		} else {
+//			fav_image.setRotationReversed(false);
+//			fav_image.setChecked(false);
+//			favcheck = false;
+//		}
+//
+//
+//		fav_image.setOnClickListener(new View.OnClickListener() {
+//
+//			Integer idfav = quoteinstance1.ID;
+//			String idfavstring5 = idfav.toString();
+//
+//			@Override
+//			public void onClick(View v) {
+//
+//				if (favcheck) {
+//					fav_image.setRotationReversed(false);
+//					fav_image.setChecked(false);
+//					ids.remove(idfavstring5);
+//					favcheck = false;
+//				} else {
+//					fav_image.setRotationReversed(true);
+//					fav_image.setChecked(true);
+//					ids.add(idfavstring5);
+//					favcheck = true;
+//				}
+//				editor.clear();
+//				editor.putStringSet("ids", ids);
+//				editor.commit();
+//			}
+//		});
 
 		author_image_view.setOnClickListener(new View.OnClickListener() {
 
@@ -356,44 +332,27 @@ public class Quote_view_fragment extends Fragment {
 			author_image_view.setImageBitmap(cX);
 		}
 
-		copy_btn.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-
-				Copy_process();
-
-			}
-		});
-		Share_button.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-
-				shareTextUrl();
-			}
-		});
-
-        fbShareButton.setEnabled(true);
-        fbShareButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG,"clicked share");
-                Intent intent = new Intent(getActivity(),Facebook_Share.class);
-                intent.putExtra("shareQuote", getArguments().getString("quote"));
-                intent.putExtra("shareAuthor", getArguments().getString("author"));
-                startActivity(intent);
-            }
-        });
 
         return rootView;
 
 	}
 
 
+    public void shareOnFb() {
+        Intent intent = new Intent(getActivity(),Facebook_Share.class);
+        intent.putExtra("shareQuote", getArguments().getString("quote"));
+        intent.putExtra("shareAuthor",getArguments().getString("author"));
+        startActivity(intent);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+    }
+
 
     public static Quote_view_fragment newinstance(String quote, String author,
-			String wiki, Integer idInteger, Boolean fromwhere) {
+                                                  String wiki, Integer idInteger, Boolean fromwhere) {
 		Quote_view_fragment instance = new Quote_view_fragment();
 		Bundle b = new Bundle();
 		b.putString("quote", quote);
@@ -429,47 +388,14 @@ public class Quote_view_fragment extends Fragment {
 
 	}
 
-	public static Boolean isFav(Integer idInteger) {
-		idfavstring = idInteger.toString();
-		ids = sp.getStringSet("ids", new HashSet<String>());
-		idlist = new ArrayList<String>(ids);
-		fav_not = idlist.contains(idfavstring);
-		return fav_not;
-	}
+//	public static Boolean isFav(Integer idInteger) {
+//		idfavstring = idInteger.toString();
+//		ids = sp.getStringSet("ids", new HashSet<String>());
+//		idlist = new ArrayList<String>(ids);
+//		fav_not = idlist.contains(idfavstring);
+//		return fav_not;
+//	}
 
-	private void showPopupMenu(View v) {
-		PopupMenu popupMenu = new PopupMenu(getActivity(), v);
-		popupMenu.getMenuInflater().inflate(R.menu.popupmenu,
-				popupMenu.getMenu());
-
-		popupMenu
-				.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-
-					@Override
-					public boolean onMenuItemClick(MenuItem item) {
-						// melegy come here
-						switch (item.getItemId()) {
-						case R.id.Suggest_Cat:
-							StrictMode.ThreadPolicy policy2 = new StrictMode.ThreadPolicy.Builder()
-									.permitAll().build();
-							StrictMode.setThreadPolicy(policy2);
-							showEditDialog();
-							break;
-						case R.id.Report_Wrong:
-							StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
-									.permitAll().build();
-							StrictMode.setThreadPolicy(policy);
-							showConfirmationDialog();
-
-							break;
-						}
-
-						return true;
-					}
-				});
-
-		popupMenu.show();
-	}
 
 	private void showConfirmationDialog() {
 		final Dialog dlg = new Dialog(getActivity());
@@ -850,4 +776,43 @@ public class Quote_view_fragment extends Fragment {
 
 	}
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.quote_menu,menu);
+    }
+
+    @Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.action_copy:
+                Copy_process();
+                return true;
+            case R.id.action_share:
+                shareTextUrl();
+                return true;
+            case R.id.action_report:
+                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                        .permitAll().build();
+                StrictMode.setThreadPolicy(policy);
+                showConfirmationDialog();
+                return true;
+            case R.id.action_suggest_edit:
+                StrictMode.ThreadPolicy policy2 = new StrictMode.ThreadPolicy.Builder()
+                        .permitAll().build();
+                StrictMode.setThreadPolicy(policy2);
+                showEditDialog();
+                return true;
+        }
+		return super.onOptionsItemSelected(item);
+	}
+	public String getCurrentQuote(){
+        return getArguments().getString("quote");
+    }
+    public String getCurrentAuthor(){
+        return getArguments().getString("author");
+    }
+    public int getCurrentId(){
+        return getArguments().getInt("idint");
+    }
 }
