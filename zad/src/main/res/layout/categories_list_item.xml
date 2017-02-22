@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:elevation="2dp"
+    android:background="@color/theme_primary_dark">
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/cat_islamic"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:background="@drawable/scrim_gradient"/>
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        tools:text="Love  Humanity"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/white"/>
+</FrameLayout>
