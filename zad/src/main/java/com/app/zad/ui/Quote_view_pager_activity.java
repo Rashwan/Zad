@@ -166,7 +166,7 @@ public class Quote_view_pager_activity extends AppCompatActivity {
 
 		} else if (!oneQuote && categories) {
 			catiInteger = sourceIntent.getExtras().getInt("catInt");
-			pos = sourceIntent.getExtras().getInt("pos");
+			pos = sourceIntent.getExtras().getInt("pos")+1;
 			quoteInstance = new Quote();
 			all = quoteInstance.getAnObjects(mContext, "Category", catiInteger);
 			NUM_PAGES = all.size();
