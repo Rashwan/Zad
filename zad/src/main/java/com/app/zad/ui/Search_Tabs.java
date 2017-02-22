@@ -157,7 +157,7 @@ public class Search_Tabs extends AppCompatActivity {
                             myadapter = new Quotes_List_adapter(
                                     getApplicationContext(), tempArrayList,
                                     true);
-                            listView.setAdapter(myadapter);
+//                            listView.setAdapter(myadapter);
                         } else {
                             for (Author_Grid_Item c2 : Authors_items) {
                                 if (textlength <= c2.getAuthor_Title().length()) {
@@ -280,7 +280,7 @@ public class Search_Tabs extends AppCompatActivity {
 
             listView = (ListView) view.findViewById(R.id.listviewix);
 
-			listView.setAdapter(myadapter);
+//			listView.setAdapter(myadapter);
 			listView.setDivider(ContextCompat.getDrawable(context,
 					R.drawable.transparent));
 
@@ -307,10 +307,10 @@ public class Search_Tabs extends AppCompatActivity {
 				wiki = tempArrayList.get(position).getwiki(context,
 						tempArrayList.get(position));
 			} catch (Exception e) {
-				quote_retrived1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Quote;
-				author_retrieved1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Author;
-				wiki = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).getwiki(context,
-                        ((Quotes_List_adapter)parent.getAdapter()).getItem(position));
+//				quote_retrived1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Quote;
+//				author_retrieved1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Author;
+//				wiki = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).getwiki(context,
+//                        ((Quotes_List_adapter)parent.getAdapter()).getItem(position));
 				e.printStackTrace();
 			}
 			Intent i1 = new Intent(getActivity(),

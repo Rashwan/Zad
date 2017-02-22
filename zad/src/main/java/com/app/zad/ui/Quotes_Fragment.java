@@ -1,8 +1,5 @@
 package com.app.zad.ui;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +15,9 @@ import android.widget.ListView;
 
 import com.app.zad.R;
 import com.app.zad.helper.FlipImageView;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class Quotes_Fragment extends Fragment implements OnItemClickListener {
 	public Context mContext;
@@ -86,7 +86,7 @@ public class Quotes_Fragment extends Fragment implements OnItemClickListener {
 			e.printStackTrace();
 		}
 
-		listView.setAdapter(myadapter);
+//		listView.setAdapter(myadapter);
 		listView.setDivider(getResources().getDrawable(R.drawable.transparent));
 
 		// Restore ListView state

@@ -197,7 +197,7 @@ public class Quote_view_pager_activity extends AppCompatActivity {
 			runUserTour();
 		} else {
 			author = sourceIntent.getExtras().getString("authorRetrived");
-			pos = sourceIntent.getExtras().getInt("pos");
+			pos = sourceIntent.getExtras().getInt("pos") + 1 ;
 			quoteInstance = new Quote();
 			all = quoteInstance.getAnObjects(mContext, "Author", author);
 			bitmap = sourceIntent.getParcelableExtra("pic");

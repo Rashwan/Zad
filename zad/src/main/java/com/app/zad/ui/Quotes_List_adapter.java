@@ -1,20 +1,12 @@
 package com.app.zad.ui;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
-
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.animation.Animation;
-import android.view.animation.Animation.AnimationListener;
-import android.view.animation.AnimationUtils;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.RelativeLayout;
@@ -23,211 +15,134 @@ import android.widget.TextView;
 import com.app.zad.R;
 import com.app.zad.helper.FlipImageView;
 
-public class Quotes_List_adapter extends ArrayAdapter<Quote> implements
-		Filterable {
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
-	private static String idfavstring;
-	private final Context contextx;
-	ArrayList<Quote> itemsArrayList;
-	boolean isFavFrag = true;
-	Context mContext = getContext();
+public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapter.QuoteVH>
+		implements Filterable{
 
-	SharedPreferences sp = mContext.getSharedPreferences("com.app.zad.fav_id",
-			Context.MODE_PRIVATE);
-	SharedPreferences.Editor editor = sp.edit();
-	Set<String> ids;
-	ArrayList<String> idlist;
-	boolean fav_not;
-	@SuppressWarnings("unused")
-	private boolean favcheck;
-	private View x = null;
+    private ArrayList<Quote> QuotesList;
+	private boolean isFavFrag = true;
+	Context mContext ;
 
-	public Quotes_List_adapter(Context context, ArrayList<Quote> arrayList,
+	private SharedPreferences sp;
+	private SharedPreferences.Editor editor;
+	private Set<String> ids;
+
+    public Quotes_List_adapter(Context context, ArrayList<Quote> quotes,
 			boolean b) {
-		super(context, R.layout.quote_list_item, arrayList);
 
-		this.contextx = context;
-		this.itemsArrayList = arrayList;
+		this.QuotesList = quotes;
 		this.isFavFrag = b;
+		sp = context.getSharedPreferences("com.app.zad.fav_id",
+                Context.MODE_PRIVATE);
 	}
 
-	public void Quotes_List_adapterUpdate(ArrayList<Quote> arrayList2) {
-
-		this.itemsArrayList = arrayList2;
-	}
 
 	@Override
 	public Filter getFilter() {
-		Filter QuoteFilter = null;
-		if (QuoteFilter == null)
-			QuoteFilter = new QuoteFilter();
+		Filter QuoteFilter;
+		QuoteFilter = new QuoteFilter();
 		return QuoteFilter;
 	}
-
-	// //////////////////
-	@SuppressLint("InflateParams")
 	@Override
-	public View getView(final int position, View convertView,
-			final ViewGroup parent) {
-		final ViewHolder holder;
-		if (convertView == null) {
-			LayoutInflater inflater = (LayoutInflater) contextx
-					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+	public QuoteVH onCreateViewHolder(ViewGroup parent, int viewType) {
+		mContext = parent.getContext();
+		LayoutInflater inflater = LayoutInflater.from(mContext);
+		View view = inflater.inflate(R.layout.quote_list_item, parent, false);
 
-			convertView = inflater.inflate(R.layout.quote_list_item, null);
+		return new QuoteVH(view);
+	}
 
-			holder = new ViewHolder();
-			holder.Quote_text = (TextView) convertView
-					.findViewById(R.id.Quote_text);
-			holder.Author_title_text = (TextView) convertView
-					.findViewById(R.id.Author_title_text);
-			holder.Fav_Button = (FlipImageView) convertView
-					.findViewById(R.id.Star_Button);
-			holder.Fav_lay = (RelativeLayout) convertView
-					.findViewById(R.id.fav_layout);
-			convertView.setTag(holder);
+	@Override
+	public void onBindViewHolder(final QuoteVH holder, int position) {
+		Integer favid = QuotesList.get(position).ID;
+		Quote quote = QuotesList.get(position);
 
-		} else {
-			holder = (ViewHolder) convertView.getTag();
-		}
-
-		Integer favid = itemsArrayList.get(position).ID;
-		holder.Quote_text.setText(itemsArrayList.get(position).Quote);
-		holder.Author_title_text.setText(itemsArrayList.get(position).Author);
-		// works but, with mistaken Quote
-		// x = holder.Fav_lay;
+		holder.Quote_text.setText(quote.Quote);
+		holder.Author_title_text.setText(quote.Author);
 
 		if (isFav(favid)) {
 			holder.Fav_Button.setRotationReversed(true);
 			holder.Fav_Button.setChecked(true);
-			favcheck = true;
 
 		} else {
 			holder.Fav_Button.setRotationReversed(false);
 			holder.Fav_Button.setChecked(false);
-			favcheck = false;
 		}
 
 		holder.Fav_Button.setOnClickListener(new OnClickListener() {
-			Quote quote1 = itemsArrayList.get(position);
+			Quote quote1 = QuotesList.get(holder.getAdapterPosition());
 			Integer idfav = quote1.ID;
 			String idfavstring = idfav.toString();
 
 			@Override
 			public void onClick(View v) {
-				if (holder.Fav_Button.isRotationReversed() == true) {
+				if (holder.Fav_Button.isRotationReversed()) {
 
 					holder.Fav_Button.setRotationReversed(false);
 					holder.Fav_Button.setChecked(false);
 
 					ids.remove(idfavstring);
-					favcheck = false;
 
-				} else if (holder.Fav_Button.isRotationReversed() == false) {
+				} else if (!holder.Fav_Button.isRotationReversed()) {
 
 					holder.Fav_Button.setRotationReversed(true);
 					holder.Fav_Button.setChecked(true);
 					ids.add(idfavstring);
-					favcheck = true;
 				}
-
+                editor = sp.edit();
 				editor.clear();
 				editor.putStringSet("ids", ids);
-				editor.commit();
+				editor.apply();
 
 				if (isFavFrag) {
 
-					Quote item = Quotes_List_adapter.this.getItem(position);
-					Quotes_List_adapter.this.remove(item);
-
-					Quotes_List_adapter.this.notifyDataSetChanged();
+					QuotesList.remove(QuotesList.get(holder.getAdapterPosition()));
+					notifyItemRemoved(holder.getAdapterPosition());
 
 				}
 
 			}
 		});
-		return convertView;
-
 	}
+    private Boolean isFav(Integer idInteger) {
+        String idfavstring = idInteger.toString();
+        ids = sp.getStringSet("ids", new HashSet<String>());
+        ArrayList<String> idlist = new ArrayList<>(ids);
+        return idlist.contains(idfavstring);
+    }
 
-	private static class ViewHolder {
-		public TextView Quote_text;
-		public TextView Author_title_text;
-		public FlipImageView Fav_Button;
-		public RelativeLayout Fav_lay;
-
+	@Override
+	public int getItemCount() {
+		return QuotesList.size();
 	}
+    public void addQuotes(List<Quote> quotes){
+        this.QuotesList.addAll(quotes);
+    }
+    public void clearQuotes(){
+        this.QuotesList.clear();
+    }
 
-	/*
-	 * //
-	 * //////////////////////xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	 * // @Override public View getViewXX(final int position, View convertView,
-	 * ViewGroup parent) {
-	 * 
-	 * LayoutInflater inflater = (LayoutInflater) context
-	 * .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-	 * 
-	 * View rowView = inflater .inflate(R.layout.quote_list_item, parent,
-	 * false);
-	 * 
-	 * TextView Quote_text = (TextView) rowView.findViewById(R.id.Quote_text);
-	 * TextView Name_Author = (TextView) rowView
-	 * .findViewById(R.id.Author_title_text); final FlipImageView Star_Button =
-	 * (FlipImageView) rowView .findViewById(R.id.Star_Button);
-	 * 
-	 * Integer favid = itemsArrayList.get(position).ID;
-	 * Quote_text.setText(itemsArrayList.get(position).Quote);
-	 * Name_Author.setText(itemsArrayList.get(position).Author);
-	 * 
-	 * if (isFav(favid)) { Star_Button.setRotationReversed(true);
-	 * Star_Button.setChecked(true); favcheck = true; } else {
-	 * Star_Button.setRotationReversed(false); Star_Button.setChecked(false);
-	 * favcheck = false; }
-	 * 
-	 * Star_Button.setOnClickListener(new OnClickListener() { Quote quote1 =
-	 * itemsArrayList.get(position); Integer idfav = quote1.ID; String
-	 * idfavstring = idfav.toString();
-	 * 
-	 * @Override public void onClick(View v) { //
-	 * XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX KAZAKY if
-	 * (Star_Button.isRotationReversed() == true) {
-	 * 
-	 * Star_Button.setRotationReversed(false); Star_Button.setChecked(false);
-	 * ids.remove(idfavstring); favcheck = false;
-	 * 
-	 * } else if (Star_Button.isRotationReversed() == false) {
-	 * 
-	 * Star_Button.setRotationReversed(true); Star_Button.setChecked(true);
-	 * ids.add(idfavstring); favcheck = true; }
-	 * 
-	 * editor.clear(); editor.putStringSet("ids", ids); editor.commit();
-	 * 
-	 * if (isFavFrag) { // itemsArrayList.remove(position); Quote item =
-	 * Quotes_List_adapter.this.getItem(position);
-	 * Quotes_List_adapter.this.remove(item);
-	 * Quotes_List_adapter.this.notifyDataSetChanged(); }
-	 * 
-	 * } });
-	 * 
-	 * // makes padding in Case of it's not Fvourite list // deprecated from Zad
-	 * /* if (isFavFrag) {
-	 * 
-	 * float scale = Quote_text.getResources().getDisplayMetrics().density; int
-	 * dpAsPixels = (int) (16 * scale + 0.5f);
-	 * Star_Button.setVisibility(View.GONE); Quote_text
-	 * .setPaddingRelative(dpAsPixels, dpAsPixels, dpAsPixels, 0); }
-	 */
-	// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX KAZAKY
-	/*
-	 * return rowView; }
-	 */
+	public static class QuoteVH extends RecyclerView.ViewHolder{
+		 TextView Quote_text;
+		 TextView Author_title_text;
+		 FlipImageView Fav_Button;
+		 RelativeLayout Fav_lay;
 
-	public Boolean isFav(Integer idInteger) {
-		idfavstring = idInteger.toString();
-		ids = sp.getStringSet("ids", new HashSet<String>());
-		idlist = new ArrayList<String>(ids);
-		fav_not = idlist.contains(idfavstring);
-		return fav_not;
+		 QuoteVH(View itemView) {
+			super(itemView);
+			Quote_text = (TextView) itemView
+					.findViewById(R.id.Quote_text);
+			Author_title_text = (TextView) itemView
+					.findViewById(R.id.Author_title_text);
+			Fav_Button = (FlipImageView) itemView
+					.findViewById(R.id.Star_Button);
+			Fav_lay = (RelativeLayout) itemView
+					.findViewById(R.id.fav_layout);
+		}
 	}
 
 	private class QuoteFilter extends Filter {
@@ -236,13 +151,13 @@ public class Quotes_List_adapter extends ArrayAdapter<Quote> implements
 		protected FilterResults performFiltering(CharSequence constraint) {
 			FilterResults results = new FilterResults();
 			if (constraint == null || constraint.length() == 0) {
-				results.values = itemsArrayList.iterator();
-				results.count = itemsArrayList.size();
+				results.values = QuotesList.iterator();
+				results.count = QuotesList.size();
 			} else {
-				ArrayList<Quote> nPlanetList = new ArrayList<Quote>();
+				ArrayList<Quote> nPlanetList = new ArrayList<>();
 				Quote p;
-				for (int i = 0; i < itemsArrayList.size(); i++) {
-					p = itemsArrayList.get(i);
+				for (int i = 0; i < QuotesList.size(); i++) {
+					p = QuotesList.get(i);
 					if (p.Quote.startsWith(constraint.toString()))
 						nPlanetList.add(p);
 				}
@@ -259,9 +174,9 @@ public class Quotes_List_adapter extends ArrayAdapter<Quote> implements
 		protected void publishResults(CharSequence constraint,
 				FilterResults results) {
 			if (results.count == 0)
-				notifyDataSetInvalidated();
+				notifyDataSetChanged();
 			else {
-				itemsArrayList = (ArrayList<Quote>) results.values;
+				QuotesList = (ArrayList<Quote>) results.values;
 				notifyDataSetChanged();
 			}
 		}

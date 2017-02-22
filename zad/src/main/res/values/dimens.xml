@@ -168,4 +168,18 @@
     <dimen name="ad_holder_min_height">50.0dip</dimen>
     <dimen name="promo_dialog_top_margin">120.0dip</dimen>
 
+    <!-- dimensions -->
+    <dimen name="image_width">96dp</dimen>
+    <dimen name="image_height">96dp</dimen>
+
+
+        <dimen name="app_bar_height">?attr/actionBarSize</dimen>
+        <dimen name="fab_margin">16dp</dimen>
+        <dimen name="text_margin">16dp</dimen>
+        <dimen name="image_left_margin_collapsed">56dp</dimen>
+        <dimen name="image_top_margin_collapsed">24dp</dimen>
+        <dimen name="title_left_margin_collapsed">130dp</dimen>
+        <dimen name="title_top_margin_collapsed">36dp</dimen>
+
+
 </resources>

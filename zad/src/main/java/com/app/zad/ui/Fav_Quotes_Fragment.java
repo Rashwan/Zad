@@ -1,10 +1,5 @@
 package com.app.zad.ui;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +16,11 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.app.zad.R;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class Fav_Quotes_Fragment extends Fragment implements
 		OnItemClickListener {
@@ -110,7 +110,7 @@ public class Fav_Quotes_Fragment extends Fragment implements
 			e.printStackTrace();
 		}
 
-		listView.setAdapter(myadapter);
+//		listView.setAdapter(myadapter);
 		listView.setDivider(getResources().getDrawable(R.drawable.transparent));
 		View emtpy_view = ((LayoutInflater) getActivity()
 				.getApplicationContext().getSystemService(

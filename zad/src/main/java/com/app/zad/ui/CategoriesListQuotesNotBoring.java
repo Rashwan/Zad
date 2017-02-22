@@ -1,8 +1,5 @@
 package com.app.zad.ui;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.ActionBar;
@@ -11,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -34,6 +30,9 @@ import com.app.zad.R;
 import com.app.zad.helper.SystemBarTintManager;
 import com.app.zad.notboring.ActionBarMagicView;
 import com.app.zad.notboring.AlphaForegroundColorSpan;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class CategoriesListQuotesNotBoring extends Activity {
 
@@ -300,7 +299,7 @@ public class CategoriesListQuotesNotBoring extends Activity {
 			e.printStackTrace();
 		}
 
-		mListView.setAdapter(myadapter);
+//		mListView.setAdapter(myadapter);
 	}
 
 	@TargetApi(19)
