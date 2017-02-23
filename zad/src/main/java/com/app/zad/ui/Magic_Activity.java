@@ -394,7 +394,6 @@ public class Magic_Activity extends AppCompatActivity {
                     break;
                 case R.id.nav_fav:
                     Fav_Quotes_Fragment fav_Quotes_fragment = new Fav_Quotes_Fragment();
-                    fav_Quotes_fragment.CheckFavourable(true);
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction()
                             .replace(R.id.content_frame, fav_Quotes_fragment).commit();

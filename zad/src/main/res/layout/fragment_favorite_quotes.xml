@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/favorites_rv"
+        android:background="@color/Card_back"
+        android:paddingLeft="@dimen/listView_padding"
+        android:paddingRight="@dimen/listView_padding">
+
+    </android.support.v7.widget.RecyclerView>
+    <include
+        layout="@layout/empty_fav_layout"
+        android:visibility="gone"
+        android:id="@+id/empty_favorites_layout"
+       />
+
+</FrameLayout>
