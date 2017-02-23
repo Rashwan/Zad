@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/listView_padding"
     android:paddingRight="@dimen/listView_padding"
+    android:background="@color/Card_back"
     xmlns:android="http://schemas.android.com/apk/res/android">
 </android.support.v7.widget.RecyclerView>
 
