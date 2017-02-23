@@ -38,6 +38,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 		this.isFavFrag = b;
 		sp = context.getSharedPreferences("com.app.zad.fav_id",
                 Context.MODE_PRIVATE);
+
 	}
 
 
@@ -52,6 +53,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 		mContext = parent.getContext();
 		LayoutInflater inflater = LayoutInflater.from(mContext);
 		View view = inflater.inflate(R.layout.quote_list_item, parent, false);
+        ids = sp.getStringSet("ids", new HashSet<String>());
 
 		return new QuoteVH(view);
 	}
@@ -109,10 +111,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 		});
 	}
     private Boolean isFav(Integer idInteger) {
-        String idfavstring = idInteger.toString();
-        ids = sp.getStringSet("ids", new HashSet<String>());
-        ArrayList<String> idlist = new ArrayList<>(ids);
-        return idlist.contains(idfavstring);
+        return ids.contains(idInteger.toString());
     }
 
 	@Override

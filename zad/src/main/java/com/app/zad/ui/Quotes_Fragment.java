@@ -1,116 +1,80 @@
 package com.app.zad.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
 
 import com.app.zad.R;
-import com.app.zad.helper.FlipImageView;
+import com.app.zad.helper.ItemClickSupport;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class Quotes_Fragment extends Fragment implements OnItemClickListener {
-	public Context mContext;
+public class Quotes_Fragment extends Fragment {
 	String author_retrived;
 	String quote_retrived;
-	boolean oneQuote;
 	Integer id;
 	String wiki;
 	ArrayList<Quote> allQuotesObjects;
-	ListView listView;
-	Parcelable ListView_State;
+	RecyclerView quotesRv;
+    private Quotes_List_adapter adapter;
 
-	private boolean favValue;
 
-	FlipImageView StarFavourite;
-
-	@Override
+    @Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.list_quotes, container, false);
-		listView = (ListView) view.findViewById(R.id.listviewix);
-
-		update();
-
+        quotesRv = (RecyclerView) view.findViewById(R.id.quotes_rv);
+        setupRecyclerView();
 		return view;
 
 	}
+    private void setupRecyclerView() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        quotesRv.setHasFixedSize(true);
+        quotesRv.setLayoutManager(linearLayoutManager);
+        adapter = new Quotes_List_adapter(getActivity(), new ArrayList<Quote>(), false);
+        quotesRv.setAdapter(adapter);
 
-	private ArrayList<Quote> generateData() throws SQLException {
+        ItemClickSupport.addTo(quotesRv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                quote_retrived = allQuotesObjects.get(position).Quote;
+                author_retrived = allQuotesObjects.get(position).Author;
+                Quote thequote = allQuotesObjects.get(position);
+                wiki = thequote.getwiki(getActivity(), thequote);
+                Intent i1 = new Intent(getActivity(), Quote_view_pager_activity.class);
+                i1.putExtra("oneQuote", true);
+                i1.putExtra("quoteRetrived", quote_retrived);
+                i1.putExtra("authorRetrived", author_retrived);
+                i1.putExtra("wiki", wiki);
+                startActivity(i1);
+            }
+        });
+    }
+
+        private ArrayList<Quote> generateData() throws SQLException {
 		Quote quoteInstance = new Quote();
-		allQuotesObjects = quoteInstance.getAllObjects(mContext);
+		allQuotesObjects = quoteInstance.getAllObjects(getActivity());
 		return allQuotesObjects;
-	}
-
-	public void CheckFavourable(boolean b) {
-		favValue = b;
-
-	}
-
-	public void onItemClick(AdapterView<?> parent, View view,
-			final int position, long id) {
-
-		oneQuote = true;
-		quote_retrived = allQuotesObjects.get(position).Quote;
-		author_retrived = allQuotesObjects.get(position).Author;
-		id = allQuotesObjects.get(position).ID;
-		Quote thequote = allQuotesObjects.get(position);
-		wiki = thequote.getwiki(mContext, thequote);
-		Intent i1 = new Intent(getActivity(), Quote_view_pager_activity.class);
-		i1.putExtra("oneQuote", oneQuote);
-		i1.putExtra("quoteRetrived", quote_retrived);
-		i1.putExtra("authorRetrived", author_retrived);
-		i1.putExtra("wiki", wiki);
-		startActivity(i1);
-
-	}
-
-	public void update() {
-		mContext = getActivity().getApplicationContext();
-
-		Quotes_List_adapter myadapter = null;
-		try {
-			myadapter = new Quotes_List_adapter(getActivity(), generateData(),
-					favValue);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-//		listView.setAdapter(myadapter);
-		listView.setDivider(getResources().getDrawable(R.drawable.transparent));
-
-		// Restore ListView state
-		if (ListView_State != null) {
-			Log.d("Quotes_Frag", "trying to restore listview state..");
-			listView.onRestoreInstanceState(ListView_State);
-		}
-
-		listView.setOnItemClickListener((OnItemClickListener) this);
-
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-		update();
+        try {
+            adapter.clearQuotes();
+            adapter.addQuotes(generateData());
+            adapter.notifyDataSetChanged();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 	}
 
-	@Override
-	public void onPause() {
-		// Save ListView state @ onPause
-		Log.d("Quotes_Frag", "saving listview state @ onPause");
-		ListView_State = listView.onSaveInstanceState();
-		super.onPause();
-	}
 
 }
