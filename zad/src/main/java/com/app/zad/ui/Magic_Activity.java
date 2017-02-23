@@ -11,6 +11,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
@@ -100,10 +101,9 @@ public class Magic_Activity extends AppCompatActivity {
 
 		mContext = this;
 		if (PublicPos > 0) {
-			if (android.os.Build.VERSION.SDK_INT >= 21) {
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 				window = getWindow();
 				window.setStatusBarColor(ContextCompat.getColor(this, R.color.Purple_Deep_Black));
-
 			}
 		}
 

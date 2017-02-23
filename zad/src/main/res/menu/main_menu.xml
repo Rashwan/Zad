@@ -21,5 +21,11 @@
         app:showAsAction="never"
         android:title="@string/zad_guide">
     </item>
+    <item
+        android:id="@+id/Help_showcase"
+        android:icon="@drawable/ic_help_black_24dp"
+        app:showAsAction="never"
+        android:title="@string/zad_help">
+    </item>
 
 </menu>

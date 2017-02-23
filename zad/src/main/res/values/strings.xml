@@ -332,5 +332,6 @@
    <string name="must_fav_for_widget">يتوجب عليك إضافة بعض الحكم والمقولات إلى مفضلتك قبل استخدام هذه الويدجيت !</string>
        <string name="add_to_faves">أعجبتني</string>
     <string name="add_to_notfaves">لم تعجبني</string>
-   
+    <string name="zad_twitter_handle">\@appZad</string>
+
 </resources>
