@@ -22,7 +22,7 @@ public class Quotes_Fragment extends Fragment {
 	String wiki;
 	ArrayList<Quote> allQuotesObjects;
 	RecyclerView quotesRv;
-    private Quotes_List_adapter adapter;
+    Quotes_List_adapter adapter;
 
 
     @Override
