@@ -257,7 +257,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 		Open_Zabtly_or_Not();
 
-		mCallback.onMazagGet(lastMazgID);
 		CurrentFaceValue = lastMazgID;
 		Color_layout.setBackground(new ColorDrawable(getMatchingColor(CurrentFaceValue)));
         actionBar.setBackgroundDrawable(new ColorDrawable(getMatchingColor(CurrentFaceValue)));
@@ -354,7 +353,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 						mazagWikiEditor.putInt("last_mazag_quote_category",
 								category_retrived);
 
-						mazagWikiEditor.commit();
+						mazagWikiEditor.apply();
 
 						TvMazag.startAnimation(slideOutRight);
 						TvMazag_Auth.startAnimation(slideOutRight);
@@ -382,7 +381,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 						mazagrightEditor.putInt(
 								"last_mazag_quote_ID_inDataBase", QWERT.ID);
 
-						mazagrightEditor.commit();
+						mazagrightEditor.apply();
 
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -413,7 +412,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 								Rwiki);
 						mazagWikiEditor.putInt("last_mazag_quote_category",
 								category_retrived);
-						mazagWikiEditor.commit();
+						mazagWikiEditor.apply();
 
 						TvMazag.startAnimation(slideOutLeft);
 						TvMazag_Auth.startAnimation(slideOutLeft);
@@ -440,7 +439,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 						mazagrightEditor2.putInt(
 								"last_mazag_quote_ID_inDataBase", QWERT2.ID);
-						mazagrightEditor2.commit();
+						mazagrightEditor2.apply();
 
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -499,7 +498,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 			Editor editor = Hmprefs.edit();
 			editor.putBoolean("firstTime", true);
-			editor.commit();
+			editor.apply();
 		}
 
 		setHasOptionsMenu(true);
@@ -514,7 +513,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		editor.putBoolean(KEY_PREF_MORNING_EVENING, true);
 		editor.putBoolean(KEY_PREF_MODES, true);
 
-		editor.commit();
+		editor.apply();
 		Alarms_Set_up def_mor = new Alarms_Set_up(getActivity());
 		Alarms_Set_up def_even = new Alarms_Set_up(getActivity());
 		Alarms_Set_up def_run_mood_Question = new Alarms_Set_up(getActivity());
@@ -540,7 +539,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 			SharedPreferences.Editor maz_editor = mazag_Hmprefs.edit();
 			maz_editor.putBoolean("firstTime55", true);
-			maz_editor.commit();
+			maz_editor.apply();
 		} else {
 
 			Update_MazagList_and_Peep(maz_id);
@@ -572,7 +571,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 		Quote another_MazagQuote = new Quote();
 
-		generate_Database_values = new HashMap<Integer, Integer>();
+		generate_Database_values = new HashMap<>();
 
 		generate_Database_values.put(0, 4);
 		generate_Database_values.put(4, 1);
@@ -592,18 +591,8 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		String Rwiki2 = theQuote.getwiki(getActivity(), theQuote);
 		int category_retrived = theQuote.Category;
 
-		// try {
-		//
-		// Author_pic_mazag.setImageBitmap(GetCroppedBitmap
-		// .getCroppedBitmap(Drawable_into_Bitmap
-		// .drawableToBitmap(mazag_Image)));
-		//
-		// } catch (Exception e) {
-		//
-		// e.printStackTrace();
-		// }
 
-		ArrayList<Integer> Black_hasn = new ArrayList<Integer>();
+		ArrayList<Integer> Black_hasn = new ArrayList<>();
 
 		for (int i = 0; i < MazagList.size(); i++) {
 
@@ -623,7 +612,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		mazagWikiEditor2.putString("last_mazag_quote_wiki", Rwiki2);
 		mazagWikiEditor2.putInt("last_mazag_quote_category", category_retrived);
 
-		mazagWikiEditor2.commit();
+		mazagWikiEditor2.apply();
 
 	}
 
@@ -655,9 +644,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 			Filtered_mazag_quotes(5);
 			break;
 		case 2:
-			;
 			Filtered_mazag_quotes(7);
-
 			break;
 		case 1:
 			Filtered_mazag_quotes(3);
@@ -724,7 +711,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		mazagWikiEditor.putInt("last_mazag_quote_ID_inDataBase",
 				Ran_mazag_quote.ID);
 
-		mazagWikiEditor.commit();
+		mazagWikiEditor.apply();
 
 		TvMazag.startAnimation(slideOutRight);
 		TvMazag_Auth.startAnimation(slideOutRight);
@@ -734,25 +721,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 		TvMazag.startAnimation(slideInRight);
 		TvMazag_Auth.startAnimation(slideInRight);
-	}
-
-	OnMazagSelectedListener mCallback;
-
-	public interface OnMazagSelectedListener {
-		public void onMazagGet(int i);
-
-	}
-
-	@Override
-	public void onAttach(Context context) {
-		super.onAttach(context);
-
-		try {
-			mCallback = (OnMazagSelectedListener) context;
-		} catch (ClassCastException e) {
-			throw new ClassCastException(context.getClass().getSimpleName()
-					+ " must implement OnHeadlineSelectedListener");
-		}
 	}
 
 	protected void ShakeItBaby() {
@@ -875,7 +843,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
             }
 
             CurrentFaceValue = 0;
-			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			update_Mazag_Card(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
@@ -893,7 +860,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
                 animateStatusBar(getMatchingColor(CurrentFaceValue), getMatchingColor(1));
             }
 			CurrentFaceValue = 1;
-			mCallback.onMazagGet(CurrentFaceValue);
 
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
@@ -912,7 +878,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
             }
 
 			CurrentFaceValue = 2;
-			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
@@ -930,7 +895,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
             }
 
 			CurrentFaceValue = 3;
-			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
@@ -949,7 +913,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
             }
 
 			CurrentFaceValue = 4;
-			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
@@ -968,7 +931,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
             }
 
 			CurrentFaceValue = 5;
-			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
@@ -987,7 +949,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
             }
 
 			CurrentFaceValue = 6;
-			mCallback.onMazagGet(CurrentFaceValue);
 			save_My_Mazag(CurrentFaceValue);
 			edit_freqently_mazag_Question(CurrentFaceValue); // e1
 			update_Mazag_Card(CurrentFaceValue);
@@ -1057,7 +1018,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 		mazEditor.putInt("currentFaceValue2", currentFaceValue2);
 
-		mazEditor.commit();
+		mazEditor.apply();
 
 		Alarms_Set_up mazag_instance = new Alarms_Set_up(getActivity());
 		mazag_instance.Alarm_SetUp_Mood();
@@ -1070,7 +1031,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		Editor editor = mazagy_SharedPreference.edit();
 
 		editor.putInt("Chosen_mazag_id", thecurrentFaceValue);
-		editor.commit();
+		editor.apply();
 	}
 
 	@Override
@@ -1193,20 +1154,17 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 	private void PreSelectedFace() {
 		Drawable[] MazgaatFaceees = {
-				getActivity().getResources().getDrawable(R.drawable.face_happy),
-				getActivity().getResources().getDrawable(R.drawable.face_loved),
-				getActivity().getResources()
-						.getDrawable(R.drawable.face_afraid),
-				getActivity().getResources().getDrawable(R.drawable.face_angry),
-				getActivity().getResources().getDrawable(R.drawable.face_sad),
-				getActivity().getResources().getDrawable(
-						R.drawable.face_stressed),
-				getActivity().getResources().getDrawable(R.drawable.face_bored) };
+				ContextCompat.getDrawable(getActivity(),R.drawable.face_happy),
+				ContextCompat.getDrawable(getActivity(),R.drawable.face_loved),
+				ContextCompat.getDrawable(getActivity(),R.drawable.face_afraid),
+				ContextCompat.getDrawable(getActivity(),R.drawable.face_angry),
+				ContextCompat.getDrawable(getActivity(),R.drawable.face_sad),
+				ContextCompat.getDrawable(getActivity(), R.drawable.face_stressed),
+				ContextCompat.getDrawable(getActivity(),R.drawable.face_bored) };
 
 		Drawable d = ContextCompat.getDrawable(getActivity(),
 				R.drawable.add_schedule_fab_checked_default);
-		// Drawable d2 = getResources().getDrawable(
-		// R.drawable.add_schedule_fab_checked_black);
+
 
 		mazagy_SharedPreference = getActivity().getSharedPreferences(
 				"Chosen_mazag", Context.MODE_PRIVATE);
@@ -1268,13 +1226,13 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 	public int MazagToColor(int GiveMeNumber) {
 		int[] MazgaatColorsX = {
-				getActivity().getResources().getColor(R.color.yellow_clicked),
-				getActivity().getResources().getColor(R.color.pink_clicked),
-				getActivity().getResources().getColor(R.color.blue_grey_clicked),
-				getActivity().getResources().getColor(R.color.red_reverse),
-				getActivity().getResources().getColor(R.color.grey_clicked),
-				getActivity().getResources().getColor(R.color.orange_reverse),
-				getActivity().getResources().getColor(R.color.green_clicked) };
+				ContextCompat.getColor(getActivity(),R.color.yellow_clicked),
+				ContextCompat.getColor(getActivity(),R.color.pink_clicked),
+				ContextCompat.getColor(getActivity(),R.color.blue_grey_clicked),
+				ContextCompat.getColor(getActivity(),R.color.red_reverse),
+				ContextCompat.getColor(getActivity(),R.color.grey_clicked),
+				ContextCompat.getColor(getActivity(),R.color.orange_reverse),
+				ContextCompat.getColor(getActivity(),R.color.green_clicked) };
 		return MazgaatColorsX[GiveMeNumber];
 	}
 
@@ -1298,7 +1256,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
 			editor.putBoolean("Zabatly_or_not_key", false);
 
-			editor.commit();
+			editor.apply();
 
 			Zabtly_Mazagy_WelNabi(fin_value_of_faceid);
 
@@ -1341,7 +1299,7 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		editor2.putString("Skey2_2", RAuthor);
 		editor2.putString("Skey3_2", wiki_Refresh);
 
-		editor2.commit();
+		editor2.apply();
 	}
 
 	@Override
@@ -1373,15 +1331,6 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 		showcaseView.setContentTitle(a.getString(R.string.change_your_mood));
 		showcaseView.setShouldCentreText(false);
 		showcaseView.setButtonText(a.getString(R.string.next));
-		/*
-		 * RelativeLayout.LayoutParams lps = new RelativeLayout.LayoutParams(
-		 * ViewGroup.LayoutParams.WRAP_CONTENT,
-		 * ViewGroup.LayoutParams.WRAP_CONTENT);
-		 * lps.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-		 * lps.addRule(RelativeLayout.ALIGN_PARENT_LEFT); int margin = ((Number)
-		 * (getResources().getDisplayMetrics().density * 20)) .intValue();
-		 * showcaseView.setButtonPosition(lps);
-		 */
 
 	}
 

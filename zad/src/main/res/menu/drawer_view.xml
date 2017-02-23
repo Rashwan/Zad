@@ -34,7 +34,7 @@
             android:id="@+id/nav_premium"
             android:title="شراء النسخة المميزة"
             android:icon="@drawable/ic_lock_black_24dp"
-            android:visible="false"/>
+            />
         <item
             android:id="@+id/nav_footer"
             app:actionLayout="@layout/footer_layout"
