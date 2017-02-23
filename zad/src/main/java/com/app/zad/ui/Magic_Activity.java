@@ -263,7 +263,7 @@ public class Magic_Activity extends AppCompatActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.home_menu, menu);
+		inflater.inflate(R.menu.main_menu, menu);
 
 		return super.onCreateOptionsMenu(menu);
 	}
@@ -325,16 +325,7 @@ public class Magic_Activity extends AppCompatActivity {
 			Intent i3 = new Intent(Magic_Activity.this, IntroActivity.class);
 			startActivity(i3);
 			return true;
-		case R.id.Help_showcase:
-
-			Home_Fragment hFrag = (Home_Fragment) getSupportFragmentManager()
-					.findFragmentByTag("home");
-			hFrag.showHomeHelpCaseView();
-
-			return true;
-
 		default:
-
 			return super.onOptionsItemSelected(item);
 		}
 	}
@@ -374,6 +365,7 @@ public class Magic_Activity extends AppCompatActivity {
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction()
                             .replace(R.id.content_frame, Authors_Frag).commit();
+
 
                     break;
 

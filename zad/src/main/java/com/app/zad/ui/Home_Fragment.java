@@ -28,6 +28,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -1376,4 +1377,14 @@ public class Home_Fragment extends Fragment implements OnClickListener {
 
     }
 
+    @Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case R.id.Help_showcase:
+				showHomeHelpCaseView();
+				return true;
+		}
+
+		return super.onOptionsItemSelected(item);
+	}
 }
