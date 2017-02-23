@@ -1,7 +1,5 @@
 package com.app.zad.ui;
 
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -16,15 +14,16 @@ import com.app.zad.R;
 import com.app.zad.helper.Drawable_into_Bitmap;
 import com.app.zad.helper.GetCroppedBitmap;
 
+import java.util.ArrayList;
+
 public class Author_Grid_adapter extends ArrayAdapter<Author_Grid_Item> {
 
 	private final Context context;
-	ArrayList<Author_Grid_Item> itemsArrayList;
+	private ArrayList<Author_Grid_Item> itemsArrayList;
 
 	public Author_Grid_adapter(Context context,
 			ArrayList<Author_Grid_Item> arrayList) {
 		super(context, R.layout.author_grid_item, arrayList);
-
 		this.context = context;
 		this.itemsArrayList = arrayList;
 	}

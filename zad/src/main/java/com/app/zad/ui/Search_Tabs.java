@@ -9,9 +9,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,31 +21,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
 import com.app.zad.R;
+import com.app.zad.helper.ItemClickSupport;
+import com.app.zad.helper.SpacesItemDecoration;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class Search_Tabs extends AppCompatActivity {
 	private FragmentTabHost mTabHost;
 	android.support.v7.widget.SearchView mSearchView = null;
 	String mQuery = "";
-    static ListView listView;
-    static GridView grid;
+    static RecyclerView quotesRv;
+    static RecyclerView authorsRv;
 	static ArrayList<String> all;
 	private static ArrayList<Quote> allQuotesObjects;
 	static ArrayList<Author_Grid_Item> Authors_items;
-	static ArrayList<Quote> tempArrayList = new ArrayList<Quote>();
-	static ArrayList<Author_Grid_Item> tempAuthorArrayList = new ArrayList<Author_Grid_Item>();
+	static ArrayList<Quote> tempArrayList = new ArrayList<>();
+	static ArrayList<Author_Grid_Item> tempAuthorArrayList = new ArrayList<>();
     Quotes_List_adapter myadapter;
 	MenuItem searchItem;
 	public  Context mContext;
@@ -52,7 +50,7 @@ public class Search_Tabs extends AppCompatActivity {
 	static String author_retrieved1;
 	static private String author_retrived2;
 	int numColumns = 1;
-    Author_Grid_adapter Gridadapter;
+    AuthorsAdapter authorsAdapter;
 	SearchManager searchManager;
 
 	@SuppressLint("NewApi")
@@ -60,7 +58,7 @@ public class Search_Tabs extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.search_tasty);
-
+        mContext = this;
 		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
         Toolbar toolbar = (Toolbar) findViewById(R.id.search_toolbar);
@@ -154,10 +152,10 @@ public class Search_Tabs extends AppCompatActivity {
                                     }
                                 }
                             }
-                            myadapter = new Quotes_List_adapter(
-                                    getApplicationContext(), tempArrayList,
+                            myadapter = new Quotes_List_adapter(mContext
+                                    , tempArrayList,
                                     true);
-//                            listView.setAdapter(myadapter);
+                            quotesRv.setAdapter(myadapter);
                         } else {
                             for (Author_Grid_Item c2 : Authors_items) {
                                 if (textlength <= c2.getAuthor_Title().length()) {
@@ -167,11 +165,8 @@ public class Search_Tabs extends AppCompatActivity {
                                     }
                                 }
                             }
-                            Gridadapter = new Author_Grid_adapter(
-                                    getApplicationContext(),
-                                    tempAuthorArrayList);
-
-                            grid.setAdapter(Gridadapter);
+                            authorsAdapter = new AuthorsAdapter(mContext, tempAuthorArrayList);
+                            authorsRv.setAdapter(authorsAdapter);
                         }
                         return true;
                     }
@@ -254,79 +249,65 @@ public class Search_Tabs extends AppCompatActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	public static class Quotes_Fragment_Own extends Fragment implements
-			OnItemClickListener {
+	public static class Quotes_Fragment_Own extends Fragment {
 
-		@SuppressWarnings("unused")
-		private ToggleButton StarFavourite;
-		private boolean oneQuote;
 		private String wiki;
-        private Context context;
-        private Quotes_List_adapter myadapter;
-
+        private Quotes_List_adapter adapter;
         @Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View view = inflater.inflate(R.layout.list_quotes_search,
 					container, false);
-            context = getActivity().getApplicationContext();
-			myadapter = null;
-			try {
-				myadapter = new Quotes_List_adapter(getActivity(),
-						generateData(), true);
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-
-            listView = (ListView) view.findViewById(R.id.listviewix);
-
-//			listView.setAdapter(myadapter);
-			listView.setDivider(ContextCompat.getDrawable(context,
-					R.drawable.transparent));
-
-			listView.setOnItemClickListener(this);
-
-			StarFavourite = (ToggleButton) view.findViewById(R.id.Star_Button);
+			quotesRv = (RecyclerView) view.findViewById(R.id.quotes_search_rv);
+            setupRecyclerView();
 			return view;
 		}
+        private void setupRecyclerView() {
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+            quotesRv.setHasFixedSize(true);
+            quotesRv.setLayoutManager(linearLayoutManager);
+            try {
+                adapter = new Quotes_List_adapter(getActivity(), generateData(), true);
+                quotesRv.setAdapter(adapter);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
 
+            ItemClickSupport.addTo(quotesRv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+                @Override
+                public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                    if (!tempArrayList.isEmpty()) {
+                        quote_retrived1 = tempArrayList.get(position).Quote;
+                        author_retrieved1 = tempArrayList.get(position).Author;
+                        wiki = tempArrayList.get(position).getwiki(getActivity(),
+                                tempArrayList.get(position));
+                    }else {
+                        quote_retrived1 = adapter.getItem(position).Quote;
+                        author_retrieved1 = adapter.getItem(position).Author;
+                        wiki = adapter.getItem(position).getwiki(getActivity(),
+                                adapter.getItem(position));
+                    }
+
+                    Intent i1 = new Intent(getActivity(),
+                            Quote_view_pager_activity.class);
+                    i1.putExtra("oneQuote", true);
+                    i1.putExtra("quoteRetrived", quote_retrived1);
+                    i1.putExtra("authorRetrived", author_retrieved1);
+                    i1.putExtra("wiki", wiki);
+                    startActivity(i1);
+                }
+            });
+        }
 		private ArrayList<Quote> generateData() throws SQLException {
 			Quote quoteInstance = new Quote();
-			allQuotesObjects = quoteInstance.getAllObjects(context);
+            allQuotesObjects = quoteInstance.getAllObjects(getActivity());
 			return allQuotesObjects;
-		}
-
-		public void onItemClick(AdapterView<?> parent, View view,
-				final int position, long id) {
-
-			oneQuote = true;
-
-			try {
-				quote_retrived1 = tempArrayList.get(position).Quote;
-				author_retrieved1 = tempArrayList.get(position).Author;
-				wiki = tempArrayList.get(position).getwiki(context,
-						tempArrayList.get(position));
-			} catch (Exception e) {
-//				quote_retrived1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Quote;
-//				author_retrieved1 = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).Author;
-//				wiki = ((Quotes_List_adapter)parent.getAdapter()).getItem(position).getwiki(context,
-//                        ((Quotes_List_adapter)parent.getAdapter()).getItem(position));
-				e.printStackTrace();
-			}
-			Intent i1 = new Intent(getActivity(),
-					Quote_view_pager_activity.class);
-			i1.putExtra("oneQuote", oneQuote);
-			i1.putExtra("quoteRetrived", quote_retrived1);
-			i1.putExtra("authorRetrived", author_retrieved1);
-			i1.putExtra("wiki", wiki);
-			startActivity(i1);
-
 		}
 	}
 
 	public static class Authors_Fragment_Own extends Fragment {
 
-        private Author_Grid_adapter adapter;
+        private AuthorsAdapter adapter;
 
         @Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -334,44 +315,35 @@ public class Search_Tabs extends AppCompatActivity {
 			View view = inflater.inflate(R.layout.grid_view_search, container,
 					false);
 
-			adapter = new Author_Grid_adapter(getActivity(), generateData());
-
-			grid = (GridView) view.findViewById(R.id.GridViewix);
-			adapter.sort(new Comparator<Author_Grid_Item>() {
-
-				public int compare(Author_Grid_Item lhs, Author_Grid_Item rhs) {
-					return lhs.getAuthor_Title().compareTo(
-							rhs.getAuthor_Title());
-				}
-			});
-
-			grid.setAdapter(adapter);
-
-			grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-				@Override
-				public void onItemClick(AdapterView<?> parent, View view,
-						int position, long id) {
-					try {
-						author_retrived2 = tempAuthorArrayList.get(position)
-								.getAuthor_Title();
-						Log.i("trygrid", "sss");
-					} catch (Exception e) {
-						Log.i("trygrid", "sss");
-						author_retrived2 = adapter.getItem(position)
-								.getAuthor_Title();
-						e.printStackTrace();
-					}
-					Intent i1 = new Intent(getActivity(),
-							Authors_list_quotes_notBoring.class);
-					i1.putExtra("authorRetrieved", author_retrived2);
-					startActivity(i1);
-				}
-			});
-
+			adapter = new AuthorsAdapter(getActivity(), generateData());
+			authorsRv = (RecyclerView) view.findViewById(R.id.authors_search_rv);
+            setupRecyclerView();
 			return view;
 		}
+        private void setupRecyclerView() {
+            GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 3);
 
+            authorsRv.setHasFixedSize(true);
+            authorsRv.setLayoutManager(gridLayoutManager);
+            authorsRv.addItemDecoration(new SpacesItemDecoration(20));
+            adapter = new AuthorsAdapter(getActivity(), generateData());
+            authorsRv.setAdapter(adapter);
+            ItemClickSupport.addTo(authorsRv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+                @Override
+                public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                    if (!tempAuthorArrayList.isEmpty()) {
+                        author_retrived2 = tempAuthorArrayList.get(position)
+                                .getAuthor_Title();
+                    }else {
+                        author_retrived2 = adapter.getItem(position).getAuthor_Title();
+                    }
+                    Intent i1 = new Intent(getActivity(),
+                            Authors_list_quotes_notBoring.class);
+                    i1.putExtra("authorRetrieved", author_retrived2);
+                    startActivity(i1);
+                }
+            });
+        }
 		private ArrayList<Author_Grid_Item> generateData() {
 			Authors_items = new ArrayList<>();
 

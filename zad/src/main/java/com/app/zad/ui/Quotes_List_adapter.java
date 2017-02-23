@@ -23,9 +23,9 @@ import java.util.Set;
 public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapter.QuoteVH>
 		implements Filterable{
 
-    private ArrayList<Quote> QuotesList;
+    private ArrayList<Quote> quotesList;
 	private boolean isFavFrag = true;
-	Context mContext ;
+	private Context mContext ;
 
 	private SharedPreferences sp;
 	private SharedPreferences.Editor editor;
@@ -34,7 +34,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
     public Quotes_List_adapter(Context context, ArrayList<Quote> quotes,
 			boolean b) {
         mContext = context;
-		this.QuotesList = quotes;
+		this.quotesList = quotes;
 		this.isFavFrag = b;
 		sp = context.getSharedPreferences("com.app.zad.fav_id",
                 Context.MODE_PRIVATE);
@@ -59,8 +59,8 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 
 	@Override
 	public void onBindViewHolder(final QuoteVH holder, int position) {
-		Integer favid = QuotesList.get(position).ID;
-		Quote quote = QuotesList.get(position);
+		Integer favid = quotesList.get(position).ID;
+		Quote quote = quotesList.get(position);
 
 		holder.Quote_text.setText(quote.Quote);
 		holder.Author_title_text.setText(quote.Author);
@@ -75,7 +75,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 		}
 
 		holder.Fav_Button.setOnClickListener(new OnClickListener() {
-			Quote quote1 = QuotesList.get(holder.getAdapterPosition());
+			Quote quote1 = quotesList.get(holder.getAdapterPosition());
 			Integer idfav = quote1.ID;
 			String idfavstring = idfav.toString();
 
@@ -101,7 +101,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 
 				if (isFavFrag) {
 
-					QuotesList.remove(QuotesList.get(holder.getAdapterPosition()));
+					quotesList.remove(quotesList.get(holder.getAdapterPosition()));
 					notifyItemRemoved(holder.getAdapterPosition());
 
 				}
@@ -115,13 +115,16 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 
 	@Override
 	public int getItemCount() {
-		return QuotesList.size();
+		return quotesList.size();
 	}
     public void addQuotes(List<Quote> quotes){
-        this.QuotesList.addAll(quotes);
+        this.quotesList.addAll(quotes);
     }
     public void clearQuotes(){
-        this.QuotesList.clear();
+        this.quotesList.clear();
+    }
+    public Quote getItem(int position){
+        return this.quotesList.get(position);
     }
 
 	public static class QuoteVH extends RecyclerView.ViewHolder{
@@ -149,13 +152,13 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 		protected FilterResults performFiltering(CharSequence constraint) {
 			FilterResults results = new FilterResults();
 			if (constraint == null || constraint.length() == 0) {
-				results.values = QuotesList.iterator();
-				results.count = QuotesList.size();
+				results.values = quotesList.iterator();
+				results.count = quotesList.size();
 			} else {
 				ArrayList<Quote> nPlanetList = new ArrayList<>();
 				Quote p;
-				for (int i = 0; i < QuotesList.size(); i++) {
-					p = QuotesList.get(i);
+				for (int i = 0; i < quotesList.size(); i++) {
+					p = quotesList.get(i);
 					if (p.Quote.startsWith(constraint.toString()))
 						nPlanetList.add(p);
 				}
@@ -174,7 +177,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 			if (results.count == 0)
 				notifyDataSetChanged();
 			else {
-				QuotesList = (ArrayList<Quote>) results.values;
+				quotesList = (ArrayList<Quote>) results.values;
 				notifyDataSetChanged();
 			}
 		}
