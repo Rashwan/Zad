@@ -279,6 +279,8 @@
                 android:layout_below="@+id/TextView11"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/google_plus_name"
+                android:layout_marginBottom="8dp"
+
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/text_hint"
                 android:textStyle="normal" />
@@ -296,7 +298,49 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/text"
                 android:textStyle="bold" />
+            <TextView
+                android:id="@+id/TextView013"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/TextView12"
+                android:background="@color/text_dividers" />
         </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/privacy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/RelativeLayout04"
+            android:layout_marginTop="@dimen/keyline_16dp"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:id="@+id/privacy_button"
+                style="@style/ZadActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/keyline_16dp"
+                android:src="@drawable/ic_about_website" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/privacy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/privacy_button"
+                android:paddingTop="@dimen/keyline_8dp"
+                android:text="@string/privacy_policy"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+
+                />
+        </RelativeLayout>
+
     </RelativeLayout>
 
 </android.support.v4.widget.NestedScrollView>

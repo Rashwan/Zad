@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.app.zad.R;
@@ -103,6 +104,7 @@ public class AboutActivity extends AppCompatActivity  {
 
 	public static class LaunchpadSectionFragment extends Fragment implements
 			OnClickListener {
+        private final static String PRIVACY_URL = "https://cdn.rawgit.com/Rashwan/9c518d389a616b47584eb9aa666c97f1/raw/bc473d431ee617c419eceafc51b72082193ceb8e/Privacy.html";
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -124,6 +126,7 @@ public class AboutActivity extends AppCompatActivity  {
 					.findViewById(R.id.about_googleplus);
 			ImageView meego = (ImageView) rootView
 					.findViewById(R.id.imageViewLogo);
+            RelativeLayout privacyLayout = (RelativeLayout) rootView.findViewById(R.id.privacy_layout);
 			meego.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.ic_zad));
 			meego.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
@@ -132,6 +135,7 @@ public class AboutActivity extends AppCompatActivity  {
 			facebook.setOnClickListener(this);
 			Twitter.setOnClickListener(this);
 			GPlus.setOnClickListener(this);
+            privacyLayout.setOnClickListener(this);
 
 			return rootView;
 		}
@@ -180,7 +184,10 @@ public class AboutActivity extends AppCompatActivity  {
 				startActivity(browserIntent);
 
 				break;
-
+                case R.id.privacy_layout:
+                    browserIntent = new Intent(Intent.ACTION_VIEW,Uri.parse(PRIVACY_URL));
+                    startActivity(browserIntent);
+                    break;
 			default:
 				break;
 			}

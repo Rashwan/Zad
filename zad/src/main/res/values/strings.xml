@@ -24,6 +24,7 @@
     <string name="website_url">appZad.com</string>
     <string name="gmail_url">zad.dev.team@gmail.com</string>
     <string name="gmail">البريد الإلكتروني</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
 
     <!-- widget -->
     <string name="initial_quote_label">جاري التحميل..</string>
