@@ -9,23 +9,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 import android.widget.TextView;
 
 import com.app.zad.R;
 import com.app.zad.helper.ItemClickSupport;
 
-import java.util.ArrayList;
-
 public class CategoriesFragment extends Fragment {
 
-	int numColumns = 1;
-	GridView grid;
 	public Context mContext;
-	String author_retrieved;
-	String[] pics_asssets = null;
-	ArrayList<String> all;
-	ArrayList<String> categories = new ArrayList<String>();
 	RecyclerView categoriesRv;
 
 	@Override

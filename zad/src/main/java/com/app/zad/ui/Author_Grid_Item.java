@@ -1,8 +1,9 @@
 package com.app.zad.ui;
 
 import android.graphics.drawable.Drawable;
+import android.support.annotation.NonNull;
 
-public class Author_Grid_Item {
+public class Author_Grid_Item implements Comparable<Author_Grid_Item> {
 
 	private final String Author_Title;
 	private final Drawable Author_Pic;
@@ -32,4 +33,9 @@ public class Author_Grid_Item {
 		return 0;
 	}
 
+
+	@Override
+	public int compareTo(@NonNull Author_Grid_Item o) {
+		return this.getAuthor_Title().compareTo(o.getAuthor_Title());
+	}
 }

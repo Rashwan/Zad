@@ -1,46 +1,39 @@
 package com.app.zad.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.GridView;
 
 import com.app.zad.R;
+import com.app.zad.helper.ItemClickSupport;
+import com.app.zad.helper.SpacesItemDecoration;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class Authors_Fragment extends Fragment {
 
 	Drawable[] PicsArray;
-	int numColumns = 1;
-	GridView grid;
-	public Context mContext;
-	String author_retrieved;
-	Parcelable GridView_State;
 	String[] pics_asssets = null;
 	ArrayList<String> all;
-	Author_Grid_adapter adapter = null;
+	AuthorsAdapter adapter ;
+	RecyclerView authorsRv;
+    private String author_retrieved;
 
-	void decodeStream() {
+    void decodeStream() {
 		Thread thread = new Thread(new Runnable() {
 			@Override
 			public void run() {
@@ -68,10 +61,9 @@ public class Authors_Fragment extends Fragment {
 					if (ins != null)
 						try {
 							ins.close();
-						} catch (IOException e) {
+						} catch (IOException ignored) {
 						}
 				}
-
 			}
 		});
 		thread.start();
@@ -80,58 +72,37 @@ public class Authors_Fragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.grid_view, container, false);
-		mContext = getActivity().getApplicationContext();
-		((AppCompatActivity)(getActivity())).getSupportActionBar()
-				.setBackgroundDrawable(new ColorDrawable(ContextCompat
-						.getColor(getActivity(),R.color.Purple_Deep)));
+		View view = inflater.inflate(R.layout.fragment_authors, container, false);
+		authorsRv = (RecyclerView) view.findViewById(R.id.authors_rv);
 
 		decodeStream();
-		Author_Grid_adapter adapter = null;
-		try {
-			adapter = new Author_Grid_adapter(getActivity(), generateData());
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		grid = (GridView) view.findViewById(R.id.GridViewix);
-		adapter.sort(new Comparator<Author_Grid_Item>() {
-
-			public int compare(Author_Grid_Item lhs, Author_Grid_Item rhs) {
-				return lhs.getAuthor_Title().compareTo(rhs.getAuthor_Title());
-			}
-		});
-
-		grid.setAdapter(adapter);
-		final Author_Grid_adapter adapter2 = adapter;
-		// Restore ListView state
-		if (GridView_State != null) {
-			Log.d("Quotes_Frag", "trying to restore listview state..");
-			grid.onRestoreInstanceState(GridView_State);
-		}
-
-		grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-			/**
-			 * Rashwan Stores the author of the clicked quote into
-			 * author_retrieved in order to use to show all the quotes of the
-			 * author in the next fragment
-			 */
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-
-				author_retrieved = adapter2.getItem(position).getAuthor_Title();
-
-				Intent i1 = new Intent(getActivity(),
-						Authors_list_quotes_notBoring.class);
-				i1.putExtra("authorRetrieved", author_retrieved);
-				startActivity(i1);
-			}
-		});
+        setupRecyclerView();
 
 		return view;
 	}
+    private void setupRecyclerView(){
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(),3);
 
+        authorsRv.setHasFixedSize(true);
+        authorsRv.setLayoutManager(gridLayoutManager);
+        authorsRv.addItemDecoration(new SpacesItemDecoration(20));
+        try {
+            adapter = new AuthorsAdapter(getActivity(),generateData());
+            authorsRv.setAdapter(adapter);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        ItemClickSupport.addTo(authorsRv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                author_retrieved = adapter.getItem(position).getAuthor_Title();
+                Intent i1 = new Intent(getActivity(),
+                        Authors_list_quotes_notBoring.class);
+                i1.putExtra("authorRetrieved", author_retrieved);
+                startActivity(i1);
+            }
+        });
+    }
 	/**
 	 * Rashwan generating a list of all the authors in the database then links
 	 * every author with its picture(the linking is hard coded now but not the
@@ -160,13 +131,4 @@ public class Authors_Fragment extends Fragment {
 
 		return items;
 	}
-
-	@Override
-	public void onPause() {
-		// Save ListView state @ onPause
-		Log.d("Quotes_Frag", "saving listview state @ onPause");
-		GridView_State = grid.onSaveInstanceState();
-		super.onPause();
-	}
-
 }

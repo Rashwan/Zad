@@ -33,7 +33,7 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 
     public Quotes_List_adapter(Context context, ArrayList<Quote> quotes,
 			boolean b) {
-
+        mContext = context;
 		this.QuotesList = quotes;
 		this.isFavFrag = b;
 		sp = context.getSharedPreferences("com.app.zad.fav_id",
@@ -50,7 +50,6 @@ public class Quotes_List_adapter extends RecyclerView.Adapter<Quotes_List_adapte
 	}
 	@Override
 	public QuoteVH onCreateViewHolder(ViewGroup parent, int viewType) {
-		mContext = parent.getContext();
 		LayoutInflater inflater = LayoutInflater.from(mContext);
 		View view = inflater.inflate(R.layout.quote_list_item, parent, false);
         ids = sp.getStringSet("ids", new HashSet<String>());
