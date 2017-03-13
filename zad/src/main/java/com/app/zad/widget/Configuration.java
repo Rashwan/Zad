@@ -1,18 +1,15 @@
 package com.app.zad.widget;
 
-import java.util.List;
-
-import android.app.ActionBar;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +23,9 @@ import com.app.zad.helpUI.PageFragmentCallbacks;
 import com.app.zad.helpUI.ReviewFragment;
 import com.app.zad.helpUI.StepPagerStrip;
 
-public class Configuration extends FragmentActivity implements
+import java.util.List;
+
+public class Configuration extends AppCompatActivity implements
 		PageFragmentCallbacks, ReviewFragment.Callbacks, ModelCallbacks {
 	private ViewPager mPager;
 	private MyPagerAdapter mPagerAdapter;
@@ -45,7 +44,6 @@ public class Configuration extends FragmentActivity implements
 
 	private int appWidgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
 	final Context context = Configuration.this;
-	private ActionBar ab;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -59,8 +57,6 @@ public class Configuration extends FragmentActivity implements
 
 		setContentView(R.layout.widget_setup);
 
-		ab = getActionBar();
-		ab.hide();
 		if (savedInstanceState != null) {
 			mWizardModel.load(savedInstanceState.getBundle("model"));
 		}

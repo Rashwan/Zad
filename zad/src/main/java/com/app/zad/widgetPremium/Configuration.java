@@ -1,6 +1,5 @@
 package com.app.zad.widgetPremium;
 
-import android.app.ActionBar;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -51,7 +50,6 @@ public class Configuration extends FragmentActivity implements
 
 	private int appWidgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
 	final Context context = Configuration.this;
-	private ActionBar ab;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -74,8 +72,6 @@ public class Configuration extends FragmentActivity implements
 
 				setContentView(R.layout.widget_setup_fav);
 
-				ab = getActionBar();
-				ab.hide();
 				if (savedInstanceState != null) {
 					mWizardModel.load(savedInstanceState.getBundle("model"));
 				}

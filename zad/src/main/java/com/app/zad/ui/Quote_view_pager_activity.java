@@ -213,7 +213,7 @@ public class Quote_view_pager_activity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 setFavoriteState();
-                super.onPageSelected(position);
+                super.onPageSelected(position-1);
             }
         });
         mPager.setCurrentItem(pos - 1);
