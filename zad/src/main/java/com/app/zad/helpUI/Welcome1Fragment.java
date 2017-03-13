@@ -2,7 +2,6 @@ package com.app.zad.helpUI;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,11 +25,9 @@ public class Welcome1Fragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-
 		View view = inflater.inflate(R.layout.helper_hey, container, false);
 
 		ImageView meego = (ImageView) view.findViewById(R.id.image_logo);
-		meego.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.ic_zad));
 		meego.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
 		return view;

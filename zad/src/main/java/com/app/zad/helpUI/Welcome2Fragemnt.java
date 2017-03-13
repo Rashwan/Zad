@@ -2,7 +2,6 @@ package com.app.zad.helpUI;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,6 @@ public class Welcome2Fragemnt extends Fragment {
 		View view = inflater.inflate(R.layout.helper_mood, container, false);
 
 		ImageView meego = (ImageView) view.findViewById(R.id.image_Faces);
-		meego.setImageDrawable(ContextCompat.getDrawable(getActivity(),R.drawable.ic_cards));
 		meego.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
 		return view;

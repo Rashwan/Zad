@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +27,7 @@ import com.app.zad.helpUI.Welcome3Fragment;
 
 import java.util.List;
 
-public class IntroActivity extends FragmentActivity implements
+public class IntroActivity extends AppCompatActivity implements
 		PageFragmentCallbacks, ReviewFragment.Callbacks, ModelCallbacks {
 	private ViewPager mPager;
 	private MyPagerAdapter mPagerAdapter;
