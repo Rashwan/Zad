@@ -1,16 +1,5 @@
 package com.app.zad.widget;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.StreamCorruptedException;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -27,14 +16,25 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.widget.RemoteViews;
 
-import com.j256.ormlite.android.apptools.OpenHelperManager;
-import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.app.zad.R;
 import com.app.zad.helper.GetCroppedBitmap;
 import com.app.zad.ui.Authors_list_quotes_notBoring;
 import com.app.zad.ui.DatabaseHelper;
 import com.app.zad.ui.Quote;
 import com.app.zad.ui.Quote_view_pager_activity;
+import com.j256.ormlite.android.apptools.OpenHelperManager;
+import com.j256.ormlite.dao.RuntimeExceptionDao;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StreamCorruptedException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class WidgetService extends Service {
 	public static final String UPDATE = "update";
@@ -111,7 +111,7 @@ public class WidgetService extends Service {
 				}
 
 				InputStream ims = context.getAssets().open(
-						"ImagesAuthors/" + pic_id_string + ".jpg");
+						"ImagesAuthors/" + pic_id_string + ".webp");
 				Drawable d = Drawable.createFromStream(ims, null);
 				bitmap = ((BitmapDrawable) d).getBitmap();
 
@@ -119,12 +119,12 @@ public class WidgetService extends Service {
 				/*
 				 * Uri uri = Uri.withAppendedPath(
 				 * MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI,
-				 * "ImagesAuthors/" + pic_id_string + ".jpg");
+				 * "ImagesAuthors/" + pic_id_string + ".webp");
 				 * views.setImageViewUri(R.id.authorPicWidget, uri);
 				 */views.setImageViewBitmap(R.id.authorPicWidget, bitmap2);
 			} catch (Exception exception) {
 				InputStream ims = context.getAssets().open(
-						"ImagesAuthors/" + "1600" + ".jpg");
+						"ImagesAuthors/" + "1600" + ".webp");
 				Drawable d = Drawable.createFromStream(ims, null);
 				bitmap = ((BitmapDrawable) d).getBitmap();
 				bitmap2 = GetCroppedBitmap.getCroppedBitmap(bitmap);

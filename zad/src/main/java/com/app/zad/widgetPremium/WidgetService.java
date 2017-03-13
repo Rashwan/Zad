@@ -1,13 +1,5 @@
 package com.app.zad.widgetPremium;
 
-import java.io.InputStream;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
-import java.util.Set;
-
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -32,6 +24,14 @@ import com.app.zad.ui.DatabaseHelper;
 import com.app.zad.ui.Quote;
 import com.app.zad.ui.Quote_view_pager_activity;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
+
+import java.io.InputStream;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 
 public class WidgetService extends Service {
 	public static final String UPDATE = "update";
@@ -106,7 +106,7 @@ public class WidgetService extends Service {
 				}
 
 				InputStream ims = context.getAssets().open(
-						"ImagesAuthors/" + pic_id_string + ".jpg");
+						"ImagesAuthors/" + pic_id_string + ".webp");
 				Drawable d = Drawable.createFromStream(ims, null);
 				bitmap = ((BitmapDrawable) d).getBitmap();
 
@@ -114,12 +114,12 @@ public class WidgetService extends Service {
 				/*
 				 * Uri uri = Uri.withAppendedPath(
 				 * MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI,
-				 * "ImagesAuthors/" + pic_id_string + ".jpg");
+				 * "ImagesAuthors/" + pic_id_string + ".webp");
 				 * views.setImageViewUri(R.id.authorPicWidget, uri);
 				 */views.setImageViewBitmap(R.id.authorPicWidget, bitmap2);
 			} catch (Exception exception) {
 				InputStream ims = context.getAssets().open(
-						"ImagesAuthors/" + "1600" + ".jpg");
+						"ImagesAuthors/" + "1600" + ".webp");
 				Drawable d = Drawable.createFromStream(ims, null);
 				bitmap = ((BitmapDrawable) d).getBitmap();
 				bitmap2 = GetCroppedBitmap.getCroppedBitmap(bitmap);

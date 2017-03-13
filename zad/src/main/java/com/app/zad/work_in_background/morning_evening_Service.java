@@ -113,7 +113,7 @@ public class morning_evening_Service extends Service {
 			}
 
 			InputStream ims = this.getAssets().open(
-					"ImagesAuthors/" + pic_id_string + ".jpg");
+					"ImagesAuthors/" + pic_id_string + ".webp");
 			Drawable d = Drawable.createFromStream(ims, null);
 
 			bitmap = ((BitmapDrawable) d).getBitmap();
