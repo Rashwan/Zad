@@ -89,8 +89,11 @@ public class Magic_Activity extends AppCompatActivity {
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+
 		setContentView(R.layout.magic_activity);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nvView);
 		setupDrawerContent(navigationView);
         toolbar = (Toolbar) findViewById(R.id.home_toolbar);

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="_Zad_Theme_yellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@android:transition/fade</item>
+
+    </style>
+    <style name="_Zad_Theme_yellow.CategoriesFragment" parent="_Zad_Theme_yellow">
+        <item name="android:windowReenterTransition">@android:transition/fade</item>
+    </style>
+    <style name="_Zad_Theme_yellow.CategoryFragment" parent="_Zad_Theme_yellow">
+        <item name="android:windowEnterTransition">@android:transition/fade</item>
+        <item name="android:windowReturnTransition">@android:transition/fade</item>
+    </style>
+</resources>
+
+
+
+
+
+
+

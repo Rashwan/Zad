@@ -2,6 +2,7 @@ package com.app.zad.ui;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -40,6 +41,9 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
     @Override
     public void onBindViewHolder(CategoriesVH holder, int position) {
         holder.categoryTv.setTypeface(type);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            holder.categoryIv.setTransitionName("category_image" + position);
+        }
         switch (position){
             case 0:
                 holder.categoryTv.setText(categoriesList[position]);

@@ -21,12 +21,15 @@ import com.app.zad.helper.ItemClickSupport;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import static com.app.zad.ui.CategoriesFragment.SHARED_ELEMENT_NAME;
+
 public class CategoriesListQuotesNotBoring extends AppCompatActivity {
 
 	ArrayList<Quote> categoryQuotes;
 	Context mContext;
 	Integer cat_int;
 	String cat_string;
+    String catSharedElement;
 
     private RecyclerView categoryQuotesRv;
 
@@ -52,6 +55,10 @@ public class CategoriesListQuotesNotBoring extends AppCompatActivity {
 		Intent cat_intent = getIntent();
 		cat_int = cat_intent.getExtras().getInt("categoriesNum");
 		cat_string = cat_intent.getExtras().getString("categoriesString");
+        if (cat_intent.hasExtra(SHARED_ELEMENT_NAME)){
+            catSharedElement = cat_intent.getExtras().getString(SHARED_ELEMENT_NAME);
+            categoryImage.setTransitionName(catSharedElement);
+        }
 
         categoryImage.setImageDrawable(chooseCategoryPicture(cat_int));
 

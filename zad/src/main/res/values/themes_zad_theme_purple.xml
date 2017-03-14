@@ -169,7 +169,6 @@
         <item name="android:actionBarItemBackground">@drawable/action_bar_item_drawable</item>
         <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
 
-
     </style>
 
     <style name="Zad_yellow_Overlay" parent="@style/_Zad_Theme_yellow">
