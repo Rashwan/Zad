@@ -1,0 +1,26 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="change_mode"
+        android:enabled="true"
+        android:icon="@drawable/ic_mood_white_24dp"
+        android:shortcutShortLabel="@string/change_mood_shortcut"
+        android:shortcutLongLabel="@string/change_mood_shortcut"
+        android:shortcutDisabledMessage="@string/change_mood_disabled_shortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.app.zad"
+            android:targetClass="com.app.zad.ui.Magic_Activity">
+            <extra
+                android:name="open_zabtly_or_not_Extras"
+                android:value= "true"
+                />
+        </intent>
+
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+
+    </shortcut>
+</shortcuts>
+    
