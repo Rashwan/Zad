@@ -1,11 +1,13 @@
 package com.app.zad.ui;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -14,6 +16,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.app.zad.R;
 import com.app.zad.helper.ItemClickSupport;
@@ -32,6 +35,8 @@ public class Authors_Fragment extends Fragment {
 	AuthorsAdapter adapter ;
 	RecyclerView authorsRv;
     private String author_retrieved;
+    public static final String AUTHOR_SHARED_ELEMENT_NAME = "com.app.zad.ui.Authors_Fragment";
+
 
     void decodeStream() {
 		Thread thread = new Thread(new Runnable() {
@@ -96,10 +101,19 @@ public class Authors_Fragment extends Fragment {
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                 author_retrieved = adapter.getItem(position).getAuthor_Title();
+                ImageView authorImage = (ImageView) v.findViewById(R.id.author_image_iv);
+
                 Intent i1 = new Intent(getActivity(),
                         Authors_list_quotes_notBoring.class);
                 i1.putExtra("authorRetrieved", author_retrieved);
-                startActivity(i1);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    i1.putExtra(AUTHOR_SHARED_ELEMENT_NAME,authorImage.getTransitionName());
+                    ActivityOptions activityOptions = ActivityOptions.
+                            makeSceneTransitionAnimation(getActivity(), authorImage, authorImage.getTransitionName());
+                    startActivity(i1,activityOptions.toBundle());
+                }else {
+                    startActivity(i1);
+                }
             }
         });
     }

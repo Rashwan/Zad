@@ -174,7 +174,8 @@
             android:layout_marginTop="-6dp"
             android:background="@drawable/add_schedule_fab_background"
             android:padding="16dp"
-            android:src="@drawable/circle_blue" />
+            android:src="@drawable/circle_blue"
+            android:transitionName="author_shared_image_name"/>
 
         <TextView
             android:id="@+id/Author_Main_title"

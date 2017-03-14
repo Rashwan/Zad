@@ -7,8 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:orientation="vertical"
-    app:elevation="2dp"
-    android:background="@color/theme_primary_dark">
+    app:elevation="2dp">
     <ImageView
         android:id="@+id/category_image"
         android:layout_width="match_parent"

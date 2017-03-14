@@ -21,7 +21,7 @@ public class CategoriesFragment extends Fragment {
 
 	public Context mContext;
 	RecyclerView categoriesRv;
-    public static final String SHARED_ELEMENT_NAME = "com.app.zad.ui.CategoriesFragment";
+    public static final String CATEGORY_SHARED_ELEMENT_NAME = "com.app.zad.ui.CategoriesFragment";
     TextView nameTv;
     View shade;
 
@@ -49,7 +49,7 @@ public class CategoriesFragment extends Fragment {
                 i1.putExtra("categoriesString", nameTv.getText());
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    i1.putExtra(SHARED_ELEMENT_NAME,categoryIv.getTransitionName());
+                    i1.putExtra(CATEGORY_SHARED_ELEMENT_NAME,categoryIv.getTransitionName());
                 }
 
 

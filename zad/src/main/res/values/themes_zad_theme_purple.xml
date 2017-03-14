@@ -170,6 +170,10 @@
         <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
 
     </style>
+    <style name="_Zad_Theme_yellow.AuthorListQuotes" parent="_Zad_Theme_yellow"/>
+    <style name="_Zad_Theme_yellow.Home" parent="_Zad_Theme_yellow"/>
+
+
 
     <style name="Zad_yellow_Overlay" parent="@style/_Zad_Theme_yellow">
         <item name="android:windowContentOverlay">@null</item>

@@ -1,6 +1,7 @@
 package com.app.zad.ui;
 
 import android.content.Context;
+import android.os.Build;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,9 @@ public class AuthorsAdapter extends RecyclerView.Adapter<AuthorsAdapter.AuthorsV
     @Override
     public void onBindViewHolder(AuthorsVH holder, int position) {
         Author_Grid_Item authorItem = authorsList.get(position);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            holder.authorImageIv.setTransitionName("Authors_" + position);
+        }
         holder.authorNameTv.setText(authorItem.getAuthor_Title());
         holder.authorImageIv.setImageDrawable(authorItem.getAuthor_Pic());
     }

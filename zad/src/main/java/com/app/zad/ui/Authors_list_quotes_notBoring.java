@@ -23,6 +23,8 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
+import static com.app.zad.ui.Authors_Fragment.AUTHOR_SHARED_ELEMENT_NAME;
+
 public class Authors_list_quotes_notBoring extends AppCompatActivity{
 
     private static final String QUOTES_RV_POSITION_KEY = "QUOTES_RV_POSITION_KEY";
@@ -61,6 +63,9 @@ public class Authors_list_quotes_notBoring extends AppCompatActivity{
 		authorRetrieved = author_intent.getExtras().getString("authorRetrieved");
         authorImage = quoteInstance.getAuthorImage(authorRetrieved);
         authorTitle.setText(authorRetrieved);
+        if (author_intent.hasExtra(AUTHOR_SHARED_ELEMENT_NAME)){
+            authorProfileImage.setTransitionName(author_intent.getExtras().getString(AUTHOR_SHARED_ELEMENT_NAME));
+        }
         authorProfileImage.setImageDrawable(authorImage);
         setupRecyclerView();
 
