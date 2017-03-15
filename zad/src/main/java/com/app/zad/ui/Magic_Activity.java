@@ -124,21 +124,24 @@ public class Magic_Activity extends AppCompatActivity {
 		bill.init(mContext);
 
         setupNavigationFooter();
+        rd = new RatingDialog(this);
 
         Intent intent = getIntent();
         if (intent.hasExtra("shortcutRandomQuote")){
             openRandomQuote();
-        }
+        }else if (intent.hasExtra("shortcutFavoriteQuotes")){
+            selectItem(navigationView.getMenu().findItem(R.id.nav_fav));
+        }else {
 
-		open_Zabatly_from_notif();
+            open_Zabatly_from_notif();
 
-		rd = new RatingDialog(this);
-		// NEW - MELEGY
-		sendUnsetRequest();
-		// -------------
+            // NEW - MELEGY
+            sendUnsetRequest();
+            // -------------
 
-        if (savedInstanceState == null){
-            selectItem(navigationView.getMenu().findItem(R.id.nav_home));
+            if (savedInstanceState == null) {
+                selectItem(navigationView.getMenu().findItem(R.id.nav_home));
+            }
         }
 
     }

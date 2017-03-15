@@ -337,7 +337,9 @@
 
     <string name="change_mood_shortcut">تغيير المزاج</string>
     <string name="random_quote_shortcut">حكمة عشوائية</string>
+    <string name="favorite_quotes_shortcut">مفضلتي</string>
     <string name="change_mood_disabled_shortcut">عفوا لا يمكنك تغيير المزاج الآن</string>
     <string name="random_quote_disabled_shortcut">عفوا لا يمكنك مشاهدة جكمة عشوائية الآن</string>
+    <string name="favorite_quotes_disabled_shortcut">عفوا لا يمكنك مشاهدة مفضلتي الآن</string>
 
 </resources>
