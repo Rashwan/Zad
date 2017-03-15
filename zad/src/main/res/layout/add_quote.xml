@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fullshette"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white" >
@@ -8,7 +7,6 @@
     <!-- Remember : Add Material like , image beside every topic & Material Padding -->
 
     <ScrollView
-        android:id="@+id/Scrolly"
         style="@style/ScrollBarZad_Theme_Purple"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
