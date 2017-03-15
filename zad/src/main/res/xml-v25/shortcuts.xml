@@ -22,5 +22,28 @@
         <categories android:name="android.shortcut.conversation" />
 
     </shortcut>
+    <shortcut
+    android:shortcutId="random_quote"
+    android:enabled="true"
+    android:icon="@drawable/ic_casino_white_24dp"
+    android:shortcutShortLabel="@string/random_quote_shortcut"
+    android:shortcutLongLabel="@string/random_quote_shortcut"
+    android:shortcutDisabledMessage="@string/random_quote_disabled_shortcut">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.app.zad"
+        android:targetClass="com.app.zad.ui.Magic_Activity">
+        <extra
+            android:name="shortcutRandomQuote"
+            android:value= "true"
+            />
+    </intent>
+
+    <!-- If your shortcut is associated with multiple intents, include them
+         here. The last intent in the list determines what the user sees when
+         they launch this shortcut. -->
+    <categories android:name="android.shortcut.conversation" />
+
+</shortcut>
 </shortcuts>
     

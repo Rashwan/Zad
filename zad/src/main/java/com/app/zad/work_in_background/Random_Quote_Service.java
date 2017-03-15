@@ -1,16 +1,16 @@
 package com.app.zad.work_in_background;
 
-import java.util.ArrayList;
-import java.util.Random;
-
-import com.app.zad.ui.Quote;
-
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.IBinder;
+
+import com.app.zad.ui.Quote;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Random_Quote_Service extends Service {
 
@@ -57,7 +57,7 @@ public class Random_Quote_Service extends Service {
 		editor.putString("Skey3_2", Rwiki);
 		editor.putInt("Skey4_2", category_retrived);
 
-		editor.commit();
+		editor.apply();
 
 		return START_STICKY;
 	}

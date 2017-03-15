@@ -336,7 +336,8 @@
     <string name="zad_twitter_handle">\@appZad</string>
 
     <string name="change_mood_shortcut">تغيير المزاج</string>
+    <string name="random_quote_shortcut">حكمة عشوائية</string>
     <string name="change_mood_disabled_shortcut">عفوا لا يمكنك تغيير المزاج الآن</string>
-    <string name="change_mood_shortcut_category">shortcut_category_mood</string>
+    <string name="random_quote_disabled_shortcut">عفوا لا يمكنك مشاهدة جكمة عشوائية الآن</string>
 
 </resources>

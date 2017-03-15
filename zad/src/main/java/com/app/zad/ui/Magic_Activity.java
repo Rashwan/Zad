@@ -42,6 +42,7 @@ import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import RateUs.RatingDialog;
 
@@ -123,6 +124,11 @@ public class Magic_Activity extends AppCompatActivity {
 		bill.init(mContext);
 
         setupNavigationFooter();
+
+        Intent intent = getIntent();
+        if (intent.hasExtra("shortcutRandomQuote")){
+            openRandomQuote();
+        }
 
 		open_Zabatly_from_notif();
 
@@ -484,6 +490,59 @@ public class Magic_Activity extends AppCompatActivity {
 		}
 		return autortopic;
 	}
+    private void openRandomQuote() {
+         Bitmap bitmap;
+
+        Quote quoteinstance2 = new Quote();
+        ArrayList<Quote> allQuotesObjects2 = quoteinstance2.getAllObjects(this);
+
+        int min2 = 0;
+        int max2 = allQuotesObjects2.size() - 1;
+
+        Random r = new Random();
+        int i2 = r.nextInt(max2 - min2 + 1) + min2;
+
+        Quote getRanQuote2 = allQuotesObjects2.get(i2);
+        String Noti_Quote = getRanQuote2.Quote;
+        String Noti_Author = getRanQuote2.Author;
+        String Wiki_from_Notif = getRanQuote2.getwiki(this, getRanQuote2);
+        int category_retrived = getRanQuote2.Category;
+
+        try {
+
+            int pic_id = getRanQuote2.Author_Image;
+            String pic_id_string;
+            if (pic_id < 10) {
+                pic_id_string = "00" + Integer.toString(pic_id);
+            } else if (pic_id < 100) {
+                pic_id_string = "0" + Integer.toString(pic_id);
+            } else {
+                pic_id_string = Integer.toString(pic_id);
+            }
+
+            InputStream ims = this.getAssets().open(
+                    "ImagesAuthors/" + pic_id_string + ".webp");
+            Drawable d = Drawable.createFromStream(ims, null);
+
+            bitmap = ((BitmapDrawable) d).getBitmap();
+
+        } catch (Exception e) {
+            bitmap = null;
+            e.printStackTrace();
+        }
+
+        Intent intent = new Intent(this, Quote_view_pager_activity.class);
+        intent.putExtra("oneQuote", true);
+        intent.putExtra("quoteRetrived", Noti_Quote);
+        intent.putExtra("authorRetrived", Noti_Author);
+        intent.putExtra("wiki", Wiki_from_Notif);
+        intent.putExtra("categoryRetrived", category_retrived);
+        intent.putExtra("pic", bitmap);
+        intent.putExtra("notifi", true);
+        intent.putExtra("favo", false);
+        startActivity(intent);
+
+    }
 
 
 }
