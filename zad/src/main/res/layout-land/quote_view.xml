@@ -25,21 +25,21 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/Author_Main_Pic"
-                android:gravity="end"
-                android:paddingStart="@dimen/keyline_8dp"
+                android:gravity="right"
+                android:paddingLeft="@dimen/keyline_8dp"
                 android:paddingEnd="@dimen/keyline_8dp"
                 android:paddingTop="3dp" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="wrap_content" >
 
                     <TextView
                         android:id="@+id/Author_Main_Bio"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_below="@+id/Author_Main_title"
-                        android:gravity="end"
+                        android:gravity="right"
                         android:lineSpacingMultiplier="1.2"
                         android:paddingTop="@dimen/keyline_8dp"
                         android:text="@string/loading"
@@ -52,7 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentEnd="true"
-                        android:gravity="end"
+                        android:gravity="right"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/Purple_Deep_Reverse"

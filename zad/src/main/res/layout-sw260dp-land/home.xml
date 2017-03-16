@@ -82,7 +82,7 @@
                         android:layout_below="@+id/mazag_quote"
                         android:layout_centerHorizontal="true"
                         android:layout_margin="10dp"
-                        android:gravity="center|start"
+                        android:gravity="center|left"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/orange" />
@@ -247,9 +247,9 @@
                         android:layout_centerVertical="true"
                         android:layout_toStartOf="@+id/Author_pic_today"
                         android:ellipsize="end"
-                        android:gravity="end"
+                        android:gravity="right"
                         android:maxLines="1"
-                        android:paddingEnd="8dp"
+                        android:paddingRight="8dp"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/brown" />
@@ -332,9 +332,9 @@
                         android:layout_centerVertical="true"
                         android:layout_toStartOf="@+id/Author_pic_random"
                         android:ellipsize="end"
-                        android:gravity="end"
+                        android:gravity="right"
                         android:maxLines="1"
-                        android:paddingEnd="8dp"
+                        android:paddingRight="8dp"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/brown" />
