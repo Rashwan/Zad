@@ -59,8 +59,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:paddingLeft="@dimen/keyline_16dp"
+            android:layout_alignParentStart="true"
+            android:paddingStart="@dimen/keyline_16dp"
             android:textColor="@color/yellow"
             android:textSize="45dp"
             android:typeface="serif" />
@@ -69,9 +69,9 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:paddingRight="@dimen/keyline_16dp"
+            android:paddingEnd="@dimen/keyline_16dp"
             android:textColor="@color/yellow"
             android:textSize="45dp"
             android:typeface="serif" />
@@ -99,9 +99,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/Category_Text"
+                android:layout_toEndOf="@+id/Category_Text"
                 android:gravity="center"
-                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
                 android:text="@string/circle_symbol"
                 android:textColor="@color/yellow"
                 android:textSize="7sp" />
@@ -110,8 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/Category_Text"
-                android:paddingRight="8dp"
+                android:layout_toStartOf="@+id/Category_Text"
+                android:paddingEnd="8dp"
                 android:text="@string/circle_symbol"
                 android:textColor="@color/yellow"
                 android:textSize="7sp" />
@@ -124,28 +124,28 @@
         android:layout_marginTop="-30dp"
         android:layout_weight="2.2"
         android:background="@color/Purple_Deep_Black_fa7m"
-        android:gravity="right|center" >
+        android:gravity="end|center" >
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/textView1"
-            android:layout_toLeftOf="@+id/Author_Main_Pic"
+            android:layout_toStartOf="@+id/Author_Main_Pic"
             android:background="@color/Purple_Deep_Black_fa7m"
-            android:gravity="right"
+            android:gravity="end"
             android:paddingBottom="@dimen/keyline_8dp"
-            android:paddingLeft="@dimen/keyline_8dp"
+            android:paddingStart="@dimen/keyline_8dp"
             android:paddingTop="@dimen/keyline_8dp" >
 
             <TextView
                 android:id="@+id/Author_Main_Bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:focusable="true"
-                android:gravity="top|right"
+                android:gravity="top|end"
                 android:lineSpacingMultiplier="1.2"
                 android:text="@string/loading"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -163,7 +163,7 @@
             android:id="@+id/Author_Main_Pic"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="-6dp"
             android:background="@drawable/add_schedule_fab_background"
@@ -176,8 +176,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/textView1"
-            android:layout_toLeftOf="@+id/Author_Main_Pic"
-            android:gravity="top|right"
+            android:layout_toStartOf="@+id/Author_Main_Pic"
+            android:gravity="top|end"
             android:paddingBottom="@dimen/keyline_8dp"
             android:shadowColor="@color/black"
             android:shadowDx="0"
@@ -200,7 +200,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:visibility="gone" >
 
@@ -229,10 +229,10 @@
                 android:id="@+id/advertise_with_us"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/keyline_8dp"
+                android:layout_marginStart="@dimen/keyline_8dp"
                 android:text="@string/advertise_with_us"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -251,7 +251,7 @@
             style="@style/ZadActionButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:alpha="0.9"
             android:padding="8dp"

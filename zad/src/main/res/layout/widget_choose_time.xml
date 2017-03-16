@@ -26,9 +26,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/freq_edit_widget"
-            android:layout_toLeftOf="@+id/freq_edit_widget"
-            android:gravity="right|bottom"
-            android:paddingRight="8dp"
+            android:layout_toStartOf="@+id/freq_edit_widget"
+            android:gravity="end|bottom"
+            android:paddingEnd="8dp"
             android:text="@string/minute"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/grey_black" />

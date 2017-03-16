@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:layout_alignParentBottom="true"
     android:background="@color/Card_back"
-    android:paddingLeft="@dimen/listView_padding"
-    android:paddingRight="@dimen/listView_padding"/>
+    android:paddingStart="@dimen/listView_padding"
+    android:paddingEnd="@dimen/listView_padding"/>
 

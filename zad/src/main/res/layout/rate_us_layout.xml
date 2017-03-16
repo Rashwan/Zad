@@ -9,8 +9,8 @@
         android:id="@+id/textViewx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
         android:text="@string/rd_title"
         android:textColor="@color/yellow"
@@ -20,8 +20,8 @@
         android:id="@+id/otherText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
         android:text="@string/rd_message"
         android:textColor="@color/text"
@@ -36,8 +36,8 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/keyline_16dp"
-        android:paddingLeft="@dimen/keyline_8dp"
-        android:paddingRight="@dimen/keyline_8dp" >
+        android:paddingStart="@dimen/keyline_8dp"
+        android:paddingEnd="@dimen/keyline_8dp" >
 
         <Button
             android:id="@+id/yes_rate"

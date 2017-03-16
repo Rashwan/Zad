@@ -21,17 +21,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/Search_Authors"
-        android:layout_marginLeft="@dimen/keyline_8dp"
-        android:layout_marginRight="@dimen/keyline_8dp" >
+        android:layout_marginStart="@dimen/keyline_8dp"
+        android:layout_marginEnd="@dimen/keyline_8dp" >
     </ListView>
 
     <RelativeLayout
         android:id="@+id/aaaa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/justtextshette"
         android:padding="@dimen/keyline_8dp" >
 
@@ -48,12 +48,12 @@
             style="@style/ZadActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_alignTop="@+id/justtextshettexx"
-            android:layout_toLeftOf="@+id/justtextshettexx"
+            android:layout_toStartOf="@+id/justtextshettexx"
             android:clickable="true"
             android:gravity="center"
-            android:drawableRight="@drawable/non_checked"
+            android:drawableEnd="@drawable/non_checked"
             android:text="@string/de_select"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/text_secondary" />
@@ -63,11 +63,11 @@
             style="@style/ZadActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/justtextshettexx"
+            android:layout_toEndOf="@+id/justtextshettexx"
             android:clickable="true"
-            android:drawableRight="@drawable/checked_all"
+            android:drawableEnd="@drawable/checked_all"
             android:text="@string/select_all"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/text_secondary" />
@@ -78,10 +78,10 @@
         style="@style/ZadEditText.Style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/aaaa"
-        android:layout_marginLeft="@dimen/keyline_8dp"
-        android:layout_marginRight="@dimen/keyline_8dp"
+        android:layout_marginStart="@dimen/keyline_8dp"
+        android:layout_marginEnd="@dimen/keyline_8dp"
         android:ems="10"
         android:hint="@string/authors_search"
         android:inputType="textPersonName"

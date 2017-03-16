@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    android:gravity="right|center"
+    android:gravity="end|center"
     android:padding="8sp"
     android:singleLine="true"
     android:textAppearance="?android:attr/textAppearanceMedium"

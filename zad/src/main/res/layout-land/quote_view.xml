@@ -23,11 +23,11 @@
                 android:id="@+id/scrollViewMazag"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_below="@+id/Author_Main_Pic"
-                android:gravity="right"
-                android:paddingLeft="@dimen/keyline_8dp"
-                android:paddingRight="@dimen/keyline_8dp"
+                android:gravity="end"
+                android:paddingStart="@dimen/keyline_8dp"
+                android:paddingEnd="@dimen/keyline_8dp"
                 android:paddingTop="3dp" >
 
                 <RelativeLayout
@@ -39,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_below="@+id/Author_Main_title"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:lineSpacingMultiplier="1.2"
                         android:paddingTop="@dimen/keyline_8dp"
                         android:text="@string/loading"
@@ -50,9 +50,9 @@
                         android:id="@+id/Author_Main_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentRight="true"
-                        android:gravity="right"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/Purple_Deep_Reverse"
@@ -101,9 +101,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@+id/Category_Text"
+                    android:layout_toEndOf="@+id/Category_Text"
                     android:gravity="center"
-                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
                     android:text="@string/circle_symbol"
                     android:textColor="@color/yellow"
                     android:textSize="7sp" />
@@ -112,8 +112,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/Category_Text"
-                    android:paddingRight="8dp"
+                    android:layout_toStartOf="@+id/Category_Text"
+                    android:paddingEnd="8dp"
                     android:text="@string/circle_symbol"
                     android:textColor="@color/yellow"
                     android:textSize="7sp" />
@@ -164,8 +164,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:paddingLeft="@dimen/keyline_16dp"
+                android:layout_alignParentStart="true"
+                android:paddingStart="@dimen/keyline_16dp"
                 android:textColor="@color/yellow"
                 android:textSize="45dp"
                 android:typeface="serif" />
@@ -174,9 +174,9 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
-                android:paddingRight="@dimen/keyline_16dp"
+                android:paddingEnd="@dimen/keyline_16dp"
                 android:textColor="@color/yellow"
                 android:textSize="45dp"
                 android:typeface="serif" />
@@ -192,7 +192,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:visibility="gone" >
 
@@ -222,10 +222,10 @@
                 android:id="@+id/advertise_with_us"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/keyline_8dp"
+                android:layout_marginStart="@dimen/keyline_8dp"
                 android:text="@string/advertise_with_us" />
         </RelativeLayout>
 
@@ -243,7 +243,7 @@
             style="@style/ZadActionButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:alpha="0.9"
             android:background="@drawable/add_schedule_fab_background"

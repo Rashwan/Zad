@@ -60,8 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/Card_back"
-        android:paddingLeft="@dimen/listView_padding"
-        android:paddingRight="@dimen/listView_padding"
+        android:paddingStart="@dimen/listView_padding"
+        android:paddingEnd="@dimen/listView_padding"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 

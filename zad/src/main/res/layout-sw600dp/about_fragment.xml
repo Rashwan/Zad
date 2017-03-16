@@ -14,7 +14,7 @@
             android:id="@+id/imageViewLogo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:background="@color/white"
             android:clickable="true"
             android:maxHeight="150dp" />
@@ -23,7 +23,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/imageViewLogo"
             android:background="@color/white"
             android:padding="28dp"
@@ -35,7 +35,7 @@
             android:id="@+id/relll1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@+id/textView2"
             android:layout_marginTop="@dimen/keyline_16dp" >
 
@@ -44,9 +44,9 @@
                 style="@style/ZadActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_16dp"
                 android:clickable="true"
                 android:src="@drawable/ic_about_website" />
 
@@ -54,7 +54,7 @@
                 android:id="@+id/TextView01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/textViewx"
+                android:layout_alignEnd="@+id/textViewx"
                 android:layout_below="@+id/textViewx"
                 android:layout_marginBottom="8dp"
                 android:paddingTop="@dimen/keyline_8dp"
@@ -68,9 +68,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="@dimen/keyline_16dp"
-                android:layout_marginRight="@dimen/keyline_24dp"
-                android:layout_toLeftOf="@+id/website_Button"
+                android:layout_marginStart="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_24dp"
+                android:layout_toStartOf="@+id/website_Button"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/website_url"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -82,8 +82,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignRight="@+id/TextView01"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/TextView01"
                 android:background="@color/text_dividers" />
         </RelativeLayout>
 
@@ -91,7 +91,7 @@
             android:id="@+id/RelativeLayout01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/relll1"
             android:layout_marginTop="@dimen/keyline_16dp" >
 
@@ -100,9 +100,9 @@
                 style="@style/ZadActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_16dp"
                 android:clickable="true"
                 android:src="@drawable/ic_about_email" />
 
@@ -110,7 +110,7 @@
                 android:id="@+id/TextView04"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/TextView02"
+                android:layout_alignEnd="@+id/TextView02"
                 android:layout_below="@+id/TextView02"
                 android:layout_marginBottom="8dp"
                 android:paddingTop="@dimen/keyline_8dp"
@@ -124,9 +124,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="@dimen/keyline_16dp"
-                android:layout_marginRight="@dimen/keyline_24dp"
-                android:layout_toLeftOf="@+id/about_email"
+                android:layout_marginStart="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_24dp"
+                android:layout_toStartOf="@+id/about_email"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/gmail_url"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -137,8 +137,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignRight="@+id/TextView04"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/TextView04"
                 android:background="@color/text_dividers" />
         </RelativeLayout>
 
@@ -146,7 +146,7 @@
             android:id="@+id/RelativeLayout02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/RelativeLayout01"
             android:layout_marginTop="@dimen/keyline_16dp" >
 
@@ -155,9 +155,9 @@
                 style="@style/ZadActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_16dp"
                 android:clickable="true"
                 android:src="@drawable/ic_about_facebook" />
 
@@ -165,7 +165,7 @@
                 android:id="@+id/TextView06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/TextView05"
+                android:layout_alignEnd="@+id/TextView05"
                 android:layout_below="@+id/TextView05"
                 android:layout_marginBottom="8dp"
                 android:paddingTop="@dimen/keyline_8dp"
@@ -179,8 +179,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginRight="@dimen/keyline_24dp"
-                android:layout_toLeftOf="@+id/about_facbook"
+                android:layout_marginEnd="@dimen/keyline_24dp"
+                android:layout_toStartOf="@+id/about_facbook"
                 android:linksClickable="true"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/facebook_url"
@@ -192,8 +192,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignRight="@+id/TextView06"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/TextView06"
                 android:background="@color/text_dividers" />
         </RelativeLayout>
 
@@ -201,7 +201,7 @@
             android:id="@+id/RelativeLayout03"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/RelativeLayout02"
             android:layout_marginTop="@dimen/keyline_16dp" >
 
@@ -210,9 +210,9 @@
                 style="@style/ZadActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_16dp"
                 android:clickable="true"
                 android:src="@drawable/ic_about_twitter" />
 
@@ -220,7 +220,7 @@
                 android:id="@+id/TextView09"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/TextViewTitter"
+                android:layout_alignEnd="@+id/TextViewTitter"
                 android:layout_below="@+id/TextViewTitter"
                 android:layout_marginBottom="8dp"
                 android:paddingTop="@dimen/keyline_8dp"
@@ -234,9 +234,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="@dimen/keyline_16dp"
-                android:layout_marginRight="@dimen/keyline_24dp"
-                android:layout_toLeftOf="@+id/about_twitter"
+                android:layout_marginStart="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_24dp"
+                android:layout_toStartOf="@+id/about_twitter"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/twitter_url"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -247,8 +247,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignRight="@+id/TextView09"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/TextView09"
                 android:background="@color/text_dividers" />
         </RelativeLayout>
 
@@ -256,7 +256,7 @@
             android:id="@+id/RelativeLayout04"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/RelativeLayout03"
             android:layout_marginTop="@dimen/keyline_16dp" >
 
@@ -265,9 +265,9 @@
                 style="@style/ZadActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_16dp"
                 android:clickable="true"
                 android:src="@drawable/ic_about_googleplus" />
 
@@ -275,7 +275,7 @@
                 android:id="@+id/TextView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignRight="@+id/TextView11"
+                android:layout_alignEnd="@+id/TextView11"
                 android:layout_below="@+id/TextView11"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/google_plus_name"
@@ -290,9 +290,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="@dimen/keyline_16dp"
-                android:layout_marginRight="@dimen/keyline_24dp"
-                android:layout_toLeftOf="@+id/about_googleplus"
+                android:layout_marginStart="@dimen/keyline_16dp"
+                android:layout_marginEnd="@dimen/keyline_24dp"
+                android:layout_toStartOf="@+id/about_googleplus"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/google_plus_url"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -302,15 +302,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignRight="@+id/TextView12"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/TextView12"
                 android:background="@color/text_dividers" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/privacy_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@id/RelativeLayout04"
             android:layout_marginTop="@dimen/keyline_16dp"
             android:clickable="true"
@@ -321,14 +321,14 @@
                 style="@style/ZadActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/keyline_16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/keyline_16dp"
                 android:src="@drawable/ic_about_website" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@id/privacy_button"
+                android:layout_toStartOf="@id/privacy_button"
                 android:paddingTop="@dimen/keyline_8dp"
                 android:text="@string/privacy_policy"
                 android:textAppearance="?android:attr/textAppearanceMedium"

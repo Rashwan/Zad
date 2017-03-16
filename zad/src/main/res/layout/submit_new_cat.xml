@@ -9,8 +9,8 @@
         android:id="@+id/textViewx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="16dp"
         android:layout_weight="0"
         android:text="@string/editDialogTitle"
@@ -21,8 +21,8 @@
         android:id="@+id/CatList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:cacheColorHint="@color/transparent" >
@@ -33,11 +33,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
         android:layout_weight="0"
-        android:gravity="center|left"
+        android:gravity="center|start"
         android:orientation="horizontal"
         android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp" >
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" >
 
         <Button
             android:id="@+id/send_report"

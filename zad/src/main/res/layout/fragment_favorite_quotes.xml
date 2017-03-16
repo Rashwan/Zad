@@ -7,8 +7,8 @@
         android:layout_height="match_parent"
         android:id="@+id/favorites_rv"
         android:background="@color/Card_back"
-        android:paddingLeft="@dimen/listView_padding"
-        android:paddingRight="@dimen/listView_padding">
+        android:paddingStart="@dimen/listView_padding"
+        android:paddingEnd="@dimen/listView_padding">
 
     </android.support.v7.widget.RecyclerView>
     <include

@@ -30,8 +30,8 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerVertical="true"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:background="@drawable/card_bg"
                     android:gravity="center" >
 
@@ -39,7 +39,7 @@
                         android:id="@+id/scrollViewMazag"
                         android:layout_width="match_parent"
                         android:layout_height="85dp"
-                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_below="@+id/mazag_title"
                         android:layout_margin="8dp"
                         android:clickable="true"
@@ -63,10 +63,10 @@
                         android:id="@+id/mazag_author"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_below="@+id/scrollViewMazag"
                         android:layout_margin="10dp"
-                        android:gravity="center|left"
+                        android:gravity="center|start"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/brown" />
@@ -75,7 +75,7 @@
                         android:id="@+id/mazag_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginTop="16dp"
                         android:gravity="center"
@@ -86,9 +86,9 @@
                     android:id="@+id/right_dot"
                     android:layout_width="5dp"
                     android:layout_height="5dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp"
                     android:visibility="invisible"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/circle_red" />
@@ -98,9 +98,9 @@
                     android:layout_width="5dp"
                     android:layout_height="5dp"
                     android:visibility="invisible"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/circle_red" />
                     
@@ -110,9 +110,9 @@
                     android:id="@+id/imageViewLogo"
                     android:layout_width="60dp"
                     android:layout_height="70dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_below="@+id/fuckinlayout1"
-                    android:layout_marginRight="110dp"
+                    android:layout_marginEnd="110dp"
                     android:layout_marginTop="-44dp"
                     android:background="@drawable/triangle_normal"
                     android:rotation="75" />
@@ -132,8 +132,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:max="100"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:progress="50"
                     android:progressDrawable="@drawable/line_white"
                     android:thumb="@color/transparent" />
@@ -153,9 +153,9 @@
                     android:id="@+id/Author_pic_mazag"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_alignRight="@+id/fuckinlayout1"
+                    android:layout_alignEnd="@+id/fuckinlayout1"
                     android:layout_below="@+id/fuckinlayout1"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginTop="2dp"
                     android:contentDescription="Author Image" />
             </RelativeLayout>
@@ -165,7 +165,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:layout_marginLeft="@dimen/keyline_16dp"
+            android:layout_marginStart="@dimen/keyline_16dp"
             android:layout_marginTop="-45dp"
             android:layout_weight="0"
             android:gravity="center" >
@@ -174,7 +174,7 @@
                 android:id="@+id/faceButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/add_schedule_fab_background"
                 android:padding="@dimen/keyline_16dp"
@@ -199,7 +199,7 @@
                     android:id="@+id/TodayQuote_Title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
@@ -212,9 +212,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
                     android:gravity="center" >
 
                     <ImageView
@@ -222,18 +222,18 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_alignParentBottom="true"
-                        android:layout_alignParentRight="true" />
+                        android:layout_alignParentEnd="true" />
 
                     <TextView
                         android:id="@+id/Today_Author"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_toLeftOf="@+id/Author_pic_today"
+                        android:layout_toStartOf="@+id/Author_pic_today"
                         android:ellipsize="end"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:maxLines="1"
-                        android:paddingRight="8dp"
+                        android:paddingEnd="8dp"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/brown" />
@@ -265,7 +265,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/card_bg"
                 android:minHeight="@dimen/home_card_size" >
 
@@ -273,7 +273,7 @@
                     android:id="@+id/Random_quote_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
@@ -286,10 +286,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_toRightOf="@+id/Refresh_button"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@+id/Refresh_button"
                     android:gravity="center" >
 
                     <ImageView
@@ -297,18 +297,18 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_alignParentBottom="true"
-                        android:layout_alignParentRight="true" />
+                        android:layout_alignParentEnd="true" />
 
                     <TextView
                         android:id="@+id/Random_quote_Author"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_toLeftOf="@+id/Author_pic_random"
+                        android:layout_toStartOf="@+id/Author_pic_random"
                         android:ellipsize="end"
-                        android:gravity="right"
+                        android:gravity="end"
                         android:maxLines="1"
-                        android:paddingRight="8dp"
+                        android:paddingEnd="8dp"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/brown" />
@@ -320,10 +320,10 @@
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:clickable="true"
-                    android:paddingLeft="@dimen/abc_action_bar_icon_vertical_padding"
-                    android:paddingRight="@dimen/abc_action_bar_icon_vertical_padding"
+                    android:paddingStart="@dimen/abc_action_bar_icon_vertical_padding"
+                    android:paddingEnd="@dimen/abc_action_bar_icon_vertical_padding"
                     android:src="@drawable/refresh" />
 
                 <RelativeLayout

@@ -8,13 +8,13 @@
         android:id="@+id/strip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/white"
-        android:gravity="left"
+        android:gravity="start"
         android:paddingBottom="8dp"
-        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
-        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:paddingStart="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingRight"
         android:paddingTop="16dp" />
 
     <android.support.v4.view.ViewPager
