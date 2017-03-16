@@ -1,6 +1,5 @@
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/jkhkhh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Card_back" >
@@ -135,7 +134,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/TextView03"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
@@ -191,7 +189,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/TextView07"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
@@ -247,7 +244,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/TextView08"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
@@ -303,7 +299,6 @@
                 android:textColor="@color/text"
                 android:textStyle="bold" />
             <TextView
-                android:id="@+id/TextView013"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
@@ -331,7 +326,6 @@
                 android:src="@drawable/ic_about_website" />
 
             <TextView
-                android:id="@+id/privacy_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@id/privacy_button"

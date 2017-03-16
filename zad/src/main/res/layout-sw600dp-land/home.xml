@@ -1,6 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Card_back"
@@ -8,7 +7,6 @@
     android:orientation="vertical" >
 
     <LinearLayout
-        android:id="@+id/mycocky"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
@@ -22,7 +20,6 @@
         android:visibility="visible" >
 
         <RelativeLayout
-            android:id="@+id/fuckinlayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -84,7 +81,6 @@
                 android:gravity="center" >
 
                 <ScrollView
-                    android:id="@+id/scrollView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
@@ -104,7 +100,6 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/fuckinlayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -178,7 +173,6 @@
                 android:gravity="center" >
 
                 <ScrollView
-                    android:id="@+id/scrollView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
@@ -210,7 +204,6 @@
         android:background="@drawable/card_color_yellow" >
 
         <RelativeLayout
-            android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingBottom="15dp"
@@ -313,7 +306,6 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/imagezz"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/fuckinlayout1"
@@ -322,8 +314,7 @@
                 android:layout_below="@+id/fuckinlayout1" >
 
                  <RelativeLayout
-                android:id="@+id/sekorelativo"
-                android:layout_width="150dp"
+                     android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
@@ -331,7 +322,6 @@
                 android:gravity="center" >
 
                 <ProgressBar
-                    android:id="@+id/JoyStickControllerX"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
@@ -376,7 +366,6 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <RelativeLayout
-        android:id="@+id/BigActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

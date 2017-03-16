@@ -13,7 +13,4 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <bool name="abc_action_bar_embed_tabs_pre_jb">true</bool>
-    <bool name="abc_split_action_bar_is_narrow">false</bool>
-</resources>
+<resources></resources>

@@ -13,7 +13,6 @@
         android:background="@drawable/card_color_yellow">
 
         <RelativeLayout
-            android:id="@+id/relativeLayout2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="15dp"
@@ -116,7 +115,6 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/sekorelativo"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageViewLogo"
@@ -125,7 +123,6 @@
                 android:gravity="center" >
 
                 <ProgressBar
-                    android:id="@+id/JoyStickControllerX"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
@@ -162,7 +159,6 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/BigActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
@@ -183,7 +179,6 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/mycocky"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginLeft="8dp"
@@ -194,7 +189,6 @@
         android:visibility="visible" >
 
         <RelativeLayout
-            android:id="@+id/fuckinlayout3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="4dp"
@@ -269,7 +263,6 @@
                 android:gravity="center" >
 
                 <ScrollView
-                    android:id="@+id/scrollView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
@@ -289,7 +282,6 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/fuckinlayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="4dp"
@@ -353,7 +345,6 @@
                 android:gravity="center" >
 
                 <ScrollView
-                    android:id="@+id/scrollView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" >
 
