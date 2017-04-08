@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.ContextCompat;
 
 import com.app.zad.R;
 import com.app.zad.helper.Drawable_into_Bitmap;
@@ -76,7 +77,7 @@ public class mood_Freq_Question_Service extends Service {
 		builder.setSmallIcon(R.drawable.ic_notif);
 		// Shahawi Edited That 15-3-2015
 		builder.setLargeIcon(Drawable_into_Bitmap
-				.drawableToBitmap(getResources().getDrawable(last_Emotion_Icon)));
+				.drawableToBitmap(ContextCompat.getDrawable(this,last_Emotion_Icon)));
 
 		builder.setContentIntent(mazag_contentIntent);
 

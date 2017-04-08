@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
 import com.app.zad.R;
@@ -119,6 +120,7 @@ public class morning_evening_Service extends Service {
 			bitmap = ((BitmapDrawable) d).getBitmap();
 
 		} catch (Exception e) {
+
 			bitmap = null;
 			e.printStackTrace();
 		}
@@ -167,7 +169,7 @@ public class morning_evening_Service extends Service {
 		builder.setStyle(new NotificationCompat.BigTextStyle()
 				.bigText(Noti_Quote));
 		
-		int circleColor = getResources().getColor(R.color.Purple_Deep);
+		int circleColor = ContextCompat.getColor(this,R.color.Purple_Deep);
 		builder.setColor(circleColor);
 		// set Action Buttons
 
@@ -181,7 +183,7 @@ public class morning_evening_Service extends Service {
 		PendingIntent shareIntent = PendingIntent.getBroadcast(this, 0,
 				shIntent, PendingIntent.FLAG_ONE_SHOT);
 
-		builder.addAction(R.drawable.ic_share_white_24dp, getString(R.string.share_quote), shareIntent); // ed-1 replace ic_launher with share icon
+		builder.addAction(R.drawable.ic_action_share, getString(R.string.share_quote), shareIntent); // ed-1 replace ic_launher with share icon
 
 		//Like Action
 		favcheck = isFav(quote_id);
