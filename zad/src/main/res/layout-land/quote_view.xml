@@ -23,11 +23,11 @@
                 android:id="@+id/scrollViewMazag"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_below="@+id/Author_Main_Pic"
                 android:gravity="right"
                 android:paddingLeft="@dimen/keyline_8dp"
-                android:paddingEnd="@dimen/keyline_8dp"
+                android:paddingRight="@dimen/keyline_8dp"
                 android:paddingTop="3dp" >
 
                 <RelativeLayout
@@ -50,8 +50,8 @@
                         android:id="@+id/Author_Main_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
                         android:gravity="right"
                         android:text="@string/loading"
                         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -243,7 +243,7 @@
             style="@style/ZadActionButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:alpha="0.9"
             android:background="@drawable/add_schedule_fab_background"
