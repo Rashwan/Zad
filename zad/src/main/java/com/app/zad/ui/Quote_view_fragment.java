@@ -316,8 +316,11 @@ public class Quote_view_fragment extends Fragment {
 		author_image = quoteInstance.getAuthorImage(getArguments().getString(
 				"author"));
 		Integer catnum = quoteinstance1.Category;
-
-		category_text.setText(arrayCat[catnum - 1]);
+		if (catnum > 0) {
+			category_text.setText(arrayCat[catnum - 1]);
+		}else {
+			category_text.setText(arrayCat[0]);
+		}
 
 		if (getArguments().getBoolean("where")) {
 			Bitmap b = Drawable_into_Bitmap.drawableToBitmap(d);

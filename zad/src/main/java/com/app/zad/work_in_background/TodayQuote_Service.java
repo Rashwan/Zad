@@ -1,9 +1,5 @@
 package com.app.zad.work_in_background;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Random;
-
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +9,10 @@ import android.os.IBinder;
 import android.preference.PreferenceManager;
 
 import com.app.zad.ui.Quote;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Random;
 
 public class TodayQuote_Service extends Service {
 
@@ -73,7 +73,7 @@ public class TodayQuote_Service extends Service {
 			Calendar cal_after_24hrs = Calendar.getInstance();
 			cal_after_24hrs.setTimeInMillis(System.currentTimeMillis());
 
-			cal_after_24hrs.add(Today_cal.get(Calendar.HOUR_OF_DAY), 24);
+			cal_after_24hrs.add(Calendar.HOUR_OF_DAY, 24);
 			cal_after_24hrs.set(Calendar.MINUTE, 0);
 			cal_after_24hrs.set(Calendar.SECOND, 0);
 			cal_after_24hrs.set(Calendar.MILLISECOND, 0);
