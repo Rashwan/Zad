@@ -121,7 +121,7 @@ public class Magic_Activity extends AppCompatActivity {
 		// Checking if the user is premium or not and save his/her status in a
 		// shared prefernece
 		Bill bill = new Bill();
-//		bill.init(mContext);
+		bill.init(mContext);
 
         setupNavigationFooter();
         rd = new RatingDialog(this);
