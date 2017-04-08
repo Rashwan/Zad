@@ -27,9 +27,9 @@
                     android:id="@+id/imageViewLogo"
                     android:layout_width="60dp"
                     android:layout_height="70dp"
-                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_below="@+id/fuckinlayout1"
-                    android:layout_marginEnd="110dp"
+                    android:layout_marginRight="110dp"
                     android:layout_marginTop="-45dp"
                     android:background="@drawable/triangle_normal"
                     android:rotation="75" />
@@ -150,9 +150,9 @@
                     android:id="@+id/Author_pic_mazag"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_alignEnd="@+id/fuckinlayout1"
+                    android:layout_alignRight="@+id/fuckinlayout1"
                     android:layout_below="@+id/fuckinlayout1"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginTop="2dp"
                     android:contentDescription="Author Image" />
             </RelativeLayout>
@@ -162,7 +162,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|start"
-            android:layout_marginStart="@dimen/keyline_16dp"
+            android:layout_marginLeft="@dimen/keyline_16dp"
             android:layout_marginTop="-45dp"
             android:layout_weight="0"
              >
@@ -171,7 +171,7 @@
                 android:id="@+id/faceButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/add_schedule_fab_background"
                 android:padding="@dimen/keyline_16dp"
@@ -231,26 +231,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/today_scroll_laut"
-                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
                     android:layout_marginBottom="@dimen/keyline_8dp"
-                    android:layout_marginEnd="@dimen/keyline_16dp"
-                    android:gravity="center" >
+                    android:layout_marginRight="@dimen/keyline_16dp"
+                     >
 
                     <ImageView
                         android:id="@+id/Author_pic_today"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
                         android:layout_centerVertical="true" />
 
                     <TextView
                         android:id="@+id/Today_Author"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/Author_pic_today"
+                        android:layout_toLeftOf="@+id/Author_pic_today"
                         android:ellipsize="end"
-                        android:gravity="right"
                         android:maxLines="1"
                         android:paddingRight="8dp"
                         android:text="@string/loading"
@@ -305,7 +304,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
                     android:layout_below="@+id/kokyna"
                     android:clickable="true"
                     android:src="@drawable/refresh" />
@@ -315,27 +314,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/Refresh_button"
-                    android:layout_alignEnd="@+id/Random_quote_title"
+                    android:layout_alignRight="@+id/Random_quote_title"
                     android:layout_marginBottom="@dimen/keyline_8dp"
-                    android:layout_marginEnd="@dimen/keyline_16dp"
-                    android:layout_toEndOf="@+id/Refresh_button"
-                    android:gravity="center" >
+                    android:layout_marginRight="@dimen/keyline_16dp"
+                    android:layout_toRightOf="@+id/Refresh_button"
+                    >
 
                     <ImageView
                         android:id="@+id/Author_pic_random"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
                         android:layout_centerVertical="true" />
 
                     <TextView
                         android:id="@+id/Random_quote_Author"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_toStartOf="@+id/Author_pic_random"
+                        android:layout_toLeftOf="@+id/Author_pic_random"
                         android:ellipsize="end"
-                        android:gravity="right"
                         android:maxLines="1"
                         android:paddingRight="8dp"
                         android:text="@string/loading"

@@ -2,9 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/Card_back"
     android:clipChildren="true"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/color_layout"
@@ -24,10 +25,8 @@
                 android:layout_width="60dp"
                 android:layout_height="70dp"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
                 android:layout_below="@+id/fuckinlayout1"
                 android:layout_marginRight="110dp"
-                android:layout_marginEnd="110dp"
                 android:layout_marginTop="-44dp"
                 android:background="@drawable/triangle_normal"
                 android:rotation="75" />
@@ -75,7 +74,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/scrollViewMazag"
                     android:layout_marginBottom="@dimen/keyline_8dp"
-                    android:layout_marginStart="@dimen/keyline_8dp"
+                    android:layout_marginLeft="@dimen/keyline_8dp"
                     android:gravity="center|left"
                     android:text="@string/loading"
                     android:textAppearance="?android:attr/textAppearanceSmall"
@@ -153,7 +152,7 @@
                 android:id="@+id/Author_pic_mazag"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_alignEnd="@+id/fuckinlayout1"
+                android:layout_alignRight="@+id/fuckinlayout1"
                 android:layout_below="@+id/fuckinlayout1"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="2dp"
@@ -165,8 +164,8 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|start"
-        android:layout_marginStart="@dimen/keyline_16dp"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="@dimen/keyline_16dp"
         android:layout_marginTop="-45dp"
         android:layout_weight="0"
 
@@ -219,32 +218,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_toEndOf="@+id/Refresh_button"
-                android:gravity="center" >
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/Refresh_button"
+                android:gravity="right" >
 
                 <ImageView
                     android:id="@+id/Author_pic_random"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_alignParentRight="true" />
 
                 <TextView
                     android:id="@+id/Random_quote_Author"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_toStartOf="@+id/Author_pic_random"
+                    android:layout_toLeftOf="@+id/Author_pic_random"
                     android:ellipsize="end"
                     android:gravity="right"
                     android:maxLines="1"
                     android:paddingRight="8dp"
                     android:text="@string/loading"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/brown" />
+                    android:textColor="@color/brown"
+                    />
             </RelativeLayout>
 
             <ImageView
@@ -253,7 +253,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:clickable="true"
                 android:src="@drawable/refresh" />
 
@@ -312,9 +312,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:gravity="center" >
 
                 <ImageView
@@ -322,19 +322,18 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_alignParentRight="true" />
 
                 <TextView
                     android:id="@+id/Today_Author"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_toStartOf="@+id/Author_pic_today"
+                    android:layout_toLeftOf="@+id/Author_pic_today"
                     android:ellipsize="end"
                     android:gravity="right"
                     android:maxLines="1"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
                     android:text="@string/loading"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/brown" />
